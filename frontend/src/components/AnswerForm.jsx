@@ -4,7 +4,19 @@ function AnswerForm({
   setAnswer,
   result,
   onCheckAnswer,
+  onNext,
 }) {
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    if (result) {
+      onNext();
+      return;
+    }
+
+    onCheckAnswer();
+  }
+
   if (task.type === "choice") {
     return (
       <div className="options">
@@ -23,18 +35,19 @@ function AnswerForm({
   }
 
   return (
-    <div className="answerBox">
+    <form className="answerBox" onSubmit={handleSubmit}>
       <input
         value={answer}
         onChange={(event) => setAnswer(event.target.value)}
         placeholder="Введите перевод"
-        disabled={Boolean(result)}
+        readOnly={Boolean(result)}
+        autoFocus
       />
 
-      <button onClick={() => onCheckAnswer()} disabled={Boolean(result)}>
-        Проверить
+      <button type="submit">
+        {result ? "Дальше" : "Проверить"}
       </button>
-    </div>
+    </form>
   );
 }
 

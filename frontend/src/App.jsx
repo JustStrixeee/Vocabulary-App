@@ -2,15 +2,23 @@ import { useEffect, useState } from "react";
 import TaskCard from "./components/TaskCard";
 import AnswerForm from "./components/AnswerForm";
 import ResultMessage from "./components/ResultMessage";
+import SessionSummary from "./components/SessionSummary";
 
 const API_URL = "http://127.0.0.1:8000";
+const TASKS_LIMIT = 10;
 
 function App() {
   const [task, setTask] = useState(null);
   const [answer, setAnswer] = useState("");
   const [result, setResult] = useState(null);
+
   const [score, setScore] = useState(0);
   const [total, setTotal] = useState(0);
+
+  const [answersHistory, setAnswersHistory] = useState([]);
+  const [sessionStartedAt, setSessionStartedAt] = useState(null);
+  const [sessionFinished, setSessionFinished] = useState(false);
+
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -36,8 +44,20 @@ function App() {
     }
   }
 
+  function restartSession() {
+    setTask(null);
+    setAnswer("");
+    setResult(null);
+    setScore(0);
+    setTotal(0);
+    setAnswersHistory([]);
+    setSessionFinished(false);
+    setSessionStartedAt(new Date().toISOString());
+    loadTask();
+  }
+
   async function checkAnswer(userAnswer) {
-    if (!task) return;
+    if (!task || result) return;
 
     const finalAnswer = userAnswer ?? answer;
 
@@ -67,7 +87,18 @@ function App() {
 
       const data = await response.json();
 
+      const historyItem = {
+        instruction: task.instruction,
+        question: task.question,
+        taskType: task.type,
+        userAnswer: finalAnswer,
+        correctAnswer: data.correct_answer,
+        correct: data.correct,
+      };
+
       setResult(data);
+      setAnswersHistory((prevHistory) => [...prevHistory, historyItem]);
+
       setTotal((prevTotal) => prevTotal + 1);
 
       if (data.correct) {
@@ -78,9 +109,33 @@ function App() {
     }
   }
 
+  function goNext() {
+    if (total >= TASKS_LIMIT) {
+      setSessionFinished(true);
+      return;
+    }
+
+    loadTask();
+  }
+
   useEffect(() => {
+    setSessionStartedAt(new Date().toISOString());
     loadTask();
   }, []);
+
+  if (sessionFinished) {
+    return (
+      <div className="app">
+        <main className="card">
+          <SessionSummary
+            startedAt={sessionStartedAt}
+            history={answersHistory}
+            onRestart={restartSession}
+          />
+        </main>
+      </div>
+    );
+  }
 
   return (
     <div className="app">
@@ -88,6 +143,11 @@ function App() {
         <p className="tag">English Vocabulary Trainer</p>
 
         <h1>Тренажёр английских слов</h1>
+
+        <div className="score">
+          Задание: <span>{Math.min(total + 1, TASKS_LIMIT)}</span> /{" "}
+          {TASKS_LIMIT}
+        </div>
 
         <div className="score">
           Счёт: <span>{score}</span> / {total}
@@ -107,13 +167,18 @@ function App() {
               setAnswer={setAnswer}
               result={result}
               onCheckAnswer={checkAnswer}
+              onNext={goNext}
             />
 
             <ResultMessage result={result} />
 
-            <button className="nextButton" onClick={loadTask}>
-              Следующее задание
-            </button>
+            {result && (
+              <button className="nextButton" onClick={goNext}>
+                {total >= TASKS_LIMIT
+                  ? "Показать результат"
+                  : "Следующее задание"}
+              </button>
+            )}
           </>
         )}
       </main>
