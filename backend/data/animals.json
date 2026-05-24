@@ -1,0 +1,42 @@
+[
+  {
+    "english": "cat",
+    "russian": "кот"
+  },
+  {
+    "english": "dog",
+    "russian": "собака"
+  },
+  {
+    "english": "fox",
+    "russian": "лиса"
+  },
+  {
+    "english": "wolf",
+    "russian": "волк"
+  },
+  {
+    "english": "bear",
+    "russian": "медведь"
+  },
+  {
+    "english": "rabbit",
+    "russian": "кролик"
+  },
+  {
+    "english": "horse",
+    "russian": "лошадь"
+  },
+  {
+    "english": "cow",
+    "russian": "корова"
+  },
+  {
+    "english": "pig",
+    "russian": "свинья"
+  },
+  {
+    "english": "duck",
+    "russian": "утка"
+  }
+]

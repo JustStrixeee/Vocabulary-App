@@ -350,3 +350,29 @@ button:disabled {
     width: 100%;
   }
 }
+
+.categorySelect {
+  display: block;
+  margin-bottom: 22px;
+}
+
+.categorySelect span {
+  display: block;
+  margin-bottom: 8px;
+  color: #cbd5e1;
+  font-weight: 700;
+}
+
+.categorySelect select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 14px;
+  background: #0f172a;
+  color: #ffffff;
+  outline: none;
+}
+
+.categorySelect select:focus {
+  border-color: #38bdf8;
+}

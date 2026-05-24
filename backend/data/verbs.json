@@ -1,0 +1,42 @@
+[
+  {
+    "english": "run",
+    "russian": "бежать"
+  },
+  {
+    "english": "walk",
+    "russian": "идти"
+  },
+  {
+    "english": "read",
+    "russian": "читать"
+  },
+  {
+    "english": "write",
+    "russian": "писать"
+  },
+  {
+    "english": "speak",
+    "russian": "говорить"
+  },
+  {
+    "english": "listen",
+    "russian": "слушать"
+  },
+  {
+    "english": "open",
+    "russian": "открывать"
+  },
+  {
+    "english": "close",
+    "russian": "закрывать"
+  },
+  {
+    "english": "learn",
+    "russian": "учить"
+  },
+  {
+    "english": "play",
+    "russian": "играть"
+  }
+]

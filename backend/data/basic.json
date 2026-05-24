@@ -1,0 +1,42 @@
+[
+  {
+    "english": "house",
+    "russian": "дом"
+  },
+  {
+    "english": "car",
+    "russian": "машина"
+  },
+  {
+    "english": "book",
+    "russian": "книга"
+  },
+  {
+    "english": "phone",
+    "russian": "телефон"
+  },
+  {
+    "english": "table",
+    "russian": "стол"
+  },
+  {
+    "english": "chair",
+    "russian": "стул"
+  },
+  {
+    "english": "door",
+    "russian": "дверь"
+  },
+  {
+    "english": "window",
+    "russian": "окно"
+  },
+  {
+    "english": "city",
+    "russian": "город"
+  },
+  {
+    "english": "street",
+    "russian": "улица"
+  }
+]

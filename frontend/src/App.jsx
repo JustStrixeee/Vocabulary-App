@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import CategorySelect from "./components/CategorySelect";
 import TaskCard from "./components/TaskCard";
 import AnswerForm from "./components/AnswerForm";
 import ResultMessage from "./components/ResultMessage";
@@ -10,6 +11,9 @@ const TASKS_LIMIT = 10;
 const STORAGE_KEY = "vocabulary_sessions";
 
 function App() {
+  const [categories, setCategories] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("all");
+
   const [task, setTask] = useState(null);
   const [answer, setAnswer] = useState("");
   const [result, setResult] = useState(null);
@@ -39,13 +43,20 @@ function App() {
     }
   }
 
-  function saveSession(history, startedAt) {
+  function getCategoryLabel(categoryValue) {
+    const category = categories.find((item) => item.value === categoryValue);
+    return category ? category.label : "Все слова";
+  }
+
+  function saveSession(history, startedAt, categoryValue) {
     const correctAnswers = history.filter((item) => item.correct).length;
     const mistakes = history.filter((item) => !item.correct);
 
     const newSession = {
       id: startedAt,
       startedAt,
+      category: categoryValue,
+      categoryLabel: getCategoryLabel(categoryValue),
       total: history.length,
       correct: correctAnswers,
       mistakes,
@@ -59,20 +70,25 @@ function App() {
     setSavedSessions(updatedSessions);
   }
 
-  async function loadTask() {
+  async function loadTask(category = selectedCategory) {
     setIsLoading(true);
     setError("");
     setResult(null);
     setAnswer("");
 
     try {
-      const response = await fetch(`${API_URL}/task`);
+      const response = await fetch(`${API_URL}/task?category=${category}`);
 
       if (!response.ok) {
         throw new Error("Не удалось загрузить задание");
       }
 
       const data = await response.json();
+
+      if (data.error) {
+        throw new Error(data.error);
+      }
+
       setTask(data);
     } catch (error) {
       setError(error.message);
@@ -81,7 +97,22 @@ function App() {
     }
   }
 
-  function restartSession() {
+  async function loadCategories() {
+    try {
+      const response = await fetch(`${API_URL}/categories`);
+
+      if (!response.ok) {
+        throw new Error("Не удалось загрузить категории");
+      }
+
+      const data = await response.json();
+      setCategories(data);
+    } catch (error) {
+      setError(error.message);
+    }
+  }
+
+  function restartSession(category = selectedCategory) {
     const startedAt = new Date().toISOString();
 
     setTask(null);
@@ -93,7 +124,7 @@ function App() {
     setSessionFinished(false);
     setSessionStartedAt(startedAt);
 
-    loadTask();
+    loadTask(category);
   }
 
   async function checkAnswer(userAnswer) {
@@ -134,6 +165,8 @@ function App() {
         userAnswer: finalAnswer,
         correctAnswer: data.correct_answer,
         correct: data.correct,
+        category: selectedCategory,
+        categoryLabel: getCategoryLabel(selectedCategory),
       };
 
       setResult(data);
@@ -148,7 +181,7 @@ function App() {
       }
 
       if (updatedHistory.length >= TASKS_LIMIT && sessionStartedAt) {
-        saveSession(updatedHistory, sessionStartedAt);
+        saveSession(updatedHistory, sessionStartedAt, selectedCategory);
       }
     } catch (error) {
       setError(error.message);
@@ -175,6 +208,7 @@ function App() {
     const startedAt = new Date().toISOString();
     setSessionStartedAt(startedAt);
 
+    loadCategories();
     loadTask();
   }, []);
 
@@ -203,6 +237,15 @@ function App() {
         <p className="tag">English Vocabulary Trainer</p>
 
         <h1>Тренажёр английских слов</h1>
+
+        <CategorySelect
+          categories={categories}
+          selectedCategory={selectedCategory}
+          onChange={(newCategory) => {
+            setSelectedCategory(newCategory);
+            restartSession(newCategory);
+          }}
+        />
 
         <div className="score">
           Задание: <span>{Math.min(total + 1, TASKS_LIMIT)}</span> /{" "}

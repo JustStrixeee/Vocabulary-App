@@ -1,0 +1,42 @@
+[
+  {
+    "english": "big",
+    "russian": "большой"
+  },
+  {
+    "english": "small",
+    "russian": "маленький"
+  },
+  {
+    "english": "fast",
+    "russian": "быстрый"
+  },
+  {
+    "english": "slow",
+    "russian": "медленный"
+  },
+  {
+    "english": "hot",
+    "russian": "горячий"
+  },
+  {
+    "english": "cold",
+    "russian": "холодный"
+  },
+  {
+    "english": "new",
+    "russian": "новый"
+  },
+  {
+    "english": "old",
+    "russian": "старый"
+  },
+  {
+    "english": "good",
+    "russian": "хороший"
+  },
+  {
+    "english": "bad",
+    "russian": "плохой"
+  }
+]

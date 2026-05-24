@@ -1,0 +1,42 @@
+[
+  {
+    "english": "apple",
+    "russian": "яблоко"
+  },
+  {
+    "english": "banana",
+    "russian": "банан"
+  },
+  {
+    "english": "bread",
+    "russian": "хлеб"
+  },
+  {
+    "english": "cheese",
+    "russian": "сыр"
+  },
+  {
+    "english": "milk",
+    "russian": "молоко"
+  },
+  {
+    "english": "water",
+    "russian": "вода"
+  },
+  {
+    "english": "coffee",
+    "russian": "кофе"
+  },
+  {
+    "english": "tea",
+    "russian": "чай"
+  },
+  {
+    "english": "meat",
+    "russian": "мясо"
+  },
+  {
+    "english": "fish",
+    "russian": "рыба"
+  }
+]
