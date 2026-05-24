@@ -3,9 +3,11 @@ import TaskCard from "./components/TaskCard";
 import AnswerForm from "./components/AnswerForm";
 import ResultMessage from "./components/ResultMessage";
 import SessionSummary from "./components/SessionSummary";
+import SessionHistory from "./components/SessionHistory";
 
 const API_URL = "http://127.0.0.1:8000";
 const TASKS_LIMIT = 10;
+const STORAGE_KEY = "vocabulary_sessions";
 
 function App() {
   const [task, setTask] = useState(null);
@@ -18,9 +20,44 @@ function App() {
   const [answersHistory, setAnswersHistory] = useState([]);
   const [sessionStartedAt, setSessionStartedAt] = useState(null);
   const [sessionFinished, setSessionFinished] = useState(false);
+  const [savedSessions, setSavedSessions] = useState([]);
 
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
+
+  function loadSavedSessions() {
+    const savedData = localStorage.getItem(STORAGE_KEY);
+
+    if (!savedData) {
+      return [];
+    }
+
+    try {
+      return JSON.parse(savedData);
+    } catch {
+      return [];
+    }
+  }
+
+  function saveSession(history, startedAt) {
+    const correctAnswers = history.filter((item) => item.correct).length;
+    const mistakes = history.filter((item) => !item.correct);
+
+    const newSession = {
+      id: startedAt,
+      startedAt,
+      total: history.length,
+      correct: correctAnswers,
+      mistakes,
+      history,
+    };
+
+    const currentSessions = loadSavedSessions();
+    const updatedSessions = [newSession, ...currentSessions];
+
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedSessions));
+    setSavedSessions(updatedSessions);
+  }
 
   async function loadTask() {
     setIsLoading(true);
@@ -45,6 +82,8 @@ function App() {
   }
 
   function restartSession() {
+    const startedAt = new Date().toISOString();
+
     setTask(null);
     setAnswer("");
     setResult(null);
@@ -52,7 +91,8 @@ function App() {
     setTotal(0);
     setAnswersHistory([]);
     setSessionFinished(false);
-    setSessionStartedAt(new Date().toISOString());
+    setSessionStartedAt(startedAt);
+
     loadTask();
   }
 
@@ -97,12 +137,18 @@ function App() {
       };
 
       setResult(data);
-      setAnswersHistory((prevHistory) => [...prevHistory, historyItem]);
+
+      const updatedHistory = [...answersHistory, historyItem];
+      setAnswersHistory(updatedHistory);
 
       setTotal((prevTotal) => prevTotal + 1);
 
       if (data.correct) {
         setScore((prevScore) => prevScore + 1);
+      }
+
+      if (updatedHistory.length >= TASKS_LIMIT && sessionStartedAt) {
+        saveSession(updatedHistory, sessionStartedAt);
       }
     } catch (error) {
       setError(error.message);
@@ -118,8 +164,17 @@ function App() {
     loadTask();
   }
 
+  function clearHistory() {
+    localStorage.removeItem(STORAGE_KEY);
+    setSavedSessions([]);
+  }
+
   useEffect(() => {
-    setSessionStartedAt(new Date().toISOString());
+    setSavedSessions(loadSavedSessions());
+
+    const startedAt = new Date().toISOString();
+    setSessionStartedAt(startedAt);
+
     loadTask();
   }, []);
 
@@ -131,6 +186,11 @@ function App() {
             startedAt={sessionStartedAt}
             history={answersHistory}
             onRestart={restartSession}
+          />
+
+          <SessionHistory
+            sessions={savedSessions}
+            onClearHistory={clearHistory}
           />
         </main>
       </div>

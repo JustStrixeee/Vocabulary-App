@@ -275,3 +275,78 @@ button:disabled {
     grid-template-columns: 1fr;
   }
 }
+
+.history {
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.historyHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.history h3 {
+  margin: 0 0 16px;
+}
+
+.historyEmpty {
+  color: #94a3b8;
+}
+
+.historyList {
+  display: grid;
+  gap: 12px;
+}
+
+.historyItem {
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.historyItem p {
+  margin: 6px 0;
+}
+
+.clearButton {
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(239, 68, 68, 0.2);
+  color: #fecaca;
+}
+
+@media (max-width: 560px) {
+  .historyHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.historyActions {
+  display: flex;
+  gap: 10px;
+}
+
+.downloadButton {
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(56, 189, 248, 0.22);
+  color: #bae6fd;
+}
+
+@media (max-width: 560px) {
+  .historyActions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .downloadButton,
+  .clearButton {
+    width: 100%;
+  }
+}
