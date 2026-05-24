@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import "./index.css";
+import TaskCard from "./components/TaskCard";
+import AnswerForm from "./components/AnswerForm";
+import ResultMessage from "./components/ResultMessage";
 
 const API_URL = "http://127.0.0.1:8000";
 
@@ -66,10 +68,10 @@ function App() {
       const data = await response.json();
 
       setResult(data);
-      setTotal((prev) => prev + 1);
+      setTotal((prevTotal) => prevTotal + 1);
 
       if (data.correct) {
-        setScore((prev) => prev + 1);
+        setScore((prevScore) => prevScore + 1);
       }
     } catch (error) {
       setError(error.message);
@@ -97,51 +99,17 @@ function App() {
 
         {!isLoading && task && (
           <>
-            <section className="task">
-              <p className="instruction">{task.instruction}</p>
-              <h2>{task.question}</h2>
-            </section>
+            <TaskCard task={task} />
 
-            {task.type === "choice" ? (
-              <div className="options">
-                {task.options.map((option) => (
-                  <button
-                    key={option}
-                    className="optionButton"
-                    onClick={() => checkAnswer(option)}
-                    disabled={Boolean(result)}
-                  >
-                    {option}
-                  </button>
-                ))}
-              </div>
-            ) : (
-              <div className="answerBox">
-                <input
-                  value={answer}
-                  onChange={(event) => setAnswer(event.target.value)}
-                  placeholder="Введите перевод"
-                  disabled={Boolean(result)}
-                />
+            <AnswerForm
+              task={task}
+              answer={answer}
+              setAnswer={setAnswer}
+              result={result}
+              onCheckAnswer={checkAnswer}
+            />
 
-                <button onClick={() => checkAnswer()} disabled={Boolean(result)}>
-                  Проверить
-                </button>
-              </div>
-            )}
-
-            {result && (
-              <div className={result.correct ? "result success" : "result fail"}>
-                {result.correct ? (
-                  <p>✅ Правильно!</p>
-                ) : (
-                  <p>
-                    ❌ Неправильно. Правильный ответ:{" "}
-                    <strong>{result.correct_answer}</strong>
-                  </p>
-                )}
-              </div>
-            )}
+            <ResultMessage result={result} />
 
             <button className="nextButton" onClick={loadTask}>
               Следующее задание
