@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import TrainingModeSelect from "./components/TrainingModeSelect";
+import MatchingTask from "./components/MatchingTask";
 import CategorySelect from "./components/CategorySelect";
 import TaskCard from "./components/TaskCard";
 import AnswerForm from "./components/AnswerForm";
@@ -13,6 +15,11 @@ const STORAGE_KEY = "vocabulary_sessions";
 function App() {
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("all");
+
+  const [trainingMode, setTrainingMode] = useState("translation");
+  const [matchingTask, setMatchingTask] = useState(null);
+  const [matchingAnswers, setMatchingAnswers] = useState({});
+  const [matchingResult, setMatchingResult] = useState(null);
 
   const [task, setTask] = useState(null);
   const [answer, setAnswer] = useState("");
@@ -75,6 +82,7 @@ function App() {
     setError("");
     setResult(null);
     setAnswer("");
+    setTask(null);
 
     try {
       const response = await fetch(`${API_URL}/task?category=${category}`);
@@ -97,6 +105,36 @@ function App() {
     }
   }
 
+  async function loadMatchingTask(category = selectedCategory) {
+    setIsLoading(true);
+    setError("");
+    setMatchingResult(null);
+    setMatchingAnswers({});
+    setMatchingTask(null);
+
+    try {
+      const response = await fetch(
+        `${API_URL}/matching-task?category=${category}`
+      );
+
+      if (!response.ok) {
+        throw new Error("Не удалось загрузить задание на сопоставление");
+      }
+
+      const data = await response.json();
+
+      if (data.error) {
+        throw new Error(data.error);
+      }
+
+      setMatchingTask(data);
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
   async function loadCategories() {
     try {
       const response = await fetch(`${API_URL}/categories`);
@@ -112,19 +150,30 @@ function App() {
     }
   }
 
-  function restartSession(category = selectedCategory) {
+  function restartSession(
+    category = selectedCategory,
+    mode = trainingMode
+  ) {
     const startedAt = new Date().toISOString();
 
     setTask(null);
+    setMatchingTask(null);
     setAnswer("");
     setResult(null);
+    setMatchingResult(null);
+    setMatchingAnswers({});
     setScore(0);
     setTotal(0);
     setAnswersHistory([]);
     setSessionFinished(false);
     setSessionStartedAt(startedAt);
+    setError("");
 
-    loadTask(category);
+    if (mode === "matching") {
+      loadMatchingTask(category);
+    } else {
+      loadTask(category);
+    }
   }
 
   async function checkAnswer(userAnswer) {
@@ -188,13 +237,56 @@ function App() {
     }
   }
 
+  function handleMatchingAnswerChange(wordId, selectedTranslationId) {
+    setMatchingAnswers((prevAnswers) => ({
+      ...prevAnswers,
+      [wordId]: selectedTranslationId,
+    }));
+  }
+
+  async function checkMatchingAnswers() {
+    if (!matchingTask) return;
+
+    if (Object.keys(matchingAnswers).length !== matchingTask.items.length) {
+      setError("Выбери перевод для каждого слова");
+      return;
+    }
+
+    setError("");
+
+    try {
+      const response = await fetch(`${API_URL}/check-matching`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          answers: matchingAnswers,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Не удалось проверить сопоставление");
+      }
+
+      const data = await response.json();
+      setMatchingResult(data);
+    } catch (error) {
+      setError(error.message);
+    }
+  }
+
+  function goNextMatching() {
+    loadMatchingTask(selectedCategory);
+  }
+
   function goNext() {
     if (total >= TASKS_LIMIT) {
       setSessionFinished(true);
       return;
     }
 
-    loadTask();
+    loadTask(selectedCategory);
   }
 
   function clearHistory() {
@@ -219,7 +311,7 @@ function App() {
           <SessionSummary
             startedAt={sessionStartedAt}
             history={answersHistory}
-            onRestart={restartSession}
+            onRestart={() => restartSession(selectedCategory, trainingMode)}
           />
 
           <SessionHistory
@@ -243,24 +335,36 @@ function App() {
           selectedCategory={selectedCategory}
           onChange={(newCategory) => {
             setSelectedCategory(newCategory);
-            restartSession(newCategory);
+            restartSession(newCategory, trainingMode);
           }}
         />
 
-        <div className="score">
-          Задание: <span>{Math.min(total + 1, TASKS_LIMIT)}</span> /{" "}
-          {TASKS_LIMIT}
-        </div>
+        <TrainingModeSelect
+          trainingMode={trainingMode}
+          onChange={(newMode) => {
+            setTrainingMode(newMode);
+            restartSession(selectedCategory, newMode);
+          }}
+        />
 
-        <div className="score">
-          Счёт: <span>{score}</span> / {total}
-        </div>
+        {trainingMode === "translation" && (
+          <>
+            <div className="score">
+              Задание: <span>{Math.min(total + 1, TASKS_LIMIT)}</span> /{" "}
+              {TASKS_LIMIT}
+            </div>
+
+            <div className="score">
+              Счёт: <span>{score}</span> / {total}
+            </div>
+          </>
+        )}
 
         {isLoading && <p className="message">Загрузка задания...</p>}
 
         {error && <p className="error">{error}</p>}
 
-        {!isLoading && task && (
+        {!isLoading && trainingMode === "translation" && task && (
           <>
             <TaskCard task={task} />
 
@@ -283,6 +387,17 @@ function App() {
               </button>
             )}
           </>
+        )}
+
+        {!isLoading && trainingMode === "matching" && matchingTask && (
+          <MatchingTask
+            task={matchingTask}
+            answers={matchingAnswers}
+            result={matchingResult}
+            onAnswerChange={handleMatchingAnswerChange}
+            onCheck={checkMatchingAnswers}
+            onNext={goNextMatching}
+          />
         )}
       </main>
     </div>

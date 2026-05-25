@@ -102,10 +102,21 @@ class CheckAnswerRequest(BaseModel):
     task_type: str
     answer: str
 
+class CheckMatchingRequest(BaseModel):
+    answers: dict[str, str]
+
 
 @app.get("/")
 def read_root():
     return {"message": "Vocabulary API is working"}
+
+def get_available_words(category: str = "all"):
+    if category == "all":
+        return words
+
+    return [
+        word for word in words if word.get("category") == category
+    ]
 
 
 @app.get("/words")
@@ -120,12 +131,7 @@ def get_categories():
 
 @app.get("/task")
 def get_task(category: str = "all"):
-    available_words = words
-
-    if category != "all":
-        available_words = [
-            word for word in words if word.get("category") == category
-        ]
+    available_words = get_available_words(category)
 
     if len(available_words) == 0:
         return {"error": "Категория не найдена"}
@@ -202,4 +208,86 @@ def check_answer(data: CheckAnswerRequest):
     return {
         "correct": is_correct,
         "correct_answer": correct_answer,
+    }
+
+@app.get("/matching-task")
+def get_matching_task(category: str = "all"):
+    available_words = get_available_words(category)
+
+    if len(available_words) < 4:
+        return {
+            "error": "Недостаточно слов для сопоставления",
+        }
+
+    selected_words = sample(available_words, 4)
+
+    items = [
+        {
+            "id": word["id"],
+            "english": word["english"],
+        }
+        for word in selected_words
+    ]
+
+    options = [
+        {
+            "id": word["id"],
+            "russian": word["russian"],
+        }
+        for word in selected_words
+    ]
+
+    options = sample(options, len(options))
+
+    return {
+        "type": "matching",
+        "instruction": "Сопоставь слова с переводом",
+        "items": items,
+        "options": options,
+        "category": category,
+    }
+
+@app.post("/check-matching")
+def check_matching(data: CheckMatchingRequest):
+    results = []
+    correct_count = 0
+
+    for word_id, selected_translation_id in data.answers.items():
+        word = next((item for item in words if item["id"] == word_id), None)
+        selected_word = next(
+            (item for item in words if item["id"] == selected_translation_id),
+            None,
+        )
+
+        if word is None or selected_word is None:
+            results.append(
+                {
+                    "word_id": word_id,
+                    "correct": False,
+                    "english": "",
+                    "user_answer": "",
+                    "correct_answer": "",
+                }
+            )
+            continue
+
+        is_correct = word["id"] == selected_word["id"]
+
+        if is_correct:
+            correct_count += 1
+
+        results.append(
+            {
+                "word_id": word["id"],
+                "correct": is_correct,
+                "english": word["english"],
+                "user_answer": selected_word["russian"],
+                "correct_answer": word["russian"],
+            }
+        )
+
+    return {
+        "correct": correct_count,
+        "total": len(data.answers),
+        "results": results,
     }

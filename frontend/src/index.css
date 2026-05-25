@@ -376,3 +376,79 @@ button:disabled {
 .categorySelect select:focus {
   border-color: #38bdf8;
 }
+
+.modeSelect {
+  display: block;
+  margin-bottom: 22px;
+}
+
+.modeSelect span {
+  display: block;
+  margin-bottom: 8px;
+  color: #cbd5e1;
+  font-weight: 700;
+}
+
+.modeSelect select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 14px;
+  background: #0f172a;
+  color: #ffffff;
+  outline: none;
+}
+
+.modeSelect select:focus {
+  border-color: #38bdf8;
+}
+
+.matchingList {
+  display: grid;
+  gap: 12px;
+}
+
+.matchingRow {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 12px;
+  align-items: center;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.matchingRow strong {
+  font-size: 20px;
+}
+
+.matchingRow select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 14px;
+  background: #0f172a;
+  color: #ffffff;
+  outline: none;
+}
+
+.matchingRow select:focus {
+  border-color: #38bdf8;
+}
+
+.miniSuccess {
+  margin: 6px 0 0;
+  color: #86efac;
+}
+
+.miniFail {
+  margin: 6px 0 0;
+  color: #fecaca;
+}
+
+@media (max-width: 560px) {
+  .matchingRow {
+    grid-template-columns: 1fr;
+  }
+}
