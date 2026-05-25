@@ -38,5 +38,365 @@
   {
     "english": "street",
     "russian": "улица"
+  },
+  {
+    "english": "room",
+    "russian": "комната"
+  },
+  {
+    "english": "bed",
+    "russian": "кровать"
+  },
+  {
+    "english": "sofa",
+    "russian": "диван"
+  },
+  {
+    "english": "lamp",
+    "russian": "лампа"
+  },
+  {
+    "english": "wall",
+    "russian": "стена"
+  },
+  {
+    "english": "floor",
+    "russian": "пол"
+  },
+  {
+    "english": "ceiling",
+    "russian": "потолок"
+  },
+  {
+    "english": "kitchen",
+    "russian": "кухня"
+  },
+  {
+    "english": "bathroom",
+    "russian": "ванная"
+  },
+  {
+    "english": "school",
+    "russian": "школа"
+  },
+  {
+    "english": "teacher",
+    "russian": "учитель"
+  },
+  {
+    "english": "student",
+    "russian": "студент"
+  },
+  {
+    "english": "lesson",
+    "russian": "урок"
+  },
+  {
+    "english": "homework",
+    "russian": "домашнее задание"
+  },
+  {
+    "english": "pen",
+    "russian": "ручка"
+  },
+  {
+    "english": "pencil",
+    "russian": "карандаш"
+  },
+  {
+    "english": "paper",
+    "russian": "бумага"
+  },
+  {
+    "english": "bag",
+    "russian": "сумка"
+  },
+  {
+    "english": "computer",
+    "russian": "компьютер"
+  },
+  {
+    "english": "keyboard",
+    "russian": "клавиатура"
+  },
+  {
+    "english": "computer mouse",
+    "russian": "компьютерная мышь"
+  },
+  {
+    "english": "screen",
+    "russian": "экран"
+  },
+  {
+    "english": "internet",
+    "russian": "интернет"
+  },
+  {
+    "english": "message",
+    "russian": "сообщение"
+  },
+  {
+    "english": "photo",
+    "russian": "фото"
+  },
+  {
+    "english": "music",
+    "russian": "музыка"
+  },
+  {
+    "english": "movie",
+    "russian": "фильм"
+  },
+  {
+    "english": "game",
+    "russian": "игра"
+  },
+  {
+    "english": "money",
+    "russian": "деньги"
+  },
+  {
+    "english": "shop",
+    "russian": "магазин"
+  },
+  {
+    "english": "market",
+    "russian": "рынок"
+  },
+  {
+    "english": "ticket",
+    "russian": "билет"
+  },
+  {
+    "english": "bus",
+    "russian": "автобус"
+  },
+  {
+    "english": "train",
+    "russian": "поезд"
+  },
+  {
+    "english": "plane",
+    "russian": "самолёт"
+  },
+  {
+    "english": "station",
+    "russian": "станция"
+  },
+  {
+    "english": "airport",
+    "russian": "аэропорт"
+  },
+  {
+    "english": "road",
+    "russian": "дорога"
+  },
+  {
+    "english": "bridge",
+    "russian": "мост"
+  },
+  {
+    "english": "park",
+    "russian": "парк"
+  },
+  {
+    "english": "river",
+    "russian": "река"
+  },
+  {
+    "english": "sea",
+    "russian": "море"
+  },
+  {
+    "english": "mountain",
+    "russian": "гора"
+  },
+  {
+    "english": "forest",
+    "russian": "лес"
+  },
+  {
+    "english": "tree",
+    "russian": "дерево"
+  },
+  {
+    "english": "flower",
+    "russian": "цветок"
+  },
+  {
+    "english": "sun",
+    "russian": "солнце"
+  },
+  {
+    "english": "moon",
+    "russian": "луна"
+  },
+  {
+    "english": "star",
+    "russian": "звезда"
+  },
+  {
+    "english": "sky",
+    "russian": "небо"
+  },
+  {
+    "english": "rain",
+    "russian": "дождь"
+  },
+  {
+    "english": "snow",
+    "russian": "снег"
+  },
+  {
+    "english": "wind",
+    "russian": "ветер"
+  },
+  {
+    "english": "fire",
+    "russian": "огонь"
+  },
+  {
+    "english": "water",
+    "russian": "вода"
+  },
+  {
+    "english": "family",
+    "russian": "семья"
+  },
+  {
+    "english": "mother",
+    "russian": "мама"
+  },
+  {
+    "english": "father",
+    "russian": "папа"
+  },
+  {
+    "english": "sister",
+    "russian": "сестра"
+  },
+  {
+    "english": "brother",
+    "russian": "брат"
+  },
+  {
+    "english": "friend",
+    "russian": "друг"
+  },
+  {
+    "english": "child",
+    "russian": "ребёнок"
+  },
+  {
+    "english": "man",
+    "russian": "мужчина"
+  },
+  {
+    "english": "woman",
+    "russian": "женщина"
+  },
+  {
+    "english": "person",
+    "russian": "человек"
+  },
+  {
+    "english": "name",
+    "russian": "имя"
+  },
+  {
+    "english": "time",
+    "russian": "время"
+  },
+  {
+    "english": "day",
+    "russian": "день"
+  },
+  {
+    "english": "night",
+    "russian": "ночь"
+  },
+  {
+    "english": "morning",
+    "russian": "утро"
+  },
+  {
+    "english": "evening",
+    "russian": "вечер"
+  },
+  {
+    "english": "week",
+    "russian": "неделя"
+  },
+  {
+    "english": "month",
+    "russian": "месяц"
+  },
+  {
+    "english": "year",
+    "russian": "год"
+  },
+  {
+    "english": "today",
+    "russian": "сегодня"
+  },
+  {
+    "english": "tomorrow",
+    "russian": "завтра"
+  },
+  {
+    "english": "yesterday",
+    "russian": "вчера"
+  },
+  {
+    "english": "question",
+    "russian": "вопрос"
+  },
+  {
+    "english": "answer",
+    "russian": "ответ"
+  },
+  {
+    "english": "problem",
+    "russian": "проблема"
+  },
+  {
+    "english": "work",
+    "russian": "работа"
+  },
+  {
+    "english": "job",
+    "russian": "работа"
+  },
+  {
+    "english": "office",
+    "russian": "офис"
+  },
+  {
+    "english": "doctor",
+    "russian": "врач"
+  },
+  {
+    "english": "hospital",
+    "russian": "больница"
+  },
+  {
+    "english": "police",
+    "russian": "полиция"
+  },
+  {
+    "english": "bank",
+    "russian": "банк"
+  },
+  {
+    "english": "letter",
+    "russian": "письмо"
+  },
+  {
+    "english": "key",
+    "russian": "ключ"
+  },
+  {
+    "english": "map",
+    "russian": "карта"
   }
 ]

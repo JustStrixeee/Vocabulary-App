@@ -38,5 +38,365 @@
   {
     "english": "duck",
     "russian": "утка"
+  },
+  {
+    "english": "lion",
+    "russian": "лев"
+  },
+  {
+    "english": "tiger",
+    "russian": "тигр"
+  },
+  {
+    "english": "elephant",
+    "russian": "слон"
+  },
+  {
+    "english": "giraffe",
+    "russian": "жираф"
+  },
+  {
+    "english": "zebra",
+    "russian": "зебра"
+  },
+  {
+    "english": "monkey",
+    "russian": "обезьяна"
+  },
+  {
+    "english": "kangaroo",
+    "russian": "кенгуру"
+  },
+  {
+    "english": "panda",
+    "russian": "панда"
+  },
+  {
+    "english": "koala",
+    "russian": "коала"
+  },
+  {
+    "english": "raccoon",
+    "russian": "енот"
+  },
+  {
+    "english": "squirrel",
+    "russian": "белка"
+  },
+  {
+    "english": "deer",
+    "russian": "олень"
+  },
+  {
+    "english": "moose",
+    "russian": "лось"
+  },
+  {
+    "english": "camel",
+    "russian": "верблюд"
+  },
+  {
+    "english": "donkey",
+    "russian": "осёл"
+  },
+  {
+    "english": "goat",
+    "russian": "коза"
+  },
+  {
+    "english": "sheep",
+    "russian": "овца"
+  },
+  {
+    "english": "chicken",
+    "russian": "курица"
+  },
+  {
+    "english": "rooster",
+    "russian": "петух"
+  },
+  {
+    "english": "turkey",
+    "russian": "индейка"
+  },
+  {
+    "english": "goose",
+    "russian": "гусь"
+  },
+  {
+    "english": "swan",
+    "russian": "лебедь"
+  },
+  {
+    "english": "owl",
+    "russian": "сова"
+  },
+  {
+    "english": "eagle",
+    "russian": "орёл"
+  },
+  {
+    "english": "parrot",
+    "russian": "попугай"
+  },
+  {
+    "english": "penguin",
+    "russian": "пингвин"
+  },
+  {
+    "english": "flamingo",
+    "russian": "фламинго"
+  },
+  {
+    "english": "peacock",
+    "russian": "павлин"
+  },
+  {
+    "english": "crow",
+    "russian": "ворона"
+  },
+  {
+    "english": "sparrow",
+    "russian": "воробей"
+  },
+  {
+    "english": "bat",
+    "russian": "летучая мышь"
+  },
+  {
+    "english": "hedgehog",
+    "russian": "ёж"
+  },
+  {
+    "english": "mole",
+    "russian": "крот"
+  },
+  {
+    "english": "mouse",
+    "russian": "мышь"
+  },
+  {
+    "english": "rat",
+    "russian": "крыса"
+  },
+  {
+    "english": "hamster",
+    "russian": "хомяк"
+  },
+  {
+    "english": "beaver",
+    "russian": "бобр"
+  },
+  {
+    "english": "otter",
+    "russian": "выдра"
+  },
+  {
+    "english": "seal",
+    "russian": "тюлень"
+  },
+  {
+    "english": "walrus",
+    "russian": "морж"
+  },
+  {
+    "english": "dolphin",
+    "russian": "дельфин"
+  },
+  {
+    "english": "whale",
+    "russian": "кит"
+  },
+  {
+    "english": "shark",
+    "russian": "акула"
+  },
+  {
+    "english": "octopus",
+    "russian": "осьминог"
+  },
+  {
+    "english": "crab",
+    "russian": "краб"
+  },
+  {
+    "english": "lobster",
+    "russian": "лобстер"
+  },
+  {
+    "english": "jellyfish",
+    "russian": "медуза"
+  },
+  {
+    "english": "seahorse",
+    "russian": "морской конёк"
+  },
+  {
+    "english": "starfish",
+    "russian": "морская звезда"
+  },
+  {
+    "english": "turtle",
+    "russian": "черепаха"
+  },
+  {
+    "english": "frog",
+    "russian": "лягушка"
+  },
+  {
+    "english": "toad",
+    "russian": "жаба"
+  },
+  {
+    "english": "snake",
+    "russian": "змея"
+  },
+  {
+    "english": "lizard",
+    "russian": "ящерица"
+  },
+  {
+    "english": "crocodile",
+    "russian": "крокодил"
+  },
+  {
+    "english": "alligator",
+    "russian": "аллигатор"
+  },
+  {
+    "english": "chameleon",
+    "russian": "хамелеон"
+  },
+  {
+    "english": "iguana",
+    "russian": "игуана"
+  },
+  {
+    "english": "butterfly",
+    "russian": "бабочка"
+  },
+  {
+    "english": "bee",
+    "russian": "пчела"
+  },
+  {
+    "english": "wasp",
+    "russian": "оса"
+  },
+  {
+    "english": "ant",
+    "russian": "муравей"
+  },
+  {
+    "english": "ladybug",
+    "russian": "божья коровка"
+  },
+  {
+    "english": "spider",
+    "russian": "паук"
+  },
+  {
+    "english": "scorpion",
+    "russian": "скорпион"
+  },
+  {
+    "english": "snail",
+    "russian": "улитка"
+  },
+  {
+    "english": "worm",
+    "russian": "червь"
+  },
+  {
+    "english": "dragonfly",
+    "russian": "стрекоза"
+  },
+  {
+    "english": "grasshopper",
+    "russian": "кузнечик"
+  },
+  {
+    "english": "beetle",
+    "russian": "жук"
+  },
+  {
+    "english": "leopard",
+    "russian": "леопард"
+  },
+  {
+    "english": "panther",
+    "russian": "пантера"
+  },
+  {
+    "english": "cheetah",
+    "russian": "гепард"
+  },
+  {
+    "english": "hyena",
+    "russian": "гиена"
+  },
+  {
+    "english": "bison",
+    "russian": "бизон"
+  },
+  {
+    "english": "buffalo",
+    "russian": "буйвол"
+  },
+  {
+    "english": "antelope",
+    "russian": "антилопа"
+  },
+  {
+    "english": "rhino",
+    "russian": "носорог"
+  },
+  {
+    "english": "hippo",
+    "russian": "бегемот"
+  },
+  {
+    "english": "yak",
+    "russian": "як"
+  },
+  {
+    "english": "llama",
+    "russian": "лама"
+  },
+  {
+    "english": "alpaca",
+    "russian": "альпака"
+  },
+  {
+    "english": "sloth",
+    "russian": "ленивец"
+  },
+  {
+    "english": "armadillo",
+    "russian": "броненосец"
+  },
+  {
+    "english": "wombat",
+    "russian": "вомбат"
+  },
+  {
+    "english": "meerkat",
+    "russian": "сурикат"
+  },
+  {
+    "english": "lemur",
+    "russian": "лемур"
+  },
+  {
+    "english": "toucan",
+    "russian": "тукан"
+  },
+  {
+    "english": "pelican",
+    "russian": "пеликан"
+  },
+  {
+    "english": "badger",
+    "russian": "барсук"
   }
 ]

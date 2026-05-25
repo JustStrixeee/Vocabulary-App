@@ -38,5 +38,365 @@
   {
     "english": "bad",
     "russian": "плохой"
+  },
+  {
+    "english": "young",
+    "russian": "молодой"
+  },
+  {
+    "english": "long",
+    "russian": "длинный"
+  },
+  {
+    "english": "short",
+    "russian": "короткий"
+  },
+  {
+    "english": "high",
+    "russian": "высокий"
+  },
+  {
+    "english": "low",
+    "russian": "низкий"
+  },
+  {
+    "english": "strong",
+    "russian": "сильный"
+  },
+  {
+    "english": "weak",
+    "russian": "слабый"
+  },
+  {
+    "english": "easy",
+    "russian": "лёгкий"
+  },
+  {
+    "english": "difficult",
+    "russian": "трудный"
+  },
+  {
+    "english": "hard",
+    "russian": "твёрдый"
+  },
+  {
+    "english": "soft",
+    "russian": "мягкий"
+  },
+  {
+    "english": "dark",
+    "russian": "тёмный"
+  },
+  {
+    "english": "light",
+    "russian": "светлый"
+  },
+  {
+    "english": "bright",
+    "russian": "яркий"
+  },
+  {
+    "english": "clean",
+    "russian": "чистый"
+  },
+  {
+    "english": "dirty",
+    "russian": "грязный"
+  },
+  {
+    "english": "beautiful",
+    "russian": "красивый"
+  },
+  {
+    "english": "ugly",
+    "russian": "некрасивый"
+  },
+  {
+    "english": "happy",
+    "russian": "счастливый"
+  },
+  {
+    "english": "sad",
+    "russian": "грустный"
+  },
+  {
+    "english": "angry",
+    "russian": "злой"
+  },
+  {
+    "english": "calm",
+    "russian": "спокойный"
+  },
+  {
+    "english": "tired",
+    "russian": "уставший"
+  },
+  {
+    "english": "hungry",
+    "russian": "голодный"
+  },
+  {
+    "english": "thirsty",
+    "russian": "испытывающий жажду"
+  },
+  {
+    "english": "full",
+    "russian": "полный"
+  },
+  {
+    "english": "empty",
+    "russian": "пустой"
+  },
+  {
+    "english": "rich",
+    "russian": "богатый"
+  },
+  {
+    "english": "poor",
+    "russian": "бедный"
+  },
+  {
+    "english": "safe",
+    "russian": "безопасный"
+  },
+  {
+    "english": "dangerous",
+    "russian": "опасный"
+  },
+  {
+    "english": "early",
+    "russian": "ранний"
+  },
+  {
+    "english": "late",
+    "russian": "поздний"
+  },
+  {
+    "english": "right",
+    "russian": "правильный"
+  },
+  {
+    "english": "wrong",
+    "russian": "неправильный"
+  },
+  {
+    "english": "true",
+    "russian": "истинный"
+  },
+  {
+    "english": "false",
+    "russian": "ложный"
+  },
+  {
+    "english": "real",
+    "russian": "реальный"
+  },
+  {
+    "english": "simple",
+    "russian": "простой"
+  },
+  {
+    "english": "complex",
+    "russian": "сложный"
+  },
+  {
+    "english": "important",
+    "russian": "важный"
+  },
+  {
+    "english": "possible",
+    "russian": "возможный"
+  },
+  {
+    "english": "impossible",
+    "russian": "невозможный"
+  },
+  {
+    "english": "useful",
+    "russian": "полезный"
+  },
+  {
+    "english": "useless",
+    "russian": "бесполезный"
+  },
+  {
+    "english": "interesting",
+    "russian": "интересный"
+  },
+  {
+    "english": "boring",
+    "russian": "скучный"
+  },
+  {
+    "english": "funny",
+    "russian": "смешной"
+  },
+  {
+    "english": "serious",
+    "russian": "серьёзный"
+  },
+  {
+    "english": "kind",
+    "russian": "добрый"
+  },
+  {
+    "english": "cruel",
+    "russian": "жестокий"
+  },
+  {
+    "english": "polite",
+    "russian": "вежливый"
+  },
+  {
+    "english": "rude",
+    "russian": "грубый"
+  },
+  {
+    "english": "quiet",
+    "russian": "тихий"
+  },
+  {
+    "english": "loud",
+    "russian": "громкий"
+  },
+  {
+    "english": "cheap",
+    "russian": "дешёвый"
+  },
+  {
+    "english": "expensive",
+    "russian": "дорогой"
+  },
+  {
+    "english": "free",
+    "russian": "свободный"
+  },
+  {
+    "english": "busy",
+    "russian": "занятый"
+  },
+  {
+    "english": "ready",
+    "russian": "готовый"
+  },
+  {
+    "english": "alone",
+    "russian": "одинокий"
+  },
+  {
+    "english": "same",
+    "russian": "такой же"
+  },
+  {
+    "english": "different",
+    "russian": "разный"
+  },
+  {
+    "english": "clear",
+    "russian": "ясный"
+  },
+  {
+    "english": "deep",
+    "russian": "глубокий"
+  },
+  {
+    "english": "wide",
+    "russian": "широкий"
+  },
+  {
+    "english": "narrow",
+    "russian": "узкий"
+  },
+  {
+    "english": "heavy",
+    "russian": "тяжёлый"
+  },
+  {
+    "english": "lightweight",
+    "russian": "лёгкий"
+  },
+  {
+    "english": "fresh",
+    "russian": "свежий"
+  },
+  {
+    "english": "dry",
+    "russian": "сухой"
+  },
+  {
+    "english": "wet",
+    "russian": "мокрый"
+  },
+  {
+    "english": "warm",
+    "russian": "тёплый"
+  },
+  {
+    "english": "cool",
+    "russian": "прохладный"
+  },
+  {
+    "english": "sweet",
+    "russian": "сладкий"
+  },
+  {
+    "english": "sour",
+    "russian": "кислый"
+  },
+  {
+    "english": "salty",
+    "russian": "солёный"
+  },
+  {
+    "english": "bitter",
+    "russian": "горький"
+  },
+  {
+    "english": "healthy",
+    "russian": "здоровый"
+  },
+  {
+    "english": "sick",
+    "russian": "больной"
+  },
+  {
+    "english": "famous",
+    "russian": "известный"
+  },
+  {
+    "english": "local",
+    "russian": "местный"
+  },
+  {
+    "english": "foreign",
+    "russian": "иностранный"
+  },
+  {
+    "english": "modern",
+    "russian": "современный"
+  },
+  {
+    "english": "ancient",
+    "russian": "древний"
+  },
+  {
+    "english": "private",
+    "russian": "частный"
+  },
+  {
+    "english": "public",
+    "russian": "общественный"
+  },
+  {
+    "english": "normal",
+    "russian": "нормальный"
+  },
+  {
+    "english": "strange",
+    "russian": "странный"
+  },
+  {
+    "english": "special",
+    "russian": "особенный"
   }
 ]

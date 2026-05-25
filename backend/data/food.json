@@ -8,8 +8,176 @@
     "russian": "банан"
   },
   {
+    "english": "orange",
+    "russian": "апельсин"
+  },
+  {
+    "english": "lemon",
+    "russian": "лимон"
+  },
+  {
+    "english": "lime",
+    "russian": "лайм"
+  },
+  {
+    "english": "grape",
+    "russian": "виноград"
+  },
+  {
+    "english": "pear",
+    "russian": "груша"
+  },
+  {
+    "english": "peach",
+    "russian": "персик"
+  },
+  {
+    "english": "plum",
+    "russian": "слива"
+  },
+  {
+    "english": "cherry",
+    "russian": "вишня"
+  },
+  {
+    "english": "strawberry",
+    "russian": "клубника"
+  },
+  {
+    "english": "raspberry",
+    "russian": "малина"
+  },
+  {
+    "english": "blueberry",
+    "russian": "черника"
+  },
+  {
+    "english": "watermelon",
+    "russian": "арбуз"
+  },
+  {
+    "english": "melon",
+    "russian": "дыня"
+  },
+  {
+    "english": "pineapple",
+    "russian": "ананас"
+  },
+  {
+    "english": "mango",
+    "russian": "манго"
+  },
+  {
+    "english": "kiwi",
+    "russian": "киви"
+  },
+  {
+    "english": "coconut",
+    "russian": "кокос"
+  },
+  {
+    "english": "avocado",
+    "russian": "авокадо"
+  },
+  {
+    "english": "tomato",
+    "russian": "помидор"
+  },
+  {
+    "english": "cucumber",
+    "russian": "огурец"
+  },
+  {
+    "english": "potato",
+    "russian": "картофель"
+  },
+  {
+    "english": "carrot",
+    "russian": "морковь"
+  },
+  {
+    "english": "onion",
+    "russian": "лук"
+  },
+  {
+    "english": "garlic",
+    "russian": "чеснок"
+  },
+  {
+    "english": "pepper",
+    "russian": "перец"
+  },
+  {
+    "english": "cabbage",
+    "russian": "капуста"
+  },
+  {
+    "english": "lettuce",
+    "russian": "салат"
+  },
+  {
+    "english": "spinach",
+    "russian": "шпинат"
+  },
+  {
+    "english": "broccoli",
+    "russian": "брокколи"
+  },
+  {
+    "english": "corn",
+    "russian": "кукуруза"
+  },
+  {
+    "english": "peas",
+    "russian": "горох"
+  },
+  {
+    "english": "beans",
+    "russian": "фасоль"
+  },
+  {
+    "english": "mushroom",
+    "russian": "гриб"
+  },
+  {
     "english": "bread",
     "russian": "хлеб"
+  },
+  {
+    "english": "rice",
+    "russian": "рис"
+  },
+  {
+    "english": "pasta",
+    "russian": "паста"
+  },
+  {
+    "english": "noodles",
+    "russian": "лапша"
+  },
+  {
+    "english": "flour",
+    "russian": "мука"
+  },
+  {
+    "english": "sugar",
+    "russian": "сахар"
+  },
+  {
+    "english": "salt",
+    "russian": "соль"
+  },
+  {
+    "english": "black pepper",
+    "russian": "чёрный перец"
+  },
+  {
+    "english": "oil",
+    "russian": "масло"
+  },
+  {
+    "english": "butter",
+    "russian": "сливочное масло"
   },
   {
     "english": "cheese",
@@ -20,8 +188,132 @@
     "russian": "молоко"
   },
   {
-    "english": "water",
-    "russian": "вода"
+    "english": "yogurt",
+    "russian": "йогурт"
+  },
+  {
+    "english": "cream",
+    "russian": "сливки"
+  },
+  {
+    "english": "egg",
+    "russian": "яйцо"
+  },
+  {
+    "english": "meat",
+    "russian": "мясо"
+  },
+  {
+    "english": "beef",
+    "russian": "говядина"
+  },
+  {
+    "english": "pork",
+    "russian": "свинина"
+  },
+  {
+    "english": "chicken meat",
+    "russian": "куриное мясо"
+  },
+  {
+    "english": "turkey meat",
+    "russian": "мясо индейки"
+  },
+  {
+    "english": "fish",
+    "russian": "рыба"
+  },
+  {
+    "english": "salmon",
+    "russian": "лосось"
+  },
+  {
+    "english": "tuna",
+    "russian": "тунец"
+  },
+  {
+    "english": "shrimp",
+    "russian": "креветка"
+  },
+  {
+    "english": "crab meat",
+    "russian": "крабовое мясо"
+  },
+  {
+    "english": "soup",
+    "russian": "суп"
+  },
+  {
+    "english": "salad",
+    "russian": "салат"
+  },
+  {
+    "english": "sandwich",
+    "russian": "сэндвич"
+  },
+  {
+    "english": "pizza",
+    "russian": "пицца"
+  },
+  {
+    "english": "burger",
+    "russian": "бургер"
+  },
+  {
+    "english": "hot dog",
+    "russian": "хот-дог"
+  },
+  {
+    "english": "steak",
+    "russian": "стейк"
+  },
+  {
+    "english": "sausage",
+    "russian": "колбаса"
+  },
+  {
+    "english": "bacon",
+    "russian": "бекон"
+  },
+  {
+    "english": "cake",
+    "russian": "торт"
+  },
+  {
+    "english": "cookie",
+    "russian": "печенье"
+  },
+  {
+    "english": "pie",
+    "russian": "пирог"
+  },
+  {
+    "english": "pancake",
+    "russian": "блин"
+  },
+  {
+    "english": "waffle",
+    "russian": "вафля"
+  },
+  {
+    "english": "ice cream",
+    "russian": "мороженое"
+  },
+  {
+    "english": "chocolate",
+    "russian": "шоколад"
+  },
+  {
+    "english": "candy",
+    "russian": "конфета"
+  },
+  {
+    "english": "honey",
+    "russian": "мёд"
+  },
+  {
+    "english": "jam",
+    "russian": "джем"
   },
   {
     "english": "coffee",
@@ -32,11 +324,79 @@
     "russian": "чай"
   },
   {
-    "english": "meat",
-    "russian": "мясо"
+    "english": "water",
+    "russian": "вода"
   },
   {
-    "english": "fish",
-    "russian": "рыба"
+    "english": "juice",
+    "russian": "сок"
+  },
+  {
+    "english": "lemonade",
+    "russian": "лимонад"
+  },
+  {
+    "english": "milkshake",
+    "russian": "молочный коктейль"
+  },
+  {
+    "english": "breakfast",
+    "russian": "завтрак"
+  },
+  {
+    "english": "lunch",
+    "russian": "обед"
+  },
+  {
+    "english": "dinner",
+    "russian": "ужин"
+  },
+  {
+    "english": "snack",
+    "russian": "перекус"
+  },
+  {
+    "english": "dessert",
+    "russian": "десерт"
+  },
+  {
+    "english": "sauce",
+    "russian": "соус"
+  },
+  {
+    "english": "ketchup",
+    "russian": "кетчуп"
+  },
+  {
+    "english": "mustard",
+    "russian": "горчица"
+  },
+  {
+    "english": "mayonnaise",
+    "russian": "майонез"
+  },
+  {
+    "english": "vinegar",
+    "russian": "уксус"
+  },
+  {
+    "english": "porridge",
+    "russian": "каша"
+  },
+  {
+    "english": "cereal",
+    "russian": "хлопья"
+  },
+  {
+    "english": "nuts",
+    "russian": "орехи"
+  },
+  {
+    "english": "almond",
+    "russian": "миндаль"
+  },
+  {
+    "english": "peanut",
+    "russian": "арахис"
   }
 ]

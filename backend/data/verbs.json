@@ -1,42 +1,402 @@
 [
   {
+    "english": "be",
+    "russian": "быть"
+  },
+  {
+    "english": "have",
+    "russian": "иметь"
+  },
+  {
+    "english": "do",
+    "russian": "делать"
+  },
+  {
+    "english": "say",
+    "russian": "говорить"
+  },
+  {
+    "english": "go",
+    "russian": "идти"
+  },
+  {
+    "english": "get",
+    "russian": "получать"
+  },
+  {
+    "english": "make",
+    "russian": "делать"
+  },
+  {
+    "english": "know",
+    "russian": "знать"
+  },
+  {
+    "english": "think",
+    "russian": "думать"
+  },
+  {
+    "english": "take",
+    "russian": "брать"
+  },
+  {
+    "english": "see",
+    "russian": "видеть"
+  },
+  {
+    "english": "come",
+    "russian": "приходить"
+  },
+  {
+    "english": "want",
+    "russian": "хотеть"
+  },
+  {
+    "english": "look",
+    "russian": "смотреть"
+  },
+  {
+    "english": "use",
+    "russian": "использовать"
+  },
+  {
+    "english": "find",
+    "russian": "находить"
+  },
+  {
+    "english": "give",
+    "russian": "давать"
+  },
+  {
+    "english": "tell",
+    "russian": "рассказывать"
+  },
+  {
+    "english": "work",
+    "russian": "работать"
+  },
+  {
+    "english": "call",
+    "russian": "звонить"
+  },
+  {
+    "english": "try",
+    "russian": "пытаться"
+  },
+  {
+    "english": "ask",
+    "russian": "спрашивать"
+  },
+  {
+    "english": "need",
+    "russian": "нуждаться"
+  },
+  {
+    "english": "feel",
+    "russian": "чувствовать"
+  },
+  {
+    "english": "become",
+    "russian": "становиться"
+  },
+  {
+    "english": "leave",
+    "russian": "уходить"
+  },
+  {
+    "english": "put",
+    "russian": "класть"
+  },
+  {
+    "english": "mean",
+    "russian": "значить"
+  },
+  {
+    "english": "keep",
+    "russian": "держать"
+  },
+  {
+    "english": "let",
+    "russian": "позволять"
+  },
+  {
+    "english": "begin",
+    "russian": "начинать"
+  },
+  {
+    "english": "seem",
+    "russian": "казаться"
+  },
+  {
+    "english": "help",
+    "russian": "помогать"
+  },
+  {
+    "english": "talk",
+    "russian": "разговаривать"
+  },
+  {
+    "english": "turn",
+    "russian": "поворачивать"
+  },
+  {
+    "english": "start",
+    "russian": "начинать"
+  },
+  {
+    "english": "show",
+    "russian": "показывать"
+  },
+  {
+    "english": "hear",
+    "russian": "слышать"
+  },
+  {
+    "english": "play",
+    "russian": "играть"
+  },
+  {
     "english": "run",
     "russian": "бежать"
   },
   {
-    "english": "walk",
-    "russian": "идти"
+    "english": "move",
+    "russian": "двигаться"
   },
   {
-    "english": "read",
-    "russian": "читать"
+    "english": "live",
+    "russian": "жить"
+  },
+  {
+    "english": "believe",
+    "russian": "верить"
+  },
+  {
+    "english": "bring",
+    "russian": "приносить"
   },
   {
     "english": "write",
     "russian": "писать"
   },
   {
-    "english": "speak",
-    "russian": "говорить"
+    "english": "sit",
+    "russian": "сидеть"
   },
   {
-    "english": "listen",
-    "russian": "слушать"
+    "english": "stand",
+    "russian": "стоять"
   },
   {
-    "english": "open",
-    "russian": "открывать"
+    "english": "lose",
+    "russian": "терять"
   },
   {
-    "english": "close",
-    "russian": "закрывать"
+    "english": "pay",
+    "russian": "платить"
+  },
+  {
+    "english": "meet",
+    "russian": "встречать"
+  },
+  {
+    "english": "include",
+    "russian": "включать"
+  },
+  {
+    "english": "continue",
+    "russian": "продолжать"
+  },
+  {
+    "english": "set",
+    "russian": "устанавливать"
   },
   {
     "english": "learn",
     "russian": "учить"
   },
   {
-    "english": "play",
-    "russian": "играть"
+    "english": "change",
+    "russian": "менять"
+  },
+  {
+    "english": "lead",
+    "russian": "вести"
+  },
+  {
+    "english": "understand",
+    "russian": "понимать"
+  },
+  {
+    "english": "watch",
+    "russian": "смотреть"
+  },
+  {
+    "english": "follow",
+    "russian": "следовать"
+  },
+  {
+    "english": "stop",
+    "russian": "останавливать"
+  },
+  {
+    "english": "create",
+    "russian": "создавать"
+  },
+  {
+    "english": "speak",
+    "russian": "говорить"
+  },
+  {
+    "english": "read",
+    "russian": "читать"
+  },
+  {
+    "english": "allow",
+    "russian": "разрешать"
+  },
+  {
+    "english": "add",
+    "russian": "добавлять"
+  },
+  {
+    "english": "spend",
+    "russian": "тратить"
+  },
+  {
+    "english": "grow",
+    "russian": "расти"
+  },
+  {
+    "english": "open",
+    "russian": "открывать"
+  },
+  {
+    "english": "walk",
+    "russian": "ходить"
+  },
+  {
+    "english": "win",
+    "russian": "побеждать"
+  },
+  {
+    "english": "offer",
+    "russian": "предлагать"
+  },
+  {
+    "english": "remember",
+    "russian": "помнить"
+  },
+  {
+    "english": "love",
+    "russian": "любить"
+  },
+  {
+    "english": "consider",
+    "russian": "рассматривать"
+  },
+  {
+    "english": "appear",
+    "russian": "появляться"
+  },
+  {
+    "english": "buy",
+    "russian": "покупать"
+  },
+  {
+    "english": "wait",
+    "russian": "ждать"
+  },
+  {
+    "english": "serve",
+    "russian": "служить"
+  },
+  {
+    "english": "die",
+    "russian": "умирать"
+  },
+  {
+    "english": "send",
+    "russian": "отправлять"
+  },
+  {
+    "english": "expect",
+    "russian": "ожидать"
+  },
+  {
+    "english": "build",
+    "russian": "строить"
+  },
+  {
+    "english": "stay",
+    "russian": "оставаться"
+  },
+  {
+    "english": "fall",
+    "russian": "падать"
+  },
+  {
+    "english": "cut",
+    "russian": "резать"
+  },
+  {
+    "english": "reach",
+    "russian": "достигать"
+  },
+  {
+    "english": "kill",
+    "russian": "убивать"
+  },
+  {
+    "english": "remain",
+    "russian": "оставаться"
+  },
+  {
+    "english": "suggest",
+    "russian": "предлагать"
+  },
+  {
+    "english": "raise",
+    "russian": "поднимать"
+  },
+  {
+    "english": "pass",
+    "russian": "проходить"
+  },
+  {
+    "english": "sell",
+    "russian": "продавать"
+  },
+  {
+    "english": "require",
+    "russian": "требовать"
+  },
+  {
+    "english": "report",
+    "russian": "сообщать"
+  },
+  {
+    "english": "decide",
+    "russian": "решать"
+  },
+  {
+    "english": "pull",
+    "russian": "тянуть"
+  },
+  {
+    "english": "return",
+    "russian": "возвращать"
+  },
+  {
+    "english": "explain",
+    "russian": "объяснять"
+  },
+  {
+    "english": "hope",
+    "russian": "надеяться"
+  },
+  {
+    "english": "develop",
+    "russian": "развивать"
   }
 ]
