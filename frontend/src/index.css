@@ -4424,3 +4424,412 @@ button:disabled {
     font-size: 32px;
   }
 }
+
+/* Matrix Breach ultimate effect */
+.matrixUltimateOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9997;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at center, rgba(34, 197, 94, 0.18), transparent 34%),
+    rgba(0, 0, 0, 0.82);
+  animation: matrixScreenGlitch 1.45s ease;
+}
+
+.matrixDarkness {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at center, rgba(16, 185, 129, 0.22), transparent 34%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.82));
+}
+
+.matrixRain {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  overflow: hidden;
+  mask-image: radial-gradient(circle at center, transparent 0 16%, black 28%);
+  animation: matrixVeilBreak 1.75s ease forwards;
+}
+
+.matrixColumn {
+  position: absolute;
+  top: -120vh;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 240vh;
+  color: #22c55e;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: 900;
+  text-shadow:
+    0 0 8px rgba(34, 197, 94, 1),
+    0 0 18px rgba(74, 222, 128, 0.8);
+  opacity: 0.92;
+  animation: matrixRainFall 2.2s linear infinite;
+}
+
+.matrixColumn span:nth-child(3n) {
+  color: #bbf7d0;
+}
+
+.matrixColumn span:nth-child(5n) {
+  opacity: 0.55;
+}
+
+.matrixCenterBreak {
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  z-index: 6;
+  width: 280px;
+  height: 280px;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+}
+
+.matrixCore {
+  position: relative;
+  z-index: 6;
+  display: grid;
+  place-items: center;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, #dcfce7 0, #22c55e 28%, #064e3b 66%, #020617 100%);
+  color: #02130a;
+  font-family: monospace;
+  font-size: 42px;
+  font-weight: 1000;
+  box-shadow:
+    0 0 42px rgba(34, 197, 94, 1),
+    0 0 110px rgba(16, 185, 129, 0.75),
+    inset 0 0 30px rgba(0, 0, 0, 0.55);
+  animation: matrixCorePulse 0.55s ease infinite alternate;
+}
+
+.matrixBreakRing {
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid rgba(34, 197, 94, 0.62);
+  box-shadow:
+    0 0 24px rgba(34, 197, 94, 0.85),
+    inset 0 0 24px rgba(16, 185, 129, 0.35);
+  opacity: 0;
+  animation: matrixBreakPulse 1.35s ease forwards;
+}
+
+.ringA {
+  width: 190px;
+  height: 190px;
+}
+
+.ringB {
+  width: 250px;
+  height: 250px;
+  animation-delay: 0.15s;
+}
+
+.ringC {
+  width: 315px;
+  height: 315px;
+  animation-delay: 0.3s;
+}
+
+.matrixShards {
+  position: absolute;
+  inset: 0;
+  z-index: 7;
+}
+
+.matrixShards span {
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  color: #bbf7d0;
+  font-family: monospace;
+  font-size: 32px;
+  font-weight: 1000;
+  text-shadow:
+    0 0 10px rgba(34, 197, 94, 1),
+    0 0 24px rgba(16, 185, 129, 0.8);
+  opacity: 0;
+  animation: matrixShardBurst 1.35s ease forwards;
+}
+
+.matrixShards span:nth-child(1) { --x: -220px; --y: -110px; }
+.matrixShards span:nth-child(2) { --x: -100px; --y: -210px; animation-delay: 0.08s; }
+.matrixShards span:nth-child(3) { --x: 90px; --y: -200px; animation-delay: 0.16s; }
+.matrixShards span:nth-child(4) { --x: 220px; --y: -70px; animation-delay: 0.24s; }
+.matrixShards span:nth-child(5) { --x: 190px; --y: 120px; animation-delay: 0.32s; }
+.matrixShards span:nth-child(6) { --x: 40px; --y: 220px; animation-delay: 0.4s; }
+.matrixShards span:nth-child(7) { --x: -150px; --y: 170px; animation-delay: 0.48s; }
+.matrixShards span:nth-child(8) { --x: -240px; --y: 20px; animation-delay: 0.56s; }
+
+.matrixUltimateTitle {
+  position: relative;
+  z-index: 8;
+  display: grid;
+  gap: 10px;
+  text-align: center;
+  margin-top: 330px;
+  padding: 22px 44px;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.34), transparent 40%),
+    linear-gradient(135deg, #020617, #064e3b, #16a34a, #bbf7d0);
+  color: #ecfdf5;
+  box-shadow:
+    0 0 44px rgba(34, 197, 94, 0.95),
+    0 0 125px rgba(16, 185, 129, 0.72),
+    0 24px 86px rgba(0, 0, 0, 0.72);
+}
+
+.matrixUltimateTitle span {
+  font-size: 42px;
+  font-weight: 1000;
+  letter-spacing: 0.1em;
+  text-shadow:
+    0 0 16px rgba(34, 197, 94, 1),
+    0 4px 18px rgba(0, 0, 0, 0.78);
+}
+
+.matrixUltimateTitle strong {
+  font-size: 20px;
+  letter-spacing: 0.08em;
+}
+
+.matrixRelic {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  width: 74px;
+  height: 74px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, #dcfce7 0, #22c55e 32%, #064e3b 68%, #020617 100%);
+  border: 2px solid rgba(34, 197, 94, 0.9);
+  box-shadow:
+    0 0 30px rgba(34, 197, 94, 0.9),
+    0 0 82px rgba(16, 185, 129, 0.55);
+  animation: matrixRelicAppear 0.55s ease;
+}
+
+.matrixRelicCore {
+  position: relative;
+  z-index: 2;
+  color: #02130a;
+  font-family: monospace;
+  font-size: 24px;
+  font-weight: 1000;
+  animation: matrixRelicPulse 1.05s ease infinite alternate;
+}
+
+.matrixRelicGlow {
+  position: absolute;
+  inset: -12px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(34, 197, 94, 0.36), transparent 66%);
+  animation: matrixRelicGlow 1.15s ease infinite alternate;
+}
+
+@keyframes matrixScreenGlitch {
+  0%, 100% {
+    transform: translate(0, 0);
+    filter: brightness(1);
+  }
+
+  18% {
+    transform: translate(3px, -2px);
+    filter: brightness(1.25);
+  }
+
+  36% {
+    transform: translate(-4px, 2px);
+    filter: brightness(0.85);
+  }
+
+  54% {
+    transform: translate(2px, 1px);
+    filter: brightness(1.35);
+  }
+
+  72% {
+    transform: translate(-2px, -1px);
+    filter: brightness(1);
+  }
+}
+
+@keyframes matrixRainFall {
+  from {
+    transform: translateY(-40vh);
+  }
+
+  to {
+    transform: translateY(160vh);
+  }
+}
+
+@keyframes matrixVeilBreak {
+  0% {
+    opacity: 1;
+    mask-image: radial-gradient(circle at center, black 0 100%);
+  }
+
+  55% {
+    opacity: 1;
+    mask-image: radial-gradient(circle at center, transparent 0 16%, black 28%);
+  }
+
+  100% {
+    opacity: 0.25;
+    mask-image: radial-gradient(circle at center, transparent 0 42%, black 64%);
+  }
+}
+
+@keyframes matrixCorePulse {
+  from {
+    transform: scale(0.94);
+    filter: brightness(1);
+  }
+
+  to {
+    transform: scale(1.1);
+    filter: brightness(1.45);
+  }
+}
+
+@keyframes matrixBreakPulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.65);
+  }
+}
+
+@keyframes matrixShardBurst {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.4);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) scale(1.6);
+  }
+}
+
+@keyframes matrixRelicAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.35) rotate(-20deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes matrixRelicPulse {
+  from {
+    transform: scale(0.92);
+    filter: brightness(1);
+  }
+
+  to {
+    transform: scale(1.12);
+    filter: brightness(1.45);
+  }
+}
+
+@keyframes matrixRelicGlow {
+  from {
+    opacity: 0.45;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.14);
+  }
+}
+
+@media (max-width: 560px) {
+  .matrixColumn {
+    font-size: 15px;
+  }
+
+  .matrixCenterBreak {
+    width: 230px;
+    height: 230px;
+  }
+
+  .matrixCore {
+    width: 104px;
+    height: 104px;
+    font-size: 32px;
+  }
+
+  .ringA {
+    width: 150px;
+    height: 150px;
+  }
+
+  .ringB {
+    width: 200px;
+    height: 200px;
+  }
+
+  .ringC {
+    width: 250px;
+    height: 250px;
+  }
+
+  .matrixUltimateTitle {
+    margin-top: 280px;
+    padding: 16px 24px;
+  }
+
+  .matrixUltimateTitle span {
+    font-size: 26px;
+  }
+
+  .matrixUltimateTitle strong {
+    font-size: 16px;
+  }
+
+  .matrixRelic {
+    right: 16px;
+    bottom: 16px;
+    width: 58px;
+    height: 58px;
+  }
+
+  .matrixRelicCore {
+    font-size: 19px;
+  }
+}

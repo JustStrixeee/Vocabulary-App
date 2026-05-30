@@ -27,6 +27,8 @@ import HurricaneEffect from "./components/effects/HurricaneEffect";
 import HurricaneRelic from "./components/effects/HurricaneRelic";
 import BlackHoleEffect from "./components/effects/BlackHoleEffect";
 import BlackHoleRelic from "./components/effects/BlackHoleRelic";
+import MatrixEffect from "./components/effects/MatrixEffect";
+import MatrixRelic from "./components/effects/MatrixRelic";
 
 const API_URL = "http://127.0.0.1:8000";
 const TASKS_LIMIT = 10;
@@ -41,6 +43,7 @@ const ULTIMATE_TYPES = [
   "eclipse",
   "hurricane",
   "blackHole",
+  "matrix",
 ];
 
 const ULTIMATE_COMPONENTS = {
@@ -71,6 +74,10 @@ const ULTIMATE_COMPONENTS = {
   blackHole: {
     Effect: BlackHoleEffect,
     Relic: BlackHoleRelic,
+  },
+  matrix: {
+    Effect: MatrixEffect,
+    Relic: MatrixRelic,
   },
 };
 
