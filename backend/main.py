@@ -142,15 +142,42 @@ def load_all_phrases():
 
     return all_phrases
 
+def parse_int_list(value: str | None):
+    if not value or value == "all":
+        return None
+
+    return [
+        int(item)
+        for item in value.split(",")
+        if item.strip().isdigit()
+    ]
+
+
+def parse_str_list(value: str | None):
+    if not value or value == "all":
+        return None
+
+    return [
+        item.strip()
+        for item in value.split(",")
+        if item.strip()
+    ]
 
 def filter_phrases(
     series: str | None = None,
     season: int | None = None,
     episode: int | None = None,
+    episodes: str | None = None,
     level: str | None = None,
+    levels: str | None = None,
     tag: str | None = None,
+    tags: str | None = None,
 ):
     phrases = load_all_phrases()
+
+    episode_list = parse_int_list(episodes)
+    level_list = parse_str_list(levels)
+    tag_list = parse_str_list(tags)
 
     if series and series != "all":
         phrases = [
@@ -167,14 +194,31 @@ def filter_phrases(
             phrase for phrase in phrases if phrase.get("episode") == episode
         ]
 
+    if episode_list:
+        phrases = [
+            phrase for phrase in phrases if phrase.get("episode") in episode_list
+        ]
+
     if level and level != "all":
         phrases = [
             phrase for phrase in phrases if phrase.get("level") == level
         ]
 
+    if level_list:
+        phrases = [
+            phrase for phrase in phrases if phrase.get("level") in level_list
+        ]
+
     if tag and tag != "all":
         phrases = [
             phrase for phrase in phrases if tag in phrase.get("tags", [])
+        ]
+
+    if tag_list:
+        phrases = [
+            phrase
+            for phrase in phrases
+            if any(item in phrase.get("tags", []) for item in tag_list)
         ]
 
     return phrases
@@ -401,15 +445,21 @@ def get_phrases(
     series: str = "all",
     season: int | None = None,
     episode: int | None = None,
+    episodes: str | None = None,
     level: str = "all",
+    levels: str = "all",
     tag: str = "all",
+    tags: str = "all",
 ):
     return filter_phrases(
         series=series,
         season=season,
         episode=episode,
+        episodes=episodes,
         level=level,
+        levels=levels,
         tag=tag,
+        tags=tags,
     )
 
 @app.get("/phrase-task")
@@ -417,21 +467,83 @@ def get_phrase_task(
     series: str = "all",
     season: int | None = None,
     episode: int | None = None,
+    episodes: str = "all",
     level: str = "all",
+    levels: str = "all",
     tag: str = "all",
+    tags: str = "all",
 ):
     phrases = filter_phrases(
         series=series,
         season=season,
         episode=episode,
+        episodes=episodes,
         level=level,
+        levels=levels,
         tag=tag,
+        tags=tags,
     )
 
     if len(phrases) == 0:
         return {"error": "Фразы не найдены"}
 
     phrase = choice(phrases)
+
+    # Примерно 70% — выбор варианта, 30% — ручной ввод
+    task_type = choice([
+        "phrase_choice",
+        "phrase_choice",
+        "phrase_choice",
+        "phrase_choice",
+        "phrase_choice",
+        "phrase_choice",
+        "phrase_choice",
+        "phrase_en_ru",
+        "phrase_en_ru",
+        "phrase_en_ru",
+    ])
+
+    if task_type == "phrase_choice":
+        wrong_phrases = [
+            item for item in phrases if item["id"] != phrase["id"]
+        ]
+
+        if len(wrong_phrases) < 3:
+            wrong_phrases = [
+                item for item in load_all_phrases() if item["id"] != phrase["id"]
+            ]
+
+        wrong_answers = sample(wrong_phrases, 3)
+
+        options = [
+            {
+                "id": phrase["id"],
+                "russian": phrase["russian"],
+            }
+        ] + [
+            {
+                "id": item["id"],
+                "russian": item["russian"],
+            }
+            for item in wrong_answers
+        ]
+
+        options = sample(options, len(options))
+
+        return {
+            "phrase_id": phrase["id"],
+            "type": "phrase_choice",
+            "instruction": "Выбери правильный перевод фразы",
+            "english": phrase["english"],
+            "russian": phrase["russian"],
+            "options": options,
+            "series": phrase["series"],
+            "season": phrase["season"],
+            "episode": phrase["episode"],
+            "episode_code": phrase["episode_code"],
+            "level": phrase["level"],
+            "tags": phrase["tags"],
+        }
 
     return {
         "phrase_id": phrase["id"],
@@ -473,3 +585,57 @@ def check_phrase(data: CheckPhraseRequest):
         "correct_answer": phrase["russian"],
     }
 
+@app.get("/phrase-filters")
+def get_phrase_filters(series: str = "all"):
+    phrases = filter_phrases(series=series)
+
+    seasons = sorted(
+        {
+            phrase.get("season")
+            for phrase in phrases
+            if phrase.get("season") is not None
+        }
+    )
+
+    episodes = sorted(
+        {
+            (
+                phrase.get("season"),
+                phrase.get("episode"),
+                phrase.get("episode_code"),
+            )
+            for phrase in phrases
+            if phrase.get("episode") is not None
+        },
+        key=lambda item: (item[0], item[1]),
+    )
+
+    levels = sorted(
+        {
+            phrase.get("level")
+            for phrase in phrases
+            if phrase.get("level")
+        }
+    )
+
+    tags = sorted(
+        {
+            tag
+            for phrase in phrases
+            for tag in phrase.get("tags", [])
+        }
+    )
+
+    return {
+        "seasons": seasons,
+        "episodes": [
+            {
+                "season": season,
+                "episode": episode,
+                "episode_code": episode_code,
+            }
+            for season, episode, episode_code in episodes
+        ],
+        "levels": levels,
+        "tags": tags,
+    }
