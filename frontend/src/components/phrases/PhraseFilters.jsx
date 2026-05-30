@@ -1,3 +1,17 @@
+function isRangeSelected(selectedEpisodes, start, end) {
+  if (selectedEpisodes.length !== end - start + 1) {
+    return false;
+  }
+
+  for (let episode = start; episode <= end; episode += 1) {
+    if (!selectedEpisodes.includes(episode)) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
 function PhraseFilters({
   selectedSeries,
   filters,
@@ -5,8 +19,10 @@ function PhraseFilters({
   selectedEpisodes,
   selectedLevels,
   selectedTags,
+  phraseTrainingType,
+  onTrainingTypeChange,
   onSeasonChange,
-  onEpisodeToggle,
+  onEpisodeRangeSelect,
   onLevelToggle,
   onTagToggle,
   onSelectAllEpisodes,
@@ -30,6 +46,30 @@ function PhraseFilters({
       <h2>{selectedSeries.russian_title}</h2>
 
       <p className="phraseMeta">{selectedSeries.description}</p>
+
+      <div className="filterBlock">
+        <h3>Тип тренировки</h3>
+
+        <div className="chips">
+          <button
+            className={
+              phraseTrainingType === "regular" ? "chip activeChip" : "chip"
+            }
+            onClick={() => onTrainingTypeChange("regular")}
+          >
+            Обычные фразы
+          </button>
+
+          <button
+            className={
+              phraseTrainingType === "matching" ? "chip activeChip" : "chip"
+            }
+            onClick={() => onTrainingTypeChange("matching")}
+          >
+            Сопоставление 4×4
+          </button>
+        </div>
+      </div>
 
       <div className="filterBlock">
         <h3>Сезон</h3>
@@ -57,21 +97,27 @@ function PhraseFilters({
         </div>
 
         <div className="chips">
-          {filters.episodes
-            .filter((episode) => episode.season === selectedSeason)
-            .map((episode) => (
-              <button
-                key={`${episode.season}-${episode.episode}`}
-                className={
-                  selectedEpisodes.includes(episode.episode)
-                    ? "chip activeChip"
-                    : "chip"
-                }
-                onClick={() => onEpisodeToggle(episode.episode)}
-              >
-                {episode.episode_code}
-              </button>
-            ))}
+          <button
+            className={
+              isRangeSelected(selectedEpisodes, 1, 11)
+                ? "chip activeChip"
+                : "chip"
+            }
+            onClick={() => onEpisodeRangeSelect(1, 11)}
+          >
+            Серии 1–11
+          </button>
+
+          <button
+            className={
+              isRangeSelected(selectedEpisodes, 12, 22)
+                ? "chip activeChip"
+                : "chip"
+            }
+            onClick={() => onEpisodeRangeSelect(12, 22)}
+          >
+            Серии 12–22
+          </button>
         </div>
       </div>
 
@@ -88,7 +134,9 @@ function PhraseFilters({
           {filters.levels.map((level) => (
             <button
               key={level}
-              className={selectedLevels.includes(level) ? "chip activeChip" : "chip"}
+              className={
+                selectedLevels.includes(level) ? "chip activeChip" : "chip"
+              }
               onClick={() => onLevelToggle(level)}
             >
               {level}
@@ -110,7 +158,9 @@ function PhraseFilters({
           {filters.tags.map((tag) => (
             <button
               key={tag}
-              className={selectedTags.includes(tag) ? "chip activeChip" : "chip"}
+              className={
+                selectedTags.includes(tag) ? "chip activeChip" : "chip"
+              }
               onClick={() => onTagToggle(tag)}
             >
               {tag}

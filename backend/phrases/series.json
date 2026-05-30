@@ -7,7 +7,8 @@
     "description": "Разговорные фразы из сериала Young Sheldon",
     "levels": ["A1", "A2", "B1"],
     "files": [
-      "young_sheldon/season_1/episodes_01_11.json"
+      "young_sheldon/season_1/episodes_01_11.json",
+      "young_sheldon/season_1/episodes_12_22.json"
     ]
   }
 ]

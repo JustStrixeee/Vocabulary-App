@@ -11,6 +11,7 @@ import SessionHistory from "./components/SessionHistory";
 import SeriesGrid from "./components/phrases/SeriesGrid";
 import PhraseTrainer from "./components/phrases/PhraseTrainer";
 import PhraseFilters from "./components/phrases/PhraseFilters";
+import PhraseMatchingTask from "./components/phrases/PhraseMatchingTask";
 
 const API_URL = "http://127.0.0.1:8000";
 const TASKS_LIMIT = 10;
@@ -50,6 +51,8 @@ function App() {
     tags: [],
   });
 
+  const [phraseTrainingType, setPhraseTrainingType] = useState("regular");
+
   const [selectedPhraseSeason, setSelectedPhraseSeason] = useState(null);
   const [selectedPhraseEpisodes, setSelectedPhraseEpisodes] = useState([]);
   const [selectedPhraseLevels, setSelectedPhraseLevels] = useState([]);
@@ -58,6 +61,11 @@ function App() {
   const [phraseTask, setPhraseTask] = useState(null);
   const [phraseAnswer, setPhraseAnswer] = useState("");
   const [phraseResult, setPhraseResult] = useState(null);
+
+  const [phraseMatchingTask, setPhraseMatchingTask] = useState(null);
+  const [phraseMatchingAnswers, setPhraseMatchingAnswers] = useState({});
+  const [phraseMatchingResult, setPhraseMatchingResult] = useState(null);
+
   const [phraseError, setPhraseError] = useState("");
 
   const [isLoading, setIsLoading] = useState(false);
@@ -196,7 +204,9 @@ function App() {
     setPhraseError("");
 
     try {
-      const response = await fetch(`${API_URL}/phrase-filters?series=${seriesId}`);
+      const response = await fetch(
+        `${API_URL}/phrase-filters?series=${seriesId}`
+      );
 
       if (!response.ok) {
         throw new Error("Не удалось загрузить фильтры");
@@ -247,6 +257,16 @@ function App() {
     setSelectedPhraseEpisodes(seasonEpisodes);
   }
 
+  function selectEpisodeRange(start, end) {
+    const episodes = [];
+
+    for (let episode = start; episode <= end; episode += 1) {
+      episodes.push(episode);
+    }
+
+    setSelectedPhraseEpisodes(episodes);
+  }
+
   function selectAllLevels() {
     setSelectedPhraseLevels(phraseFilters.levels);
   }
@@ -255,10 +275,12 @@ function App() {
     setSelectedPhraseTags([]);
   }
 
-  function buildPhraseTaskUrl(seriesId) {
+  function buildPhraseTaskParams() {
     const params = new URLSearchParams();
 
-    params.set("series", seriesId);
+    if (selectedPhraseSeries) {
+      params.set("series", selectedPhraseSeries.id);
+    }
 
     if (selectedPhraseSeason) {
       params.set("season", selectedPhraseSeason);
@@ -276,17 +298,19 @@ function App() {
       params.set("tags", selectedPhraseTags.join(","));
     }
 
-    return `${API_URL}/phrase-task?${params.toString()}`;
+    return params.toString();
   }
 
-  async function loadPhraseTask(seriesId) {
+  async function loadPhraseTask() {
     setPhraseTask(null);
     setPhraseAnswer("");
     setPhraseResult(null);
     setPhraseError("");
 
     try {
-      const response = await fetch(buildPhraseTaskUrl(seriesId));
+      const response = await fetch(
+        `${API_URL}/phrase-task?${buildPhraseTaskParams()}`
+      );
 
       if (!response.ok) {
         throw new Error("Не удалось загрузить фразу");
@@ -299,6 +323,33 @@ function App() {
       }
 
       setPhraseTask(data);
+    } catch (error) {
+      setPhraseError(error.message);
+    }
+  }
+
+  async function loadPhraseMatchingTask() {
+    setPhraseMatchingTask(null);
+    setPhraseMatchingAnswers({});
+    setPhraseMatchingResult(null);
+    setPhraseError("");
+
+    try {
+      const response = await fetch(
+        `${API_URL}/phrase-matching-task?${buildPhraseTaskParams()}`
+      );
+
+      if (!response.ok) {
+        throw new Error("Не удалось загрузить сопоставление фраз");
+      }
+
+      const data = await response.json();
+
+      if (data.error) {
+        throw new Error(data.error);
+      }
+
+      setPhraseMatchingTask(data);
     } catch (error) {
       setPhraseError(error.message);
     }
@@ -324,7 +375,12 @@ function App() {
     }
 
     setPhraseStep("trainer");
-    loadPhraseTask(selectedPhraseSeries.id);
+
+    if (phraseTrainingType === "matching") {
+      loadPhraseMatchingTask();
+    } else {
+      loadPhraseTask();
+    }
   }
 
   async function checkPhraseAnswer(answerOverride) {
@@ -368,9 +424,54 @@ function App() {
     }
   }
 
+  function handlePhraseMatchingAnswerChange(phraseId, selectedTranslationId) {
+    setPhraseMatchingAnswers((prevAnswers) => ({
+      ...prevAnswers,
+      [phraseId]: selectedTranslationId,
+    }));
+  }
+
+  async function checkPhraseMatchingAnswers() {
+    if (!phraseMatchingTask) return;
+
+    if (
+      Object.keys(phraseMatchingAnswers).length !==
+      phraseMatchingTask.items.length
+    ) {
+      setPhraseError("Выбери перевод для каждой фразы");
+      return;
+    }
+
+    setPhraseError("");
+
+    try {
+      const response = await fetch(`${API_URL}/check-phrase-matching`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          answers: phraseMatchingAnswers,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Не удалось проверить сопоставление фраз");
+      }
+
+      const data = await response.json();
+      setPhraseMatchingResult(data);
+    } catch (error) {
+      setPhraseError(error.message);
+    }
+  }
+
   function goNextPhrase() {
-    if (!selectedPhraseSeries) return;
-    loadPhraseTask(selectedPhraseSeries.id);
+    loadPhraseTask();
+  }
+
+  function goNextPhraseMatching() {
+    loadPhraseMatchingTask();
   }
 
   function goBackToSeries() {
@@ -379,6 +480,9 @@ function App() {
     setPhraseTask(null);
     setPhraseAnswer("");
     setPhraseResult(null);
+    setPhraseMatchingTask(null);
+    setPhraseMatchingAnswers({});
+    setPhraseMatchingResult(null);
     setPhraseError("");
   }
 
@@ -387,6 +491,9 @@ function App() {
     setPhraseTask(null);
     setPhraseAnswer("");
     setPhraseResult(null);
+    setPhraseMatchingTask(null);
+    setPhraseMatchingAnswers({});
+    setPhraseMatchingResult(null);
     setPhraseError("");
   }
 
@@ -594,16 +701,16 @@ function App() {
                 selectedEpisodes={selectedPhraseEpisodes}
                 selectedLevels={selectedPhraseLevels}
                 selectedTags={selectedPhraseTags}
+                phraseTrainingType={phraseTrainingType}
+                onTrainingTypeChange={setPhraseTrainingType}
                 onSeasonChange={handleSeasonChange}
-                onEpisodeToggle={(episode) =>
-                  toggleValue(
-                    episode,
-                    selectedPhraseEpisodes,
-                    setSelectedPhraseEpisodes
-                  )
-                }
+                onEpisodeRangeSelect={selectEpisodeRange}
                 onLevelToggle={(level) =>
-                  toggleValue(level, selectedPhraseLevels, setSelectedPhraseLevels)
+                  toggleValue(
+                    level,
+                    selectedPhraseLevels,
+                    setSelectedPhraseLevels
+                  )
                 }
                 onTagToggle={(tag) =>
                   toggleValue(tag, selectedPhraseTags, setSelectedPhraseTags)
@@ -616,19 +723,36 @@ function App() {
               />
             )}
 
-            {phraseStep === "trainer" && selectedPhraseSeries && (
-              <PhraseTrainer
-                selectedSeries={selectedPhraseSeries}
-                phraseTask={phraseTask}
-                phraseAnswer={phraseAnswer}
-                phraseResult={phraseResult}
-                phraseError={phraseError}
-                onAnswerChange={setPhraseAnswer}
-                onCheck={checkPhraseAnswer}
-                onNext={goNextPhrase}
-                onBack={goBackToFilters}
-              />
-            )}
+            {phraseStep === "trainer" &&
+              selectedPhraseSeries &&
+              phraseTrainingType === "regular" && (
+                <PhraseTrainer
+                  selectedSeries={selectedPhraseSeries}
+                  phraseTask={phraseTask}
+                  phraseAnswer={phraseAnswer}
+                  phraseResult={phraseResult}
+                  phraseError={phraseError}
+                  onAnswerChange={setPhraseAnswer}
+                  onCheck={checkPhraseAnswer}
+                  onNext={goNextPhrase}
+                  onBack={goBackToFilters}
+                />
+              )}
+
+            {phraseStep === "trainer" &&
+              selectedPhraseSeries &&
+              phraseTrainingType === "matching" && (
+                <PhraseMatchingTask
+                  task={phraseMatchingTask}
+                  answers={phraseMatchingAnswers}
+                  result={phraseMatchingResult}
+                  error={phraseError}
+                  onAnswerChange={handlePhraseMatchingAnswerChange}
+                  onCheck={checkPhraseMatchingAnswers}
+                  onNext={goNextPhraseMatching}
+                  onBack={goBackToFilters}
+                />
+              )}
           </>
         )}
 

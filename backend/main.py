@@ -249,6 +249,8 @@ class CheckPhraseRequest(BaseModel):
     phrase_id: str
     answer: str
 
+class CheckPhraseMatchingRequest(BaseModel):
+    answers: dict[str, str]
 
 @app.get("/")
 def read_root():
@@ -638,4 +640,103 @@ def get_phrase_filters(series: str = "all"):
         ],
         "levels": levels,
         "tags": tags,
+    }
+
+@app.get("/phrase-matching-task")
+def get_phrase_matching_task(
+    series: str = "all",
+    season: int | None = None,
+    episodes: str = "all",
+    levels: str = "all",
+    tags: str = "all",
+):
+    phrases = filter_phrases(
+        series=series,
+        season=season,
+        episodes=episodes,
+        levels=levels,
+        tags=tags,
+    )
+
+    if len(phrases) < 4:
+        return {"error": "Недостаточно фраз для сопоставления"}
+
+    selected_phrases = sample(phrases, 4)
+
+    items = [
+        {
+            "id": phrase["id"],
+            "english": phrase["english"],
+        }
+        for phrase in selected_phrases
+    ]
+
+    options = [
+        {
+            "id": phrase["id"],
+            "russian": phrase["russian"],
+        }
+        for phrase in selected_phrases
+    ]
+
+    options = sample(options, len(options))
+
+    first_phrase = selected_phrases[0]
+
+    return {
+        "type": "phrase_matching",
+        "instruction": "Сопоставь фразы с переводом",
+        "items": items,
+        "options": options,
+        "series": first_phrase["series"],
+        "season": first_phrase["season"],
+        "episode_code": first_phrase["episode_code"],
+        "level": first_phrase["level"],
+    }
+
+@app.post("/check-phrase-matching")
+def check_phrase_matching(data: CheckPhraseMatchingRequest):
+    phrases = load_all_phrases()
+
+    results = []
+    correct_count = 0
+
+    for phrase_id, selected_translation_id in data.answers.items():
+        phrase = next((item for item in phrases if item["id"] == phrase_id), None)
+        selected_phrase = next(
+            (item for item in phrases if item["id"] == selected_translation_id),
+            None,
+        )
+
+        if phrase is None or selected_phrase is None:
+            results.append(
+                {
+                    "phrase_id": phrase_id,
+                    "correct": False,
+                    "english": "",
+                    "user_answer": "",
+                    "correct_answer": "",
+                }
+            )
+            continue
+
+        is_correct = phrase["id"] == selected_phrase["id"]
+
+        if is_correct:
+            correct_count += 1
+
+        results.append(
+            {
+                "phrase_id": phrase["id"],
+                "correct": is_correct,
+                "english": phrase["english"],
+                "user_answer": selected_phrase["russian"],
+                "correct_answer": phrase["russian"],
+            }
+        )
+
+    return {
+        "correct": correct_count,
+        "total": len(data.answers),
+        "results": results,
     }

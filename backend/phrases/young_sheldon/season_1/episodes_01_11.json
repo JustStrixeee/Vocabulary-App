@@ -23,8 +23,8 @@
     "episode_code": "S01E01",
     "level": "A2",
     "words": 3,
-    "english": "I don't know.",
-    "russian": "Я не знаю.",
+    "english": "I don't know",
+    "russian": "Я не знаю",
     "tags": [
       "answer",
       "everyday"
@@ -38,8 +38,8 @@
     "episode_code": "S01E01",
     "level": "A2",
     "words": 3,
-    "english": "Take your time.",
-    "russian": "Не торопись.",
+    "english": "Take your time",
+    "russian": "Не торопись",
     "tags": [
       "polite",
       "everyday"
@@ -53,8 +53,8 @@
     "episode_code": "S01E01",
     "level": "A2",
     "words": 4,
-    "english": "I want to leave.",
-    "russian": "Я хочу уйти.",
+    "english": "I want to leave",
+    "russian": "Я хочу уйти",
     "tags": [
       "want",
       "everyday"
@@ -68,8 +68,8 @@
     "episode_code": "S01E01",
     "level": "A2",
     "words": 2,
-    "english": "Not really.",
-    "russian": "Не особо.",
+    "english": "Not really",
+    "russian": "Не особо",
     "tags": [
       "answer",
       "everyday"
@@ -83,8 +83,8 @@
     "episode_code": "S01E01",
     "level": "A2",
     "words": 5,
-    "english": "We live across the hall.",
-    "russian": "Мы живём напротив.",
+    "english": "We live across the hall",
+    "russian": "Мы живём напротив",
     "tags": [
       "home",
       "everyday"
@@ -98,8 +98,8 @@
     "episode_code": "S01E01",
     "level": "A2",
     "words": 2,
-    "english": "That's nice.",
-    "russian": "Это мило.",
+    "english": "That's nice",
+    "russian": "Это мило",
     "tags": [
       "reaction",
       "everyday"
@@ -113,8 +113,8 @@
     "episode_code": "S01E01",
     "level": "A2",
     "words": 4,
-    "english": "Welcome to the building.",
-    "russian": "Добро пожаловать в дом.",
+    "english": "Welcome to the building",
+    "russian": "Добро пожаловать в дом",
     "tags": [
       "polite",
       "home"
@@ -128,8 +128,8 @@
     "episode_code": "S01E01",
     "level": "A2",
     "words": 4,
-    "english": "Make yourself at home.",
-    "russian": "Чувствуй себя как дома.",
+    "english": "Make yourself at home",
+    "russian": "Чувствуй себя как дома",
     "tags": [
       "polite",
       "home"
@@ -143,8 +143,8 @@
     "episode_code": "S01E01",
     "level": "A2",
     "words": 2,
-    "english": "Come on.",
-    "russian": "Да ладно / Давай.",
+    "english": "Come on",
+    "russian": "Да ладно / Давай",
     "tags": [
       "reaction",
       "everyday"
@@ -188,8 +188,8 @@
     "episode_code": "S01E01",
     "level": "A2",
     "words": 4,
-    "english": "Tell us about you.",
-    "russian": "Расскажи нам о себе.",
+    "english": "Tell us about you",
+    "russian": "Расскажи нам о себе",
     "tags": [
       "request",
       "everyday"
@@ -203,8 +203,8 @@
     "episode_code": "S01E01",
     "level": "A2",
     "words": 3,
-    "english": "I love steak.",
-    "russian": "Я люблю стейк.",
+    "english": "I love steak",
+    "russian": "Я люблю стейк",
     "tags": [
       "food",
       "everyday"
@@ -218,8 +218,8 @@
     "episode_code": "S01E01",
     "level": "A2",
     "words": 3,
-    "english": "I'm so sorry.",
-    "russian": "Мне очень жаль.",
+    "english": "I'm so sorry",
+    "russian": "Мне очень жаль",
     "tags": [
       "apology",
       "everyday"
@@ -233,8 +233,8 @@
     "episode_code": "S01E01",
     "level": "A2",
     "words": 3,
-    "english": "Our shower works.",
-    "russian": "Наш душ работает.",
+    "english": "Our shower works",
+    "russian": "Наш душ работает",
     "tags": [
       "home",
       "everyday"
@@ -248,8 +248,8 @@
     "episode_code": "S01E01",
     "level": "A2",
     "words": 1,
-    "english": "Thanks.",
-    "russian": "Спасибо.",
+    "english": "Thanks",
+    "russian": "Спасибо",
     "tags": [
       "polite",
       "everyday"
@@ -263,8 +263,8 @@
     "episode_code": "S01E01",
     "level": "A2",
     "words": 3,
-    "english": "You're very welcome.",
-    "russian": "Всегда пожалуйста.",
+    "english": "You're very welcome",
+    "russian": "Всегда пожалуйста",
     "tags": [
       "polite",
       "everyday"
@@ -278,8 +278,8 @@
     "episode_code": "S01E01",
     "level": "A2",
     "words": 2,
-    "english": "It's okay.",
-    "russian": "Всё нормально.",
+    "english": "It's okay",
+    "russian": "Всё нормально",
     "tags": [
       "reaction",
       "everyday"
@@ -293,8 +293,8 @@
     "episode_code": "S01E01",
     "level": "A2",
     "words": 2,
-    "english": "That's great.",
-    "russian": "Это здорово.",
+    "english": "That's great",
+    "russian": "Это здорово",
     "tags": [
       "reaction",
       "everyday"
@@ -304,1217 +304,19 @@
     "number": 21,
     "series": "Young Sheldon",
     "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2",
-    "words": 3,
-    "english": "Are you okay?",
-    "russian": "Ты в порядке?",
-    "tags": [
-      "question",
-      "emotion"
-    ]
-  },
-  {
-    "number": 22,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2",
-    "words": 2,
-    "english": "I'm fine.",
-    "russian": "Я в порядке.",
-    "tags": [
-      "answer",
-      "emotion"
-    ]
-  },
-  {
-    "number": 23,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2",
-    "words": 3,
-    "english": "Are you sure?",
-    "russian": "Ты уверен?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 24,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2",
-    "words": 3,
-    "english": "Maybe you're right.",
-    "russian": "Может, ты прав.",
-    "tags": [
-      "agreement",
-      "everyday"
-    ]
-  },
-  {
-    "number": 25,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2",
-    "words": 3,
-    "english": "I think so.",
-    "russian": "Думаю, да.",
-    "tags": [
-      "answer",
-      "everyday"
-    ]
-  },
-  {
-    "number": 26,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2",
-    "words": 4,
-    "english": "I don't think so.",
-    "russian": "Думаю, нет.",
-    "tags": [
-      "answer",
-      "everyday"
-    ]
-  },
-  {
-    "number": 27,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2",
-    "words": 4,
-    "english": "What are you doing?",
-    "russian": "Что ты делаешь?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 28,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2",
-    "words": 4,
-    "english": "What do you want?",
-    "russian": "Чего ты хочешь?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 29,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2",
-    "words": 5,
-    "english": "I want to go home.",
-    "russian": "Я хочу домой.",
-    "tags": [
-      "want",
-      "everyday"
-    ]
-  },
-  {
-    "number": 30,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2",
-    "words": 4,
-    "english": "Can we go now?",
-    "russian": "Мы можем идти?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 31,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2",
-    "words": 2,
-    "english": "Let's go.",
-    "russian": "Пойдём.",
-    "tags": [
-      "request",
-      "everyday"
-    ]
-  },
-  {
-    "number": 32,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2",
-    "words": 4,
-    "english": "I'll be right back.",
-    "russian": "Я сейчас вернусь.",
-    "tags": [
-      "everyday"
-    ]
-  },
-  {
-    "number": 33,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2",
-    "words": 3,
-    "english": "See you later.",
-    "russian": "Увидимся позже.",
-    "tags": [
-      "polite",
-      "everyday"
-    ]
-  },
-  {
-    "number": 34,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2",
-    "words": 2,
-    "english": "Good night.",
-    "russian": "Спокойной ночи.",
-    "tags": [
-      "polite",
-      "everyday"
-    ]
-  },
-  {
-    "number": 35,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2",
-    "words": 2,
-    "english": "Sweet dreams.",
-    "russian": "Сладких снов.",
-    "tags": [
-      "polite",
-      "family"
-    ]
-  },
-  {
-    "number": 36,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2",
-    "words": 3,
-    "english": "What's going on?",
-    "russian": "Что происходит?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 37,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2",
-    "words": 2,
-    "english": "What's wrong?",
-    "russian": "Что не так?",
-    "tags": [
-      "question",
-      "emotion"
-    ]
-  },
-  {
-    "number": 38,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2",
-    "words": 2,
-    "english": "What's that?",
-    "russian": "Что это?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 39,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2",
-    "words": 2,
-    "english": "What happened?",
-    "russian": "Что случилось?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 40,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2",
-    "words": 3,
-    "english": "Where are they?",
-    "russian": "Где они?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 41,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2",
-    "words": 3,
-    "english": "Where's your bag?",
-    "russian": "Где твоя сумка?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 42,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2",
-    "words": 3,
-    "english": "How are you?",
-    "russian": "Как ты?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 43,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2",
-    "words": 3,
-    "english": "How's your dad?",
-    "russian": "Как твой папа?",
-    "tags": [
-      "question",
-      "family"
-    ]
-  },
-  {
-    "number": 44,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2",
-    "words": 3,
-    "english": "I can help.",
-    "russian": "Я могу помочь.",
-    "tags": [
-      "offer",
-      "everyday"
-    ]
-  },
-  {
-    "number": 45,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2",
-    "words": 4,
-    "english": "Can you help me?",
-    "russian": "Можешь мне помочь?",
-    "tags": [
-      "request",
-      "everyday"
-    ]
-  },
-  {
-    "number": 46,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2",
-    "words": 4,
-    "english": "Let me help you.",
-    "russian": "Дай я тебе помогу.",
-    "tags": [
-      "offer",
-      "everyday"
-    ]
-  },
-  {
-    "number": 47,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2",
-    "words": 2,
-    "english": "No problem.",
-    "russian": "Без проблем.",
-    "tags": [
-      "answer",
-      "everyday"
-    ]
-  },
-  {
-    "number": 48,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2",
-    "words": 2,
-    "english": "That's okay.",
-    "russian": "Всё нормально.",
-    "tags": [
-      "reaction",
-      "everyday"
-    ]
-  },
-  {
-    "number": 49,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2",
-    "words": 3,
-    "english": "I got it.",
-    "russian": "Я понял / У меня есть.",
-    "tags": [
-      "answer",
-      "everyday"
-    ]
-  },
-  {
-    "number": 50,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2",
-    "words": 2,
-    "english": "I see.",
-    "russian": "Понимаю.",
-    "tags": [
-      "answer",
-      "everyday"
-    ]
-  },
-  {
-    "number": 51,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2",
-    "words": 3,
-    "english": "I like it.",
-    "russian": "Мне это нравится.",
-    "tags": [
-      "opinion",
-      "everyday"
-    ]
-  },
-  {
-    "number": 52,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2",
-    "words": 4,
-    "english": "I don't like it.",
-    "russian": "Мне это не нравится.",
-    "tags": [
-      "opinion",
-      "everyday"
-    ]
-  },
-  {
-    "number": 53,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2",
-    "words": 4,
-    "english": "I love this place.",
-    "russian": "Я люблю это место.",
-    "tags": [
-      "opinion",
-      "everyday"
-    ]
-  },
-  {
-    "number": 54,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2",
-    "words": 3,
-    "english": "This is different.",
-    "russian": "Это другое.",
-    "tags": [
-      "reaction",
-      "everyday"
-    ]
-  },
-  {
-    "number": 55,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2",
-    "words": 3,
-    "english": "This is serious.",
-    "russian": "Это серьёзно.",
-    "tags": [
-      "reaction",
-      "everyday"
-    ]
-  },
-  {
-    "number": 56,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2",
-    "words": 3,
-    "english": "That's not nice.",
-    "russian": "Это нехорошо.",
-    "tags": [
-      "reaction",
-      "everyday"
-    ]
-  },
-  {
-    "number": 57,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2",
-    "words": 3,
-    "english": "That's really weird.",
-    "russian": "Это очень странно.",
-    "tags": [
-      "reaction",
-      "everyday"
-    ]
-  },
-  {
-    "number": 58,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2",
-    "words": 4,
-    "english": "That's a good one.",
-    "russian": "Хорошая шутка.",
-    "tags": [
-      "reaction",
-      "everyday"
-    ]
-  },
-  {
-    "number": 59,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2",
-    "words": 3,
-    "english": "That's too bad.",
-    "russian": "Очень жаль.",
-    "tags": [
-      "reaction",
-      "everyday"
-    ]
-  },
-  {
-    "number": 60,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2",
-    "words": 3,
-    "english": "That's all right.",
-    "russian": "Всё в порядке.",
-    "tags": [
-      "reaction",
-      "everyday"
-    ]
-  },
-  {
-    "number": 61,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2",
-    "words": 2,
-    "english": "I'm ready.",
-    "russian": "Я готов.",
-    "tags": [
-      "state",
-      "everyday"
-    ]
-  },
-  {
-    "number": 62,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2",
-    "words": 2,
-    "english": "I'm tired.",
-    "russian": "Я устал.",
-    "tags": [
-      "state",
-      "everyday"
-    ]
-  },
-  {
-    "number": 63,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2",
-    "words": 3,
-    "english": "I'm not lying.",
-    "russian": "Я не вру.",
-    "tags": [
-      "conflict",
-      "everyday"
-    ]
-  },
-  {
-    "number": 64,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2",
-    "words": 4,
-    "english": "I didn't take it.",
-    "russian": "Я это не брал.",
-    "tags": [
-      "conflict",
-      "everyday"
-    ]
-  },
-  {
-    "number": 65,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2",
-    "words": 4,
-    "english": "I didn't write it.",
-    "russian": "Я этого не писал.",
-    "tags": [
-      "conflict",
-      "everyday"
-    ]
-  },
-  {
-    "number": 66,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2",
-    "words": 4,
-    "english": "I don't believe it.",
-    "russian": "Не могу в это поверить.",
-    "tags": [
-      "reaction",
-      "everyday"
-    ]
-  },
-  {
-    "number": 67,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2",
-    "words": 3,
-    "english": "I understand that.",
-    "russian": "Я это понимаю.",
-    "tags": [
-      "answer",
-      "everyday"
-    ]
-  },
-  {
-    "number": 68,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2",
-    "words": 3,
-    "english": "I prefer facts.",
-    "russian": "Я предпочитаю факты.",
-    "tags": [
-      "opinion",
-      "everyday"
-    ]
-  },
-  {
-    "number": 69,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2",
-    "words": 4,
-    "english": "I have a question.",
-    "russian": "У меня есть вопрос.",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 70,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2",
-    "words": 5,
-    "english": "Can I ask you something?",
-    "russian": "Можно тебя кое-что спросить?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 71,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2",
-    "words": 4,
-    "english": "Why are you here?",
-    "russian": "Почему ты здесь?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 72,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2",
-    "words": 5,
-    "english": "Why did you do that?",
-    "russian": "Зачем ты это сделал?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 73,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2",
-    "words": 4,
-    "english": "Why are you crying?",
-    "russian": "Почему ты плачешь?",
-    "tags": [
-      "question",
-      "emotion"
-    ]
-  },
-  {
-    "number": 74,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2",
-    "words": 4,
-    "english": "Why aren't you eating?",
-    "russian": "Почему ты не ешь?",
-    "tags": [
-      "question",
-      "food"
-    ]
-  },
-  {
-    "number": 75,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2",
-    "words": 4,
-    "english": "What do you mean?",
-    "russian": "Что ты имеешь в виду?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 76,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2",
-    "words": 4,
-    "english": "What did you say?",
-    "russian": "Что ты сказал?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 77,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2",
-    "words": 4,
-    "english": "What did I miss?",
-    "russian": "Что я пропустил?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 78,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2",
-    "words": 4,
-    "english": "What are we doing?",
-    "russian": "Что мы делаем?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 79,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2",
-    "words": 4,
-    "english": "What do you think?",
-    "russian": "Что ты думаешь?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 80,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2",
-    "words": 3,
-    "english": "What sounds fun?",
-    "russian": "Что звучит весело?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 81,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2",
-    "words": 3,
-    "english": "You look great.",
-    "russian": "Ты отлично выглядишь.",
-    "tags": [
-      "compliment",
-      "everyday"
-    ]
-  },
-  {
-    "number": 82,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2",
-    "words": 3,
-    "english": "You look beautiful.",
-    "russian": "Ты прекрасно выглядишь.",
-    "tags": [
-      "compliment",
-      "everyday"
-    ]
-  },
-  {
-    "number": 83,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2",
-    "words": 3,
-    "english": "You were right.",
-    "russian": "Ты был прав.",
-    "tags": [
-      "agreement",
-      "everyday"
-    ]
-  },
-  {
-    "number": 84,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2",
-    "words": 2,
-    "english": "You're right.",
-    "russian": "Ты прав.",
-    "tags": [
-      "agreement",
-      "everyday"
-    ]
-  },
-  {
-    "number": 85,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2",
-    "words": 4,
-    "english": "You're gonna love it.",
-    "russian": "Тебе это понравится.",
-    "tags": [
-      "opinion",
-      "everyday"
-    ]
-  },
-  {
-    "number": 86,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2",
-    "words": 4,
-    "english": "You need to go.",
-    "russian": "Тебе нужно идти.",
-    "tags": [
-      "advice",
-      "everyday"
-    ]
-  },
-  {
-    "number": 87,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2",
-    "words": 4,
-    "english": "You should go home.",
-    "russian": "Тебе стоит пойти домой.",
-    "tags": [
-      "advice",
-      "everyday"
-    ]
-  },
-  {
-    "number": 88,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2",
-    "words": 4,
-    "english": "You can't do that.",
-    "russian": "Ты не можешь так делать.",
-    "tags": [
-      "warning",
-      "everyday"
-    ]
-  },
-  {
-    "number": 89,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2",
-    "words": 4,
-    "english": "You can tell me.",
-    "russian": "Ты можешь мне сказать.",
-    "tags": [
-      "support",
-      "everyday"
-    ]
-  },
-  {
-    "number": 90,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2",
-    "words": 3,
-    "english": "You got it.",
-    "russian": "Договорились.",
-    "tags": [
-      "answer",
-      "everyday"
-    ]
-  },
-  {
-    "number": 91,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 8,
-    "episode_code": "S01E08",
-    "level": "A2",
-    "words": 3,
-    "english": "We can go.",
-    "russian": "Мы можем идти.",
-    "tags": [
-      "everyday"
-    ]
-  },
-  {
-    "number": 92,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 8,
-    "episode_code": "S01E08",
-    "level": "A2",
-    "words": 3,
-    "english": "We should go.",
-    "russian": "Нам стоит идти.",
-    "tags": [
-      "advice",
-      "everyday"
-    ]
-  },
-  {
-    "number": 93,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 8,
-    "episode_code": "S01E08",
-    "level": "A2",
-    "words": 4,
-    "english": "We need to talk.",
-    "russian": "Нам нужно поговорить.",
-    "tags": [
-      "relationship",
-      "everyday"
-    ]
-  },
-  {
-    "number": 94,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 8,
-    "episode_code": "S01E08",
-    "level": "A2",
-    "words": 4,
-    "english": "We don't know that.",
-    "russian": "Мы этого не знаем.",
-    "tags": [
-      "answer",
-      "everyday"
-    ]
-  },
-  {
-    "number": 95,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 8,
-    "episode_code": "S01E08",
-    "level": "A2",
-    "words": 4,
-    "english": "We are not lost.",
-    "russian": "Мы не заблудились.",
-    "tags": [
-      "travel",
-      "everyday"
-    ]
-  },
-  {
-    "number": 96,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 8,
-    "episode_code": "S01E08",
-    "level": "A2",
-    "words": 4,
-    "english": "We'll figure it out.",
-    "russian": "Мы что-нибудь придумаем.",
-    "tags": [
-      "support",
-      "everyday"
-    ]
-  },
-  {
-    "number": 97,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 8,
-    "episode_code": "S01E08",
-    "level": "A2",
-    "words": 4,
-    "english": "We'll think of something.",
-    "russian": "Мы что-нибудь придумаем.",
-    "tags": [
-      "support",
-      "everyday"
-    ]
-  },
-  {
-    "number": 98,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 8,
-    "episode_code": "S01E08",
-    "level": "A2",
-    "words": 3,
-    "english": "Let's talk later.",
-    "russian": "Поговорим позже.",
-    "tags": [
-      "planning",
-      "everyday"
-    ]
-  },
-  {
-    "number": 99,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 8,
-    "episode_code": "S01E08",
-    "level": "A2",
-    "words": 3,
-    "english": "Let's do it.",
-    "russian": "Давай сделаем это.",
-    "tags": [
-      "planning",
-      "everyday"
-    ]
-  },
-  {
-    "number": 100,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 8,
-    "episode_code": "S01E08",
-    "level": "A2",
-    "words": 3,
-    "english": "Let's try again.",
-    "russian": "Давай попробуем ещё раз.",
-    "tags": [
-      "planning",
-      "everyday"
-    ]
-  },
-  {
-    "number": 101,
-    "series": "Young Sheldon",
-    "season": 1,
     "episode": 1,
     "episode_code": "S01E01",
     "level": "A2-B1",
     "words": 7,
-    "english": "I don't think I can do this.",
-    "russian": "Не думаю, что смогу это сделать.",
+    "english": "I don't think I can do this",
+    "russian": "Не думаю, что смогу это сделать",
     "tags": [
       "opinion",
       "everyday"
     ]
   },
   {
-    "number": 102,
+    "number": 22,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 1,
@@ -1529,127 +331,127 @@
     ]
   },
   {
-    "number": 103,
+    "number": 23,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 1,
     "episode_code": "S01E01",
     "level": "A2-B1",
     "words": 5,
-    "english": "Let's try just walking out.",
-    "russian": "Давай попробуем просто выйти.",
+    "english": "Let's try just walking out",
+    "russian": "Давай попробуем просто выйти",
     "tags": [
       "planning",
       "everyday"
     ]
   },
   {
-    "number": 104,
+    "number": 24,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 1,
     "episode_code": "S01E01",
     "level": "A2-B1",
     "words": 5,
-    "english": "We don't mean to interrupt.",
-    "russian": "Мы не хотим мешать.",
+    "english": "We don't mean to interrupt",
+    "russian": "Мы не хотим мешать",
     "tags": [
       "polite",
       "everyday"
     ]
   },
   {
-    "number": 105,
+    "number": 25,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 1,
     "episode_code": "S01E01",
     "level": "A2-B1",
     "words": 6,
-    "english": "I think this is the place.",
-    "russian": "Думаю, это то самое место.",
+    "english": "I think this is the place",
+    "russian": "Думаю, это то самое место",
     "tags": [
       "opinion",
       "everyday"
     ]
   },
   {
-    "number": 106,
+    "number": 26,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 1,
     "episode_code": "S01E01",
     "level": "A2-B1",
     "words": 6,
-    "english": "I’m gonna invite her over.",
-    "russian": "Я приглашу её к нам.",
+    "english": "I’m gonna invite her over",
+    "russian": "Я приглашу её к нам",
     "tags": [
       "planning",
       "home"
     ]
   },
   {
-    "number": 107,
+    "number": 27,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 1,
     "episode_code": "S01E01",
     "level": "A2-B1",
     "words": 4,
-    "english": "It’s not difficult.",
-    "russian": "Это несложно.",
+    "english": "It’s not difficult",
+    "russian": "Это несложно",
     "tags": [
       "opinion",
       "everyday"
     ]
   },
   {
-    "number": 108,
+    "number": 28,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 1,
     "episode_code": "S01E01",
     "level": "A2-B1",
     "words": 4,
-    "english": "Moving can be stressful.",
-    "russian": "Переезд может быть стрессовым.",
+    "english": "Moving can be stressful",
+    "russian": "Переезд может быть стрессовым",
     "tags": [
       "home",
       "everyday"
     ]
   },
   {
-    "number": 109,
+    "number": 29,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 1,
     "episode_code": "S01E01",
     "level": "A2-B1",
     "words": 4,
-    "english": "I’d love to.",
-    "russian": "С удовольствием.",
+    "english": "I’d love to",
+    "russian": "С удовольствием",
     "tags": [
       "answer",
       "polite"
     ]
   },
   {
-    "number": 110,
+    "number": 30,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 1,
     "episode_code": "S01E01",
     "level": "A2-B1",
     "words": 4,
-    "english": "This is really impressive.",
-    "russian": "Это правда впечатляет.",
+    "english": "This is really impressive",
+    "russian": "Это правда впечатляет",
     "tags": [
       "reaction",
       "everyday"
     ]
   },
   {
-    "number": 111,
+    "number": 31,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 1,
@@ -1664,967 +466,67 @@
     ]
   },
   {
-    "number": 112,
+    "number": 32,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 1,
     "episode_code": "S01E01",
     "level": "A2-B1",
     "words": 4,
-    "english": "Just sit somewhere else.",
-    "russian": "Просто сядь в другое место.",
+    "english": "Just sit somewhere else",
+    "russian": "Просто сядь в другое место",
     "tags": [
       "request",
       "everyday"
     ]
   },
   {
-    "number": 113,
+    "number": 33,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 1,
     "episode_code": "S01E01",
     "level": "A2-B1",
     "words": 8,
-    "english": "We don't have a lot of company over.",
-    "russian": "У нас нечасто бывают гости.",
+    "english": "We don't have a lot of company over",
+    "russian": "У нас нечасто бывают гости",
     "tags": [
       "home",
       "everyday"
     ]
   },
   {
-    "number": 114,
+    "number": 34,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 1,
     "episode_code": "S01E01",
     "level": "A2-B1",
     "words": 5,
-    "english": "That's probably enough about us.",
-    "russian": "Думаю, достаточно о нас.",
+    "english": "That's probably enough about us",
+    "russian": "Думаю, достаточно о нас",
     "tags": [
       "conversation",
       "everyday"
     ]
   },
   {
-    "number": 115,
+    "number": 35,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 1,
     "episode_code": "S01E01",
     "level": "A2-B1",
     "words": 3,
-    "english": "It sounds wonderful.",
-    "russian": "Звучит замечательно.",
+    "english": "It sounds wonderful",
+    "russian": "Звучит замечательно",
     "tags": [
       "reaction",
       "everyday"
     ]
   },
   {
-    "number": 116,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2-B1",
-    "words": 7,
-    "english": "I can’t believe I trusted him.",
-    "russian": "Не могу поверить, что я ему доверяла.",
-    "tags": [
-      "emotion",
-      "relationship"
-    ]
-  },
-  {
-    "number": 117,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2-B1",
-    "words": 4,
-    "english": "Should I say something?",
-    "russian": "Мне что-нибудь сказать?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 118,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "You’ll only make it worse.",
-    "russian": "Ты только сделаешь хуже.",
-    "tags": [
-      "warning",
-      "everyday"
-    ]
-  },
-  {
-    "number": 119,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2-B1",
-    "words": 8,
-    "english": "Would it be weird if I used it?",
-    "russian": "Это будет странно, если я этим воспользуюсь?",
-    "tags": [
-      "question",
-      "polite"
-    ]
-  },
-  {
-    "number": 120,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2-B1",
-    "words": 5,
-    "english": "This is an interesting development.",
-    "russian": "Это интересное развитие событий.",
-    "tags": [
-      "reaction",
-      "everyday"
-    ]
-  },
-  {
-    "number": 121,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "It's just not a good time.",
-    "russian": "Сейчас просто неподходящий момент.",
-    "tags": [
-      "planning",
-      "everyday"
-    ]
-  },
-  {
-    "number": 122,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "Can I ask you a favor?",
-    "russian": "Можно попросить тебя об одолжении?",
-    "tags": [
-      "request",
-      "polite"
-    ]
-  },
-  {
-    "number": 123,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "It's okay if you say no.",
-    "russian": "Ничего страшного, если ты откажешься.",
-    "tags": [
-      "polite",
-      "everyday"
-    ]
-  },
-  {
-    "number": 124,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2-B1",
-    "words": 4,
-    "english": "I'll probably say yes.",
-    "russian": "Я, скорее всего, соглашусь.",
-    "tags": [
-      "answer",
-      "everyday"
-    ]
-  },
-  {
-    "number": 125,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 2,
-    "episode_code": "S01E02",
-    "level": "A2-B1",
-    "words": 8,
-    "english": "She asked me to do her a favor.",
-    "russian": "Она попросила меня об одолжении.",
-    "tags": [
-      "request",
-      "everyday"
-    ]
-  },
-  {
-    "number": 126,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2-B1",
-    "words": 7,
-    "english": "Why can't she get her own TV?",
-    "russian": "Почему она не может забрать свой телевизор сама?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 127,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2-B1",
-    "words": 7,
-    "english": "You know how it is with breakups.",
-    "russian": "Ты же знаешь, как бывает после расставаний.",
-    "tags": [
-      "relationship",
-      "everyday"
-    ]
-  },
-  {
-    "number": 128,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2-B1",
-    "words": 4,
-    "english": "I'll do the talking.",
-    "russian": "Говорить буду я.",
-    "tags": [
-      "planning",
-      "everyday"
-    ]
-  },
-  {
-    "number": 129,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2-B1",
-    "words": 2,
-    "english": "Get lost.",
-    "russian": "Проваливай.",
-    "tags": [
-      "conflict",
-      "everyday"
-    ]
-  },
-  {
-    "number": 130,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "We're not going to give up.",
-    "russian": "Мы не собираемся сдаваться.",
-    "tags": [
-      "motivation",
-      "everyday"
-    ]
-  },
-  {
-    "number": 131,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2-B1",
-    "words": 5,
-    "english": "Tell him about our IQ.",
-    "russian": "Расскажи ему про наш IQ.",
-    "tags": [
-      "request",
-      "everyday"
-    ]
-  },
-  {
-    "number": 132,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2-B1",
-    "words": 7,
-    "english": "I'm sorry I dragged you through this.",
-    "russian": "Прости, что втянул тебя в это.",
-    "tags": [
-      "apology",
-      "everyday"
-    ]
-  },
-  {
-    "number": 133,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2-B1",
-    "words": 4,
-    "english": "I've learned my lesson.",
-    "russian": "Я усвоил урок.",
-    "tags": [
-      "reflection",
-      "everyday"
-    ]
-  },
-  {
-    "number": 134,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2-B1",
-    "words": 5,
-    "english": "She's out of my league.",
-    "russian": "Она не моего уровня.",
-    "tags": [
-      "relationship",
-      "idiom"
-    ]
-  },
-  {
-    "number": 135,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 3,
-    "episode_code": "S01E03",
-    "level": "A2-B1",
-    "words": 4,
-    "english": "Don't think like that.",
-    "russian": "Не думай так.",
-    "tags": [
-      "support",
-      "everyday"
-    ]
-  },
-  {
-    "number": 136,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2-B1",
-    "words": 3,
-    "english": "That sounds interesting.",
-    "russian": "Звучит интересно.",
-    "tags": [
-      "reaction",
-      "everyday"
-    ]
-  },
-  {
-    "number": 137,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2-B1",
-    "words": 4,
-    "english": "You'll think about it?",
-    "russian": "Ты подумаешь об этом?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 138,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2-B1",
-    "words": 11,
-    "english": "I don't think I'll be able to stop thinking about it.",
-    "russian": "Думаю, я не смогу перестать об этом думать.",
-    "tags": [
-      "emotion",
-      "everyday"
-    ]
-  },
-  {
-    "number": 139,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2-B1",
-    "words": 2,
-    "english": "What happened?",
-    "russian": "Что случилось?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 140,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "I really thought it would work.",
-    "russian": "Я правда думал, что это сработает.",
-    "tags": [
-      "opinion",
-      "everyday"
-    ]
-  },
-  {
-    "number": 141,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "Thank you so much for going.",
-    "russian": "Большое спасибо, что сходили.",
-    "tags": [
-      "thanks",
-      "everyday"
-    ]
-  },
-  {
-    "number": 142,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2-B1",
-    "words": 4,
-    "english": "Dinner is on me.",
-    "russian": "Ужин за мой счёт.",
-    "tags": [
-      "food",
-      "everyday"
-    ]
-  },
-  {
-    "number": 143,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "Is Thai food okay with you?",
-    "russian": "Тайская еда тебе подходит?",
-    "tags": [
-      "food",
-      "question"
-    ]
-  },
-  {
-    "number": 144,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2-B1",
-    "words": 4,
-    "english": "That sounds like fun.",
-    "russian": "Звучит весело.",
-    "tags": [
-      "reaction",
-      "everyday"
-    ]
-  },
-  {
-    "number": 145,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 4,
-    "episode_code": "S01E04",
-    "level": "A2-B1",
-    "words": 5,
-    "english": "We can't have Thai food.",
-    "russian": "Мы не можем есть тайскую еду.",
-    "tags": [
-      "food",
-      "everyday"
-    ]
-  },
-  {
-    "number": 146,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "You invited company over for dinner?",
-    "russian": "Ты пригласил гостей на ужин?",
-    "tags": [
-      "home",
-      "question"
-    ]
-  },
-  {
-    "number": 147,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2-B1",
-    "words": 7,
-    "english": "I was afraid you might say no.",
-    "russian": "Я боялся, что ты можешь отказать.",
-    "tags": [
-      "emotion",
-      "everyday"
-    ]
-  },
-  {
-    "number": 148,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "You mean he just showed up?",
-    "russian": "То есть он просто появился?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 149,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "Are you about ready for dinner?",
-    "russian": "Вы уже почти готовы к ужину?",
-    "tags": [
-      "food",
-      "question"
-    ]
-  },
-  {
-    "number": 150,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "You're kind of dominating the conversation.",
-    "russian": "Ты немного захватил весь разговор.",
-    "tags": [
-      "conversation",
-      "everyday"
-    ]
-  },
-  {
-    "number": 151,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "Why don't you let her talk?",
-    "russian": "Почему бы тебе не дать ей поговорить?",
-    "tags": [
-      "request",
-      "conversation"
-    ]
-  },
-  {
-    "number": 152,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2-B1",
-    "words": 8,
-    "english": "You sure I can't give you a ride?",
-    "russian": "Точно не подвезти тебя?",
-    "tags": [
-      "offer",
-      "travel"
-    ]
-  },
-  {
-    "number": 153,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "We should do it again sometime.",
-    "russian": "Нам стоит как-нибудь повторить.",
-    "tags": [
-      "planning",
-      "everyday"
-    ]
-  },
-  {
-    "number": 154,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2-B1",
-    "words": 4,
-    "english": "Glad you enjoyed it.",
-    "russian": "Рад, что тебе понравилось.",
-    "tags": [
-      "polite",
-      "everyday"
-    ]
-  },
-  {
-    "number": 155,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 5,
-    "episode_code": "S01E05",
-    "level": "A2-B1",
-    "words": 5,
-    "english": "There's nothing to talk about.",
-    "russian": "Тут не о чем говорить.",
-    "tags": [
-      "conversation",
-      "everyday"
-    ]
-  },
-  {
-    "number": 156,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2-B1",
-    "words": 8,
-    "english": "You know you want to talk about it.",
-    "russian": "Ты же знаешь, что хочешь об этом поговорить.",
-    "tags": [
-      "conversation",
-      "everyday"
-    ]
-  },
-  {
-    "number": 157,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2-B1",
-    "words": 9,
-    "english": "How am I supposed to be okay with that?",
-    "russian": "И как мне с этим нормально жить?",
-    "tags": [
-      "emotion",
-      "everyday"
-    ]
-  },
-  {
-    "number": 158,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2-B1",
-    "words": 9,
-    "english": "I don't know how to spend time with her.",
-    "russian": "Я не знаю, как проводить с ней время.",
-    "tags": [
-      "relationship",
-      "everyday"
-    ]
-  },
-  {
-    "number": 159,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2-B1",
-    "words": 7,
-    "english": "Ask her what she wants to do.",
-    "russian": "Спроси её, чем она хочет заняться.",
-    "tags": [
-      "advice",
-      "everyday"
-    ]
-  },
-  {
-    "number": 160,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "Yeah, I'll give it a try.",
-    "russian": "Да, я попробую.",
-    "tags": [
-      "answer",
-      "everyday"
-    ]
-  },
-  {
-    "number": 161,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "Let me stop you right there.",
-    "russian": "Дай я сразу тебя остановлю.",
-    "tags": [
-      "conversation",
-      "everyday"
-    ]
-  },
-  {
-    "number": 162,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "Go home and have your breakfast.",
-    "russian": "Иди домой и позавтракай.",
-    "tags": [
-      "request",
-      "food"
-    ]
-  },
-  {
-    "number": 163,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "We don't spend much time together.",
-    "russian": "Мы мало времени проводим вместе.",
-    "tags": [
-      "relationship",
-      "everyday"
-    ]
-  },
-  {
-    "number": 164,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2-B1",
-    "words": 6,
-    "english": "What did you have in mind?",
-    "russian": "Что ты имел в виду?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 165,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 6,
-    "episode_code": "S01E06",
-    "level": "A2-B1",
-    "words": 5,
-    "english": "Let's talk about something else.",
-    "russian": "Давай поговорим о чём-нибудь другом.",
-    "tags": [
-      "conversation",
-      "everyday"
-    ]
-  },
-  {
-    "number": 166,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2-B1",
-    "words": 7,
-    "english": "Here, let me help you with that.",
-    "russian": "Давай я помогу тебе с этим.",
-    "tags": [
-      "offer",
-      "everyday"
-    ]
-  },
-  {
-    "number": 167,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2-B1",
-    "words": 4,
-    "english": "No, sit with me.",
-    "russian": "Нет, посиди со мной.",
-    "tags": [
-      "request",
-      "everyday"
-    ]
-  },
-  {
-    "number": 168,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2-B1",
-    "words": 7,
-    "english": "How long have you played the piano?",
-    "russian": "Как давно ты играешь на пианино?",
-    "tags": [
-      "question",
-      "hobby"
-    ]
-  },
-  {
-    "number": 169,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2-B1",
-    "words": 3,
-    "english": "I'd rather not.",
-    "russian": "Я бы предпочёл не делать этого.",
-    "tags": [
-      "answer",
-      "everyday"
-    ]
-  },
-  {
-    "number": 170,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2-B1",
-    "words": 3,
-    "english": "I wouldn't know.",
-    "russian": "Я бы не знал.",
-    "tags": [
-      "answer",
-      "everyday"
-    ]
-  },
-  {
-    "number": 171,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2-B1",
-    "words": 4,
-    "english": "I’m afraid not.",
-    "russian": "Боюсь, что нет.",
-    "tags": [
-      "answer",
-      "polite"
-    ]
-  },
-  {
-    "number": 172,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2-B1",
-    "words": 5,
-    "english": "What took you so long?",
-    "russian": "Почему ты так долго?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 173,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2-B1",
-    "words": 3,
-    "english": "I better go.",
-    "russian": "Мне лучше идти.",
-    "tags": [
-      "planning",
-      "everyday"
-    ]
-  },
-  {
-    "number": 174,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2-B1",
-    "words": 3,
-    "english": "I understand that.",
-    "russian": "Я это понимаю.",
-    "tags": [
-      "answer",
-      "everyday"
-    ]
-  },
-  {
-    "number": 175,
-    "series": "Young Sheldon",
-    "season": 1,
-    "episode": 7,
-    "episode_code": "S01E07",
-    "level": "A2-B1",
-    "words": 4,
-    "english": "What's to think about?",
-    "russian": "О чём тут думать?",
-    "tags": [
-      "question",
-      "everyday"
-    ]
-  },
-  {
-    "number": 176,
+    "number": 36,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 1,
@@ -2639,52 +541,426 @@
     ]
   },
   {
-    "number": 177,
+    "number": 37,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 1,
     "episode_code": "S01E01",
     "level": "B1",
     "words": 4,
-    "english": "They're fighting about money.",
-    "russian": "Они ссорятся из-за денег.",
+    "english": "They're fighting about money",
+    "russian": "Они ссорятся из-за денег",
     "tags": [
       "family",
       "money"
     ]
   },
   {
-    "number": 178,
+    "number": 38,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 1,
     "episode_code": "S01E01",
     "level": "B1",
     "words": 5,
-    "english": "They're fighting about you again.",
-    "russian": "Они снова ссорятся из-за тебя.",
+    "english": "They're fighting about you again",
+    "russian": "Они снова ссорятся из-за тебя",
     "tags": [
       "family",
       "conflict"
     ]
   },
   {
-    "number": 179,
+    "number": 39,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2",
+    "words": 3,
+    "english": "Are you okay?",
+    "russian": "Ты в порядке?",
+    "tags": [
+      "question",
+      "emotion"
+    ]
+  },
+  {
+    "number": 40,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2",
+    "words": 2,
+    "english": "I'm fine",
+    "russian": "Я в порядке",
+    "tags": [
+      "answer",
+      "emotion"
+    ]
+  },
+  {
+    "number": 41,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2",
+    "words": 3,
+    "english": "Are you sure?",
+    "russian": "Ты уверен?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 42,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2",
+    "words": 3,
+    "english": "Maybe you're right",
+    "russian": "Может, ты прав",
+    "tags": [
+      "agreement",
+      "everyday"
+    ]
+  },
+  {
+    "number": 43,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2",
+    "words": 3,
+    "english": "I think so",
+    "russian": "Думаю, да",
+    "tags": [
+      "answer",
+      "everyday"
+    ]
+  },
+  {
+    "number": 44,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2",
+    "words": 4,
+    "english": "I don't think so",
+    "russian": "Думаю, нет",
+    "tags": [
+      "answer",
+      "everyday"
+    ]
+  },
+  {
+    "number": 45,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2",
+    "words": 4,
+    "english": "What are you doing?",
+    "russian": "Что ты делаешь?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 46,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2",
+    "words": 4,
+    "english": "What do you want?",
+    "russian": "Чего ты хочешь?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 47,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2",
+    "words": 5,
+    "english": "I want to go home",
+    "russian": "Я хочу домой",
+    "tags": [
+      "want",
+      "everyday"
+    ]
+  },
+  {
+    "number": 48,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2",
+    "words": 4,
+    "english": "Can we go now?",
+    "russian": "Мы можем идти?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 49,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2",
+    "words": 2,
+    "english": "Let's go",
+    "russian": "Пойдём",
+    "tags": [
+      "request",
+      "everyday"
+    ]
+  },
+  {
+    "number": 50,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2",
+    "words": 4,
+    "english": "I'll be right back",
+    "russian": "Я сейчас вернусь",
+    "tags": [
+      "everyday"
+    ]
+  },
+  {
+    "number": 51,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2",
+    "words": 3,
+    "english": "See you later",
+    "russian": "Увидимся позже",
+    "tags": [
+      "polite",
+      "everyday"
+    ]
+  },
+  {
+    "number": 52,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2",
+    "words": 2,
+    "english": "Good night",
+    "russian": "Спокойной ночи",
+    "tags": [
+      "polite",
+      "everyday"
+    ]
+  },
+  {
+    "number": 53,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2",
+    "words": 2,
+    "english": "Sweet dreams",
+    "russian": "Сладких снов",
+    "tags": [
+      "polite",
+      "family"
+    ]
+  },
+  {
+    "number": 54,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2-B1",
+    "words": 7,
+    "english": "I can’t believe I trusted him",
+    "russian": "Не могу поверить, что я ему доверяла",
+    "tags": [
+      "emotion",
+      "relationship"
+    ]
+  },
+  {
+    "number": 55,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2-B1",
+    "words": 4,
+    "english": "Should I say something?",
+    "russian": "Мне что-нибудь сказать?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 56,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "You’ll only make it worse",
+    "russian": "Ты только сделаешь хуже",
+    "tags": [
+      "warning",
+      "everyday"
+    ]
+  },
+  {
+    "number": 57,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2-B1",
+    "words": 8,
+    "english": "Would it be weird if I used it?",
+    "russian": "Это будет странно, если я этим воспользуюсь?",
+    "tags": [
+      "question",
+      "polite"
+    ]
+  },
+  {
+    "number": 58,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2-B1",
+    "words": 5,
+    "english": "This is an interesting development",
+    "russian": "Это интересное развитие событий",
+    "tags": [
+      "reaction",
+      "everyday"
+    ]
+  },
+  {
+    "number": 59,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "It's just not a good time",
+    "russian": "Сейчас просто неподходящий момент",
+    "tags": [
+      "planning",
+      "everyday"
+    ]
+  },
+  {
+    "number": 60,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "Can I ask you a favor?",
+    "russian": "Можно попросить тебя об одолжении?",
+    "tags": [
+      "request",
+      "polite"
+    ]
+  },
+  {
+    "number": 61,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "It's okay if you say no",
+    "russian": "Ничего страшного, если ты откажешься",
+    "tags": [
+      "polite",
+      "everyday"
+    ]
+  },
+  {
+    "number": 62,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2-B1",
+    "words": 4,
+    "english": "I'll probably say yes",
+    "russian": "Я, скорее всего, соглашусь",
+    "tags": [
+      "answer",
+      "everyday"
+    ]
+  },
+  {
+    "number": 63,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 2,
+    "episode_code": "S01E02",
+    "level": "A2-B1",
+    "words": 8,
+    "english": "She asked me to do her a favor",
+    "russian": "Она попросила меня об одолжении",
+    "tags": [
+      "request",
+      "everyday"
+    ]
+  },
+  {
+    "number": 64,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 2,
     "episode_code": "S01E02",
     "level": "B1",
     "words": 6,
-    "english": "I personally find that very reassuring.",
-    "russian": "Лично я нахожу это очень успокаивающим.",
+    "english": "I personally find that very reassuring",
+    "russian": "Лично я нахожу это очень успокаивающим",
     "tags": [
       "opinion",
       "emotion"
     ]
   },
   {
-    "number": 180,
+    "number": 65,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 2,
@@ -2699,67 +975,442 @@
     ]
   },
   {
-    "number": 181,
+    "number": 66,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 2,
     "episode_code": "S01E02",
     "level": "B1",
     "words": 4,
-    "english": "I clearly missed something.",
-    "russian": "Я явно что-то пропустил.",
+    "english": "I clearly missed something",
+    "russian": "Я явно что-то пропустил",
     "tags": [
       "reaction",
       "everyday"
     ]
   },
   {
-    "number": 182,
+    "number": 67,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 2,
     "episode_code": "S01E02",
     "level": "B1",
     "words": 5,
-    "english": "I wasn't interested in friends.",
-    "russian": "Мне не были интересны друзья.",
+    "english": "I wasn't interested in friends",
+    "russian": "Мне не были интересны друзья",
     "tags": [
       "relationship",
       "everyday"
     ]
   },
   {
-    "number": 183,
+    "number": 68,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 3,
     "episode_code": "S01E03",
-    "level": "B1",
-    "words": 5,
-    "english": "Maybe I'm crying for attention.",
-    "russian": "Может, я плачу ради внимания.",
+    "level": "A2",
+    "words": 3,
+    "english": "What's going on?",
+    "russian": "Что происходит?",
     "tags": [
-      "emotion",
+      "question",
       "everyday"
     ]
   },
   {
-    "number": 184,
+    "number": 69,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 3,
     "episode_code": "S01E03",
-    "level": "B1",
-    "words": 5,
-    "english": "That's humorous because it's true.",
-    "russian": "Это смешно, потому что это правда.",
+    "level": "A2",
+    "words": 2,
+    "english": "What's wrong?",
+    "russian": "Что не так?",
+    "tags": [
+      "question",
+      "emotion"
+    ]
+  },
+  {
+    "number": 70,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2",
+    "words": 2,
+    "english": "What's that?",
+    "russian": "Что это?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 71,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2",
+    "words": 2,
+    "english": "What happened?",
+    "russian": "Что случилось?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 72,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2",
+    "words": 3,
+    "english": "Where are they?",
+    "russian": "Где они?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 73,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2",
+    "words": 3,
+    "english": "Where's your bag?",
+    "russian": "Где твоя сумка?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 74,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2",
+    "words": 3,
+    "english": "How are you?",
+    "russian": "Как ты?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 75,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2",
+    "words": 3,
+    "english": "How's your dad?",
+    "russian": "Как твой папа?",
+    "tags": [
+      "question",
+      "family"
+    ]
+  },
+  {
+    "number": 76,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2",
+    "words": 3,
+    "english": "I can help",
+    "russian": "Я могу помочь",
+    "tags": [
+      "offer",
+      "everyday"
+    ]
+  },
+  {
+    "number": 77,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2",
+    "words": 4,
+    "english": "Can you help me?",
+    "russian": "Можешь мне помочь?",
+    "tags": [
+      "request",
+      "everyday"
+    ]
+  },
+  {
+    "number": 78,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2",
+    "words": 4,
+    "english": "Let me help you",
+    "russian": "Дай я тебе помогу",
+    "tags": [
+      "offer",
+      "everyday"
+    ]
+  },
+  {
+    "number": 79,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2",
+    "words": 2,
+    "english": "No problem",
+    "russian": "Без проблем",
+    "tags": [
+      "answer",
+      "everyday"
+    ]
+  },
+  {
+    "number": 80,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2",
+    "words": 2,
+    "english": "That's okay",
+    "russian": "Всё нормально",
     "tags": [
       "reaction",
       "everyday"
     ]
   },
   {
-    "number": 185,
+    "number": 81,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2",
+    "words": 3,
+    "english": "I got it",
+    "russian": "Я понял / У меня есть",
+    "tags": [
+      "answer",
+      "everyday"
+    ]
+  },
+  {
+    "number": 82,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2",
+    "words": 2,
+    "english": "I see",
+    "russian": "Понимаю",
+    "tags": [
+      "answer",
+      "everyday"
+    ]
+  },
+  {
+    "number": 83,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2-B1",
+    "words": 7,
+    "english": "Why can't she get her own TV?",
+    "russian": "Почему она не может забрать свой телевизор сама?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 84,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2-B1",
+    "words": 7,
+    "english": "You know how it is with breakups",
+    "russian": "Ты же знаешь, как бывает после расставаний",
+    "tags": [
+      "relationship",
+      "everyday"
+    ]
+  },
+  {
+    "number": 85,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2-B1",
+    "words": 4,
+    "english": "I'll do the talking",
+    "russian": "Говорить буду я",
+    "tags": [
+      "planning",
+      "everyday"
+    ]
+  },
+  {
+    "number": 86,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2-B1",
+    "words": 2,
+    "english": "Get lost",
+    "russian": "Проваливай",
+    "tags": [
+      "conflict",
+      "everyday"
+    ]
+  },
+  {
+    "number": 87,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "We're not going to give up",
+    "russian": "Мы не собираемся сдаваться",
+    "tags": [
+      "motivation",
+      "everyday"
+    ]
+  },
+  {
+    "number": 88,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2-B1",
+    "words": 5,
+    "english": "Tell him about our IQ",
+    "russian": "Расскажи ему про наш IQ",
+    "tags": [
+      "request",
+      "everyday"
+    ]
+  },
+  {
+    "number": 89,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2-B1",
+    "words": 7,
+    "english": "I'm sorry I dragged you through this",
+    "russian": "Прости, что втянул тебя в это",
+    "tags": [
+      "apology",
+      "everyday"
+    ]
+  },
+  {
+    "number": 90,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2-B1",
+    "words": 4,
+    "english": "I've learned my lesson",
+    "russian": "Я усвоил урок",
+    "tags": [
+      "reflection",
+      "everyday"
+    ]
+  },
+  {
+    "number": 91,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2-B1",
+    "words": 5,
+    "english": "She's out of my league",
+    "russian": "Она не моего уровня",
+    "tags": [
+      "relationship",
+      "idiom"
+    ]
+  },
+  {
+    "number": 92,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "A2-B1",
+    "words": 4,
+    "english": "Don't think like that",
+    "russian": "Не думай так",
+    "tags": [
+      "support",
+      "everyday"
+    ]
+  },
+  {
+    "number": 93,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "B1",
+    "words": 5,
+    "english": "Maybe I'm crying for attention",
+    "russian": "Может, я плачу ради внимания",
+    "tags": [
+      "emotion",
+      "everyday"
+    ]
+  },
+  {
+    "number": 94,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 3,
+    "episode_code": "S01E03",
+    "level": "B1",
+    "words": 5,
+    "english": "That's humorous because it's true",
+    "russian": "Это смешно, потому что это правда",
+    "tags": [
+      "reaction",
+      "everyday"
+    ]
+  },
+  {
+    "number": 95,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 3,
@@ -2774,7 +1425,7 @@
     ]
   },
   {
-    "number": 186,
+    "number": 96,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 3,
@@ -2789,37 +1440,337 @@
     ]
   },
   {
-    "number": 187,
+    "number": 97,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 4,
     "episode_code": "S01E04",
-    "level": "B1",
+    "level": "A2",
+    "words": 3,
+    "english": "I like it",
+    "russian": "Мне это нравится",
+    "tags": [
+      "opinion",
+      "everyday"
+    ]
+  },
+  {
+    "number": 98,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2",
     "words": 4,
-    "english": "Well, this changes everything.",
-    "russian": "Ну, это всё меняет.",
+    "english": "I don't like it",
+    "russian": "Мне это не нравится",
+    "tags": [
+      "opinion",
+      "everyday"
+    ]
+  },
+  {
+    "number": 99,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2",
+    "words": 4,
+    "english": "I love this place",
+    "russian": "Я люблю это место",
+    "tags": [
+      "opinion",
+      "everyday"
+    ]
+  },
+  {
+    "number": 100,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2",
+    "words": 3,
+    "english": "This is different",
+    "russian": "Это другое",
     "tags": [
       "reaction",
       "everyday"
     ]
   },
   {
-    "number": 188,
+    "number": 101,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2",
+    "words": 3,
+    "english": "This is serious",
+    "russian": "Это серьёзно",
+    "tags": [
+      "reaction",
+      "everyday"
+    ]
+  },
+  {
+    "number": 102,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2",
+    "words": 3,
+    "english": "That's not nice",
+    "russian": "Это нехорошо",
+    "tags": [
+      "reaction",
+      "everyday"
+    ]
+  },
+  {
+    "number": 103,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2",
+    "words": 3,
+    "english": "That's really weird",
+    "russian": "Это очень странно",
+    "tags": [
+      "reaction",
+      "everyday"
+    ]
+  },
+  {
+    "number": 104,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2",
+    "words": 4,
+    "english": "That's a good one",
+    "russian": "Хорошая шутка",
+    "tags": [
+      "reaction",
+      "everyday"
+    ]
+  },
+  {
+    "number": 105,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2",
+    "words": 3,
+    "english": "That's too bad",
+    "russian": "Очень жаль",
+    "tags": [
+      "reaction",
+      "everyday"
+    ]
+  },
+  {
+    "number": 106,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2",
+    "words": 3,
+    "english": "That's all right",
+    "russian": "Всё в порядке",
+    "tags": [
+      "reaction",
+      "everyday"
+    ]
+  },
+  {
+    "number": 107,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2-B1",
+    "words": 3,
+    "english": "That sounds interesting",
+    "russian": "Звучит интересно",
+    "tags": [
+      "reaction",
+      "everyday"
+    ]
+  },
+  {
+    "number": 108,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2-B1",
+    "words": 4,
+    "english": "You'll think about it?",
+    "russian": "Ты подумаешь об этом?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 109,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2-B1",
+    "words": 11,
+    "english": "I don't think I'll be able to stop thinking about it",
+    "russian": "Думаю, я не смогу перестать об этом думать",
+    "tags": [
+      "emotion",
+      "everyday"
+    ]
+  },
+  {
+    "number": 110,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2-B1",
+    "words": 2,
+    "english": "What happened?",
+    "russian": "Что случилось?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 111,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "I really thought it would work",
+    "russian": "Я правда думал, что это сработает",
+    "tags": [
+      "opinion",
+      "everyday"
+    ]
+  },
+  {
+    "number": 112,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "Thank you so much for going",
+    "russian": "Большое спасибо, что сходили",
+    "tags": [
+      "thanks",
+      "everyday"
+    ]
+  },
+  {
+    "number": 113,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2-B1",
+    "words": 4,
+    "english": "Dinner is on me",
+    "russian": "Ужин за мой счёт",
+    "tags": [
+      "food",
+      "everyday"
+    ]
+  },
+  {
+    "number": 114,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "Is Thai food okay with you?",
+    "russian": "Тайская еда тебе подходит?",
+    "tags": [
+      "food",
+      "question"
+    ]
+  },
+  {
+    "number": 115,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2-B1",
+    "words": 4,
+    "english": "That sounds like fun",
+    "russian": "Звучит весело",
+    "tags": [
+      "reaction",
+      "everyday"
+    ]
+  },
+  {
+    "number": 116,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "A2-B1",
+    "words": 5,
+    "english": "We can't have Thai food",
+    "russian": "Мы не можем есть тайскую еду",
+    "tags": [
+      "food",
+      "everyday"
+    ]
+  },
+  {
+    "number": 117,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 4,
+    "episode_code": "S01E04",
+    "level": "B1",
+    "words": 4,
+    "english": "Well, this changes everything",
+    "russian": "Ну, это всё меняет",
+    "tags": [
+      "reaction",
+      "everyday"
+    ]
+  },
+  {
+    "number": 118,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 4,
     "episode_code": "S01E04",
     "level": "B1",
     "words": 5,
-    "english": "I hope you're not bluffing.",
-    "russian": "Надеюсь, ты не блефуешь.",
+    "english": "I hope you're not bluffing",
+    "russian": "Надеюсь, ты не блефуешь",
     "tags": [
       "conflict",
       "everyday"
     ]
   },
   {
-    "number": 189,
+    "number": 119,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 4,
@@ -2834,37 +1785,337 @@
     ]
   },
   {
-    "number": 190,
+    "number": 120,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 4,
     "episode_code": "S01E04",
     "level": "B1",
     "words": 5,
-    "english": "Thanks for making it depressing.",
-    "russian": "Спасибо, что сделал это депрессивным.",
+    "english": "Thanks for making it depressing",
+    "russian": "Спасибо, что сделал это депрессивным",
     "tags": [
       "sarcasm",
       "everyday"
     ]
   },
   {
-    "number": 191,
+    "number": 121,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 5,
     "episode_code": "S01E05",
-    "level": "B1",
-    "words": 5,
-    "english": "You have the coolest excuse.",
-    "russian": "У тебя самая крутая отговорка.",
+    "level": "A2",
+    "words": 2,
+    "english": "I'm ready",
+    "russian": "Я готов",
+    "tags": [
+      "state",
+      "everyday"
+    ]
+  },
+  {
+    "number": 122,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2",
+    "words": 2,
+    "english": "I'm tired",
+    "russian": "Я устал",
+    "tags": [
+      "state",
+      "everyday"
+    ]
+  },
+  {
+    "number": 123,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2",
+    "words": 3,
+    "english": "I'm not lying",
+    "russian": "Я не вру",
+    "tags": [
+      "conflict",
+      "everyday"
+    ]
+  },
+  {
+    "number": 124,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2",
+    "words": 4,
+    "english": "I didn't take it",
+    "russian": "Я это не брал",
+    "tags": [
+      "conflict",
+      "everyday"
+    ]
+  },
+  {
+    "number": 125,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2",
+    "words": 4,
+    "english": "I didn't write it",
+    "russian": "Я этого не писал",
+    "tags": [
+      "conflict",
+      "everyday"
+    ]
+  },
+  {
+    "number": 126,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2",
+    "words": 4,
+    "english": "I don't believe it",
+    "russian": "Не могу в это поверить",
     "tags": [
       "reaction",
       "everyday"
     ]
   },
   {
-    "number": 192,
+    "number": 127,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2",
+    "words": 3,
+    "english": "I understand that",
+    "russian": "Я это понимаю",
+    "tags": [
+      "answer",
+      "everyday"
+    ]
+  },
+  {
+    "number": 128,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2",
+    "words": 3,
+    "english": "I prefer facts",
+    "russian": "Я предпочитаю факты",
+    "tags": [
+      "opinion",
+      "everyday"
+    ]
+  },
+  {
+    "number": 129,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2",
+    "words": 4,
+    "english": "I have a question",
+    "russian": "У меня есть вопрос",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 130,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2",
+    "words": 5,
+    "english": "Can I ask you something?",
+    "russian": "Можно тебя кое-что спросить?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 131,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "You invited company over for dinner?",
+    "russian": "Ты пригласил гостей на ужин?",
+    "tags": [
+      "home",
+      "question"
+    ]
+  },
+  {
+    "number": 132,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2-B1",
+    "words": 7,
+    "english": "I was afraid you might say no",
+    "russian": "Я боялся, что ты можешь отказать",
+    "tags": [
+      "emotion",
+      "everyday"
+    ]
+  },
+  {
+    "number": 133,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "You mean he just showed up?",
+    "russian": "То есть он просто появился?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 134,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "Are you about ready for dinner?",
+    "russian": "Вы уже почти готовы к ужину?",
+    "tags": [
+      "food",
+      "question"
+    ]
+  },
+  {
+    "number": 135,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "You're kind of dominating the conversation",
+    "russian": "Ты немного захватил весь разговор",
+    "tags": [
+      "conversation",
+      "everyday"
+    ]
+  },
+  {
+    "number": 136,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "Why don't you let her talk?",
+    "russian": "Почему бы тебе не дать ей поговорить?",
+    "tags": [
+      "request",
+      "conversation"
+    ]
+  },
+  {
+    "number": 137,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2-B1",
+    "words": 8,
+    "english": "You sure I can't give you a ride?",
+    "russian": "Точно не подвезти тебя?",
+    "tags": [
+      "offer",
+      "travel"
+    ]
+  },
+  {
+    "number": 138,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "We should do it again sometime",
+    "russian": "Нам стоит как-нибудь повторить",
+    "tags": [
+      "planning",
+      "everyday"
+    ]
+  },
+  {
+    "number": 139,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2-B1",
+    "words": 4,
+    "english": "Glad you enjoyed it",
+    "russian": "Рад, что тебе понравилось",
+    "tags": [
+      "polite",
+      "everyday"
+    ]
+  },
+  {
+    "number": 140,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "A2-B1",
+    "words": 5,
+    "english": "There's nothing to talk about",
+    "russian": "Тут не о чем говорить",
+    "tags": [
+      "conversation",
+      "everyday"
+    ]
+  },
+  {
+    "number": 141,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 5,
+    "episode_code": "S01E05",
+    "level": "B1",
+    "words": 5,
+    "english": "You have the coolest excuse",
+    "russian": "У тебя самая крутая отговорка",
+    "tags": [
+      "reaction",
+      "everyday"
+    ]
+  },
+  {
+    "number": 142,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 5,
@@ -2879,66 +2130,666 @@
     ]
   },
   {
-    "number": 193,
+    "number": 143,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 5,
     "episode_code": "S01E05",
     "level": "B1",
     "words": 5,
-    "english": "That's a very nice jacket.",
-    "russian": "Это очень хорошая куртка.",
+    "english": "That's a very nice jacket",
+    "russian": "Это очень хорошая куртка",
     "tags": [
       "compliment",
       "everyday"
     ]
   },
   {
-    "number": 194,
+    "number": 144,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2",
+    "words": 4,
+    "english": "Why are you here?",
+    "russian": "Почему ты здесь?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 145,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2",
+    "words": 5,
+    "english": "Why did you do that?",
+    "russian": "Зачем ты это сделал?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 146,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2",
+    "words": 4,
+    "english": "Why are you crying?",
+    "russian": "Почему ты плачешь?",
+    "tags": [
+      "question",
+      "emotion"
+    ]
+  },
+  {
+    "number": 147,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2",
+    "words": 4,
+    "english": "Why aren't you eating?",
+    "russian": "Почему ты не ешь?",
+    "tags": [
+      "question",
+      "food"
+    ]
+  },
+  {
+    "number": 148,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2",
+    "words": 4,
+    "english": "What do you mean?",
+    "russian": "Что ты имеешь в виду?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 149,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2",
+    "words": 4,
+    "english": "What did you say?",
+    "russian": "Что ты сказал?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 150,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2",
+    "words": 4,
+    "english": "What did I miss?",
+    "russian": "Что я пропустил?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 151,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2",
+    "words": 4,
+    "english": "What are we doing?",
+    "russian": "Что мы делаем?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 152,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2",
+    "words": 4,
+    "english": "What do you think?",
+    "russian": "Что ты думаешь?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 153,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2",
+    "words": 3,
+    "english": "What sounds fun?",
+    "russian": "Что звучит весело?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 154,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2-B1",
+    "words": 8,
+    "english": "You know you want to talk about it",
+    "russian": "Ты же знаешь, что хочешь об этом поговорить",
+    "tags": [
+      "conversation",
+      "everyday"
+    ]
+  },
+  {
+    "number": 155,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2-B1",
+    "words": 9,
+    "english": "How am I supposed to be okay with that?",
+    "russian": "И как мне с этим нормально жить?",
+    "tags": [
+      "emotion",
+      "everyday"
+    ]
+  },
+  {
+    "number": 156,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2-B1",
+    "words": 9,
+    "english": "I don't know how to spend time with her",
+    "russian": "Я не знаю, как проводить с ней время",
+    "tags": [
+      "relationship",
+      "everyday"
+    ]
+  },
+  {
+    "number": 157,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2-B1",
+    "words": 7,
+    "english": "Ask her what she wants to do",
+    "russian": "Спроси её, чем она хочет заняться",
+    "tags": [
+      "advice",
+      "everyday"
+    ]
+  },
+  {
+    "number": 158,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "Yeah, I'll give it a try",
+    "russian": "Да, я попробую",
+    "tags": [
+      "answer",
+      "everyday"
+    ]
+  },
+  {
+    "number": 159,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "Let me stop you right there",
+    "russian": "Дай я сразу тебя остановлю",
+    "tags": [
+      "conversation",
+      "everyday"
+    ]
+  },
+  {
+    "number": 160,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "Go home and have your breakfast",
+    "russian": "Иди домой и позавтракай",
+    "tags": [
+      "request",
+      "food"
+    ]
+  },
+  {
+    "number": 161,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "We don't spend much time together",
+    "russian": "Мы мало времени проводим вместе",
+    "tags": [
+      "relationship",
+      "everyday"
+    ]
+  },
+  {
+    "number": 162,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "What did you have in mind?",
+    "russian": "Что ты имел в виду?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 163,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 6,
+    "episode_code": "S01E06",
+    "level": "A2-B1",
+    "words": 5,
+    "english": "Let's talk about something else",
+    "russian": "Давай поговорим о чём-нибудь другом",
+    "tags": [
+      "conversation",
+      "everyday"
+    ]
+  },
+  {
+    "number": 164,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 6,
     "episode_code": "S01E06",
     "level": "B1",
     "words": 6,
-    "english": "I need a minute to change.",
-    "russian": "Мне нужна минута, чтобы переодеться.",
+    "english": "I need a minute to change",
+    "russian": "Мне нужна минута, чтобы переодеться",
     "tags": [
       "everyday"
     ]
   },
   {
-    "number": 195,
+    "number": 165,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 6,
     "episode_code": "S01E06",
     "level": "B1",
     "words": 4,
-    "english": "Well, that's very impressive.",
-    "russian": "Ну, это очень впечатляет.",
+    "english": "Well, that's very impressive",
+    "russian": "Ну, это очень впечатляет",
     "tags": [
       "reaction",
       "everyday"
     ]
   },
   {
-    "number": 196,
+    "number": 166,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 6,
     "episode_code": "S01E06",
     "level": "B1",
     "words": 7,
-    "english": "I thought you might want to apologize.",
-    "russian": "Я подумал, что ты, возможно, захочешь извиниться.",
+    "english": "I thought you might want to apologize",
+    "russian": "Я подумал, что ты, возможно, захочешь извиниться",
     "tags": [
       "apology",
       "everyday"
     ]
   },
   {
-    "number": 197,
+    "number": 167,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2",
+    "words": 3,
+    "english": "You look great",
+    "russian": "Ты отлично выглядишь",
+    "tags": [
+      "compliment",
+      "everyday"
+    ]
+  },
+  {
+    "number": 168,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2",
+    "words": 3,
+    "english": "You look beautiful",
+    "russian": "Ты прекрасно выглядишь",
+    "tags": [
+      "compliment",
+      "everyday"
+    ]
+  },
+  {
+    "number": 169,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2",
+    "words": 3,
+    "english": "You were right",
+    "russian": "Ты был прав",
+    "tags": [
+      "agreement",
+      "everyday"
+    ]
+  },
+  {
+    "number": 170,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2",
+    "words": 2,
+    "english": "You're right",
+    "russian": "Ты прав",
+    "tags": [
+      "agreement",
+      "everyday"
+    ]
+  },
+  {
+    "number": 171,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2",
+    "words": 4,
+    "english": "You're gonna love it",
+    "russian": "Тебе это понравится",
+    "tags": [
+      "opinion",
+      "everyday"
+    ]
+  },
+  {
+    "number": 172,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2",
+    "words": 4,
+    "english": "You need to go",
+    "russian": "Тебе нужно идти",
+    "tags": [
+      "advice",
+      "everyday"
+    ]
+  },
+  {
+    "number": 173,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2",
+    "words": 4,
+    "english": "You should go home",
+    "russian": "Тебе стоит пойти домой",
+    "tags": [
+      "advice",
+      "everyday"
+    ]
+  },
+  {
+    "number": 174,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2",
+    "words": 4,
+    "english": "You can't do that",
+    "russian": "Ты не можешь так делать",
+    "tags": [
+      "warning",
+      "everyday"
+    ]
+  },
+  {
+    "number": 175,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2",
+    "words": 4,
+    "english": "You can tell me",
+    "russian": "Ты можешь мне сказать",
+    "tags": [
+      "support",
+      "everyday"
+    ]
+  },
+  {
+    "number": 176,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2",
+    "words": 3,
+    "english": "You got it",
+    "russian": "Договорились",
+    "tags": [
+      "answer",
+      "everyday"
+    ]
+  },
+  {
+    "number": 177,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2-B1",
+    "words": 7,
+    "english": "Here, let me help you with that",
+    "russian": "Давай я помогу тебе с этим",
+    "tags": [
+      "offer",
+      "everyday"
+    ]
+  },
+  {
+    "number": 178,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2-B1",
+    "words": 4,
+    "english": "No, sit with me",
+    "russian": "Нет, посиди со мной",
+    "tags": [
+      "request",
+      "everyday"
+    ]
+  },
+  {
+    "number": 179,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2-B1",
+    "words": 7,
+    "english": "How long have you played the piano?",
+    "russian": "Как давно ты играешь на пианино?",
+    "tags": [
+      "question",
+      "hobby"
+    ]
+  },
+  {
+    "number": 180,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2-B1",
+    "words": 3,
+    "english": "I'd rather not",
+    "russian": "Я бы предпочёл не делать этого",
+    "tags": [
+      "answer",
+      "everyday"
+    ]
+  },
+  {
+    "number": 181,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2-B1",
+    "words": 3,
+    "english": "I wouldn't know",
+    "russian": "Я бы не знал",
+    "tags": [
+      "answer",
+      "everyday"
+    ]
+  },
+  {
+    "number": 182,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2-B1",
+    "words": 4,
+    "english": "I’m afraid not",
+    "russian": "Боюсь, что нет",
+    "tags": [
+      "answer",
+      "polite"
+    ]
+  },
+  {
+    "number": 183,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2-B1",
+    "words": 5,
+    "english": "What took you so long?",
+    "russian": "Почему ты так долго?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 184,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2-B1",
+    "words": 3,
+    "english": "I better go",
+    "russian": "Мне лучше идти",
+    "tags": [
+      "planning",
+      "everyday"
+    ]
+  },
+  {
+    "number": 185,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2-B1",
+    "words": 3,
+    "english": "I understand that",
+    "russian": "Я это понимаю",
+    "tags": [
+      "answer",
+      "everyday"
+    ]
+  },
+  {
+    "number": 186,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 7,
+    "episode_code": "S01E07",
+    "level": "A2-B1",
+    "words": 4,
+    "english": "What's to think about?",
+    "russian": "О чём тут думать?",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 187,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 7,
@@ -2953,7 +2804,7 @@
     ]
   },
   {
-    "number": 198,
+    "number": 188,
     "series": "Young Sheldon",
     "season": 1,
     "episode": 7,
@@ -2965,6 +2816,155 @@
     "tags": [
       "secret",
       "question"
+    ]
+  },
+  {
+    "number": 189,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 8,
+    "episode_code": "S01E08",
+    "level": "A2",
+    "words": 3,
+    "english": "We can go",
+    "russian": "Мы можем идти",
+    "tags": [
+      "everyday"
+    ]
+  },
+  {
+    "number": 190,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 8,
+    "episode_code": "S01E08",
+    "level": "A2",
+    "words": 3,
+    "english": "We should go",
+    "russian": "Нам стоит идти",
+    "tags": [
+      "advice",
+      "everyday"
+    ]
+  },
+  {
+    "number": 191,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 8,
+    "episode_code": "S01E08",
+    "level": "A2",
+    "words": 4,
+    "english": "We need to talk",
+    "russian": "Нам нужно поговорить",
+    "tags": [
+      "relationship",
+      "everyday"
+    ]
+  },
+  {
+    "number": 192,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 8,
+    "episode_code": "S01E08",
+    "level": "A2",
+    "words": 4,
+    "english": "We don't know that",
+    "russian": "Мы этого не знаем",
+    "tags": [
+      "answer",
+      "everyday"
+    ]
+  },
+  {
+    "number": 193,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 8,
+    "episode_code": "S01E08",
+    "level": "A2",
+    "words": 4,
+    "english": "We are not lost",
+    "russian": "Мы не заблудились",
+    "tags": [
+      "travel",
+      "everyday"
+    ]
+  },
+  {
+    "number": 194,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 8,
+    "episode_code": "S01E08",
+    "level": "A2",
+    "words": 4,
+    "english": "We'll figure it out",
+    "russian": "Мы что-нибудь придумаем",
+    "tags": [
+      "support",
+      "everyday"
+    ]
+  },
+  {
+    "number": 195,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 8,
+    "episode_code": "S01E08",
+    "level": "A2",
+    "words": 4,
+    "english": "We'll think of something",
+    "russian": "Мы что-нибудь придумаем",
+    "tags": [
+      "support",
+      "everyday"
+    ]
+  },
+  {
+    "number": 196,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 8,
+    "episode_code": "S01E08",
+    "level": "A2",
+    "words": 3,
+    "english": "Let's talk later",
+    "russian": "Поговорим позже",
+    "tags": [
+      "planning",
+      "everyday"
+    ]
+  },
+  {
+    "number": 197,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 8,
+    "episode_code": "S01E08",
+    "level": "A2",
+    "words": 3,
+    "english": "Let's do it",
+    "russian": "Давай сделаем это",
+    "tags": [
+      "planning",
+      "everyday"
+    ]
+  },
+  {
+    "number": 198,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 8,
+    "episode_code": "S01E08",
+    "level": "A2",
+    "words": 3,
+    "english": "Let's try again",
+    "russian": "Давай попробуем ещё раз",
+    "tags": [
+      "planning",
+      "everyday"
     ]
   },
   {
@@ -2990,11 +2990,507 @@
     "episode_code": "S01E08",
     "level": "B1",
     "words": 6,
-    "english": "I haven't given it any thought.",
-    "russian": "Я об этом не думал.",
+    "english": "I haven't given it any thought",
+    "russian": "Я об этом не думал",
     "tags": [
       "answer",
       "everyday"
+    ]
+  },
+  {
+    "number": 201,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 9,
+    "episode_code": "S01E09",
+    "level": "A2",
+    "words": 3,
+    "english": "Please sit down",
+    "russian": "Пожалуйста, садись",
+    "tags": [
+      "polite",
+      "request",
+      "everyday"
+    ]
+  },
+  {
+    "number": 202,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 9,
+    "episode_code": "S01E09",
+    "level": "A2",
+    "words": 3,
+    "english": "Please slow down",
+    "russian": "Пожалуйста, помедленнее",
+    "tags": [
+      "request",
+      "everyday"
+    ]
+  },
+  {
+    "number": 203,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 9,
+    "episode_code": "S01E09",
+    "level": "A2",
+    "words": 3,
+    "english": "Please trust me",
+    "russian": "Пожалуйста, доверься мне",
+    "tags": [
+      "request",
+      "support"
+    ]
+  },
+  {
+    "number": 204,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 9,
+    "episode_code": "S01E09",
+    "level": "A2",
+    "words": 3,
+    "english": "Don't tell me",
+    "russian": "Не говори мне",
+    "tags": [
+      "request",
+      "everyday"
+    ]
+  },
+  {
+    "number": 205,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 9,
+    "episode_code": "S01E09",
+    "level": "A2",
+    "words": 2,
+    "english": "Don't worry",
+    "russian": "Не волнуйся",
+    "tags": [
+      "support",
+      "emotion"
+    ]
+  },
+  {
+    "number": 206,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 9,
+    "episode_code": "S01E09",
+    "level": "A2",
+    "words": 2,
+    "english": "Be calm",
+    "russian": "Будь спокойным",
+    "tags": [
+      "advice",
+      "emotion"
+    ]
+  },
+  {
+    "number": 207,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 9,
+    "episode_code": "S01E09",
+    "level": "A2",
+    "words": 2,
+    "english": "Have fun",
+    "russian": "Повеселись",
+    "tags": [
+      "polite",
+      "everyday"
+    ]
+  },
+  {
+    "number": 208,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 9,
+    "episode_code": "S01E09",
+    "level": "A2",
+    "words": 4,
+    "english": "Have a good day",
+    "russian": "Хорошего дня",
+    "tags": [
+      "polite",
+      "everyday"
+    ]
+  },
+  {
+    "number": 209,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 9,
+    "episode_code": "S01E09",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "What did you have in mind",
+    "russian": "Что ты имел в виду",
+    "tags": [
+      "question",
+      "conversation"
+    ]
+  },
+  {
+    "number": 210,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 9,
+    "episode_code": "S01E09",
+    "level": "A2-B1",
+    "words": 5,
+    "english": "Let's talk about something else",
+    "russian": "Давай поговорим о чём-нибудь другом",
+    "tags": [
+      "conversation",
+      "request"
+    ]
+  },
+  {
+    "number": 211,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 9,
+    "episode_code": "S01E09",
+    "level": "B1",
+    "words": 6,
+    "english": "I haven't given it any thought",
+    "russian": "Я об этом не думал",
+    "tags": [
+      "answer",
+      "everyday"
+    ]
+  },
+  {
+    "number": 212,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 10,
+    "episode_code": "S01E10",
+    "level": "A2",
+    "words": 4,
+    "english": "Can you help me",
+    "russian": "Можешь мне помочь",
+    "tags": [
+      "request",
+      "everyday"
+    ]
+  },
+  {
+    "number": 213,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 10,
+    "episode_code": "S01E10",
+    "level": "A2",
+    "words": 5,
+    "english": "Do you want a snack",
+    "russian": "Хочешь перекусить",
+    "tags": [
+      "question",
+      "food"
+    ]
+  },
+  {
+    "number": 214,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 10,
+    "episode_code": "S01E10",
+    "level": "A2",
+    "words": 4,
+    "english": "I love this kid",
+    "russian": "Я люблю этого ребёнка",
+    "tags": [
+      "family",
+      "emotion"
+    ]
+  },
+  {
+    "number": 215,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 10,
+    "episode_code": "S01E10",
+    "level": "A2",
+    "words": 3,
+    "english": "No, but thanks",
+    "russian": "Нет, но спасибо",
+    "tags": [
+      "polite",
+      "answer"
+    ]
+  },
+  {
+    "number": 216,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 10,
+    "episode_code": "S01E10",
+    "level": "A2",
+    "words": 4,
+    "english": "How are you doing",
+    "russian": "Как дела",
+    "tags": [
+      "question",
+      "everyday"
+    ]
+  },
+  {
+    "number": 217,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 10,
+    "episode_code": "S01E10",
+    "level": "A2",
+    "words": 5,
+    "english": "Is this a good time",
+    "russian": "Сейчас подходящее время",
+    "tags": [
+      "question",
+      "polite"
+    ]
+  },
+  {
+    "number": 218,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 10,
+    "episode_code": "S01E10",
+    "level": "A2",
+    "words": 3,
+    "english": "Please sit down",
+    "russian": "Пожалуйста, садись",
+    "tags": [
+      "polite",
+      "request"
+    ]
+  },
+  {
+    "number": 219,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 10,
+    "episode_code": "S01E10",
+    "level": "A2-B1",
+    "words": 5,
+    "english": "Let's hear what you have",
+    "russian": "Давай послушаем, что у тебя есть",
+    "tags": [
+      "conversation",
+      "request"
+    ]
+  },
+  {
+    "number": 220,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 10,
+    "episode_code": "S01E10",
+    "level": "A2-B1",
+    "words": 5,
+    "english": "Sorry, I agree with you",
+    "russian": "Прости, я с тобой согласен",
+    "tags": [
+      "apology",
+      "agreement"
+    ]
+  },
+  {
+    "number": 221,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 10,
+    "episode_code": "S01E10",
+    "level": "A2-B1",
+    "words": 4,
+    "english": "What do you do",
+    "russian": "Чем ты занимаешься",
+    "tags": [
+      "question",
+      "work"
+    ]
+  },
+  {
+    "number": 222,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 10,
+    "episode_code": "S01E10",
+    "level": "B1",
+    "words": 4,
+    "english": "It's not that simple",
+    "russian": "Всё не так просто",
+    "tags": [
+      "opinion",
+      "everyday"
+    ]
+  },
+  {
+    "number": 223,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 11,
+    "episode_code": "S01E11",
+    "level": "A2",
+    "words": 2,
+    "english": "You're lucky",
+    "russian": "Тебе повезло",
+    "tags": [
+      "reaction",
+      "everyday"
+    ]
+  },
+  {
+    "number": 224,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 11,
+    "episode_code": "S01E11",
+    "level": "A2",
+    "words": 4,
+    "english": "He's a great guy",
+    "russian": "Он отличный парень",
+    "tags": [
+      "opinion",
+      "people"
+    ]
+  },
+  {
+    "number": 225,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 11,
+    "episode_code": "S01E11",
+    "level": "A2",
+    "words": 3,
+    "english": "Have fun, kids",
+    "russian": "Веселитесь, дети",
+    "tags": [
+      "polite",
+      "family"
+    ]
+  },
+  {
+    "number": 226,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 11,
+    "episode_code": "S01E11",
+    "level": "A2",
+    "words": 4,
+    "english": "That's not a joke",
+    "russian": "Это не шутка",
+    "tags": [
+      "reaction",
+      "everyday"
+    ]
+  },
+  {
+    "number": 227,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 11,
+    "episode_code": "S01E11",
+    "level": "A2",
+    "words": 4,
+    "english": "I don't recommend it",
+    "russian": "Я этого не рекомендую",
+    "tags": [
+      "advice",
+      "everyday"
+    ]
+  },
+  {
+    "number": 228,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 11,
+    "episode_code": "S01E11",
+    "level": "A2",
+    "words": 5,
+    "english": "I do have a question",
+    "russian": "У меня всё-таки есть вопрос",
+    "tags": [
+      "question",
+      "conversation"
+    ]
+  },
+  {
+    "number": 229,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 11,
+    "episode_code": "S01E11",
+    "level": "A2",
+    "words": 5,
+    "english": "We've been waiting for you",
+    "russian": "Мы ждали тебя",
+    "tags": [
+      "everyday",
+      "time"
+    ]
+  },
+  {
+    "number": 230,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 11,
+    "episode_code": "S01E11",
+    "level": "A2-B1",
+    "words": 5,
+    "english": "Who wants to go first",
+    "russian": "Кто хочет начать первым",
+    "tags": [
+      "question",
+      "group"
+    ]
+  },
+  {
+    "number": 231,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 11,
+    "episode_code": "S01E11",
+    "level": "A2-B1",
+    "words": 6,
+    "english": "I would like to go third",
+    "russian": "Я бы хотел пойти третьим",
+    "tags": [
+      "preference",
+      "group"
+    ]
+  },
+  {
+    "number": 232,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 11,
+    "episode_code": "S01E11",
+    "level": "A2-B1",
+    "words": 7,
+    "english": "Can you tell me what it's like",
+    "russian": "Можешь рассказать мне, каково это",
+    "tags": [
+      "question",
+      "conversation"
+    ]
+  },
+  {
+    "number": 233,
+    "series": "Young Sheldon",
+    "season": 1,
+    "episode": 11,
+    "episode_code": "S01E11",
+    "level": "B1",
+    "words": 6,
+    "english": "Well, let's start with the basics",
+    "russian": "Ну, давай начнём с основ",
+    "tags": [
+      "conversation",
+      "learning"
     ]
   }
 ]
