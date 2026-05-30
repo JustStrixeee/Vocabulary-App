@@ -13,13 +13,66 @@ import PhraseTrainer from "./components/phrases/PhraseTrainer";
 import PhraseFilters from "./components/phrases/PhraseFilters";
 import PhraseMatchingTask from "./components/phrases/PhraseMatchingTask";
 import ComboEffect from "./components/effects/ComboEffect";
+import SandTrapEffect from "./components/effects/SandTrapEffect";
+import SandRelic from "./components/effects/SandRelic";
 import LightningEffect from "./components/effects/LightningEffect";
 import LightningRelic from "./components/effects/LightningRelic";
+import IceEffect from "./components/effects/IceEffect";
+import IceRelic from "./components/effects/IceRelic";
+import FireballEffect from "./components/effects/FireballEffect";
+import FireballRelic from "./components/effects/FireballRelic";
+import EclipseEffect from "./components/effects/EclipseEffect";
+import EclipseRelic from "./components/effects/EclipseRelic";
+import HurricaneEffect from "./components/effects/HurricaneEffect";
+import HurricaneRelic from "./components/effects/HurricaneRelic";
+import BlackHoleEffect from "./components/effects/BlackHoleEffect";
+import BlackHoleRelic from "./components/effects/BlackHoleRelic";
 
 const API_URL = "http://127.0.0.1:8000";
 const TASKS_LIMIT = 10;
 const STORAGE_KEY = "vocabulary_sessions";
-const LIGHTNING_TEST_STREAK = 2;
+const ULTIMATE_TRIGGER_STEP = 5;
+
+const ULTIMATE_TYPES = [
+  "sand",
+  "lightning",
+  "ice",
+  "fireball",
+  "eclipse",
+  "hurricane",
+  "blackHole",
+];
+
+const ULTIMATE_COMPONENTS = {
+  sand: {
+    Effect: SandTrapEffect,
+    Relic: SandRelic,
+  },
+  lightning: {
+    Effect: LightningEffect,
+    Relic: LightningRelic,
+  },
+  ice: {
+    Effect: IceEffect,
+    Relic: IceRelic,
+  },
+  fireball: {
+    Effect: FireballEffect,
+    Relic: FireballRelic,
+  },
+  eclipse: {
+    Effect: EclipseEffect,
+    Relic: EclipseRelic,
+  },
+  hurricane: {
+    Effect: HurricaneEffect,
+    Relic: HurricaneRelic,
+  },
+  blackHole: {
+    Effect: BlackHoleEffect,
+    Relic: BlackHoleRelic,
+  },
+};
 
 function App() {
   const [appSection, setAppSection] = useState("words");
@@ -74,8 +127,9 @@ function App() {
 
   const [comboStreak, setComboStreak] = useState(0);
   const [comboVisible, setComboVisible] = useState(false);
-  const [lightningVisible, setLightningVisible] = useState(false);
-  const [lightningRelicVisible, setLightningRelicVisible] = useState(false);
+  const [activeUltimate, setActiveUltimate] = useState(null);
+  const [visibleRelic, setVisibleRelic] = useState(null);
+  const [lastUltimate, setLastUltimate] = useState(null);
 
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
@@ -133,27 +187,44 @@ function App() {
     }, 1800);
   }
 
-  function triggerLightningEffect(nextStreak) {
-    if (nextStreak !== LIGHTNING_TEST_STREAK) {
+  function getRandomUltimate(excludedUltimate) {
+    const availableUltimates = ULTIMATE_TYPES.filter(
+      (type) => type !== excludedUltimate
+    );
+
+    const randomIndex = Math.floor(Math.random() * availableUltimates.length);
+
+    return availableUltimates[randomIndex];
+  }
+
+  function triggerRandomUltimateEffect(nextStreak) {
+    if (nextStreak < ULTIMATE_TRIGGER_STEP) {
       return;
     }
 
-    setLightningVisible(true);
+    if (nextStreak % ULTIMATE_TRIGGER_STEP !== 0) {
+      return;
+    }
+
+    const selectedUltimate = getRandomUltimate(lastUltimate);
+
+    setActiveUltimate(selectedUltimate);
+    setLastUltimate(selectedUltimate);
   }
 
   function handleComboResult(isSuccess) {
     if (!isSuccess) {
       setComboStreak(0);
       setComboVisible(false);
-      setLightningVisible(false);
+      setActiveUltimate(null);
       return;
     }
 
     setComboStreak((prevStreak) => {
       const nextStreak = prevStreak + 1;
 
-      triggerComboEffect(nextStreak);
-      triggerLightningEffect(nextStreak);
+      triggerRandomUltimateEffect(nextStreak);
+      triggerRandomUltimateEffect(nextStreak);
 
       return nextStreak;
     });
@@ -167,8 +238,9 @@ function App() {
   function resetCombo() {
     setComboStreak(0);
     setComboVisible(false);
-    setLightningVisible(false);
-    setLightningRelicVisible(false);
+    setActiveUltimate(null);
+    setVisibleRelic(null);
+    setLastUltimate(null);
   }
 
   async function loadTask(category = selectedCategory) {
@@ -716,22 +788,41 @@ function App() {
     loadPhraseSeries();
   }, []);
 
+  function renderUltimateEffect() {
+    const activeConfig = activeUltimate
+      ? ULTIMATE_COMPONENTS[activeUltimate]
+      : null;
+
+    const relicConfig = visibleRelic ? ULTIMATE_COMPONENTS[visibleRelic] : null;
+
+    const ActiveEffect = activeConfig?.Effect;
+    const ActiveRelic = relicConfig?.Relic;
+
+    return (
+      <>
+        {ActiveEffect && (
+          <ActiveEffect
+            visible={Boolean(activeUltimate)}
+            streak={comboStreak}
+            onComplete={() => {
+              setVisibleRelic(activeUltimate);
+              setActiveUltimate(null);
+            }}
+          />
+        )}
+
+        {ActiveRelic && <ActiveRelic visible />}
+      </>
+    );
+  }
+
   if (sessionFinished) {
     return (
       <div className="app">
         <main className="card">
           <ComboEffect streak={comboStreak} visible={comboVisible} />
 
-          <LightningEffect
-            visible={lightningVisible}
-            streak={comboStreak}
-            onComplete={() => {
-              setLightningVisible(false);
-              setLightningRelicVisible(true);
-            }}
-          />
-
-          <LightningRelic visible={lightningRelicVisible} />
+          {renderUltimateEffect()}
 
           <SessionSummary
             startedAt={sessionStartedAt}
@@ -753,16 +844,7 @@ function App() {
       <main className="card">
         <ComboEffect streak={comboStreak} visible={comboVisible} />
 
-        <LightningEffect
-          visible={lightningVisible}
-          streak={comboStreak}
-          onComplete={() => {
-            setLightningVisible(false);
-            setLightningRelicVisible(true);
-          }}
-        />
-
-        <LightningRelic visible={lightningRelicVisible} />
+        {renderUltimateEffect()}
 
         <p className="tag">English Vocabulary Trainer</p>
 
