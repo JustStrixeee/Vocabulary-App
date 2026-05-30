@@ -1,0 +1,13 @@
+[
+  {
+    "id": "young_sheldon",
+    "title": "Young Sheldon",
+    "russian_title": "Детство Шелдона",
+    "poster": "young_sheldon.jpg",
+    "description": "Разговорные фразы из сериала Young Sheldon",
+    "levels": ["A1", "A2", "B1"],
+    "files": [
+      "young_sheldon/season_1/episodes_01_11.json"
+    ]
+  }
+]

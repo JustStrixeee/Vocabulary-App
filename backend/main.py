@@ -9,6 +9,8 @@ from pydantic import BaseModel
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
+PHRASES_DIR = BASE_DIR / "phrases"
+SERIES_FILE = PHRASES_DIR / "series.json"
 
 CATEGORY_FILES = {
     "animals": {
@@ -82,6 +84,100 @@ def load_all_words():
 
     return all_words
 
+def load_phrase_series():
+    if not SERIES_FILE.exists():
+        return []
+
+    with open(SERIES_FILE, "r", encoding="utf-8") as file:
+        return json.load(file)
+
+
+def load_phrases_for_series(series_id: str):
+    phrase_series = load_phrase_series()
+    series_info = next(
+        (item for item in phrase_series if item["id"] == series_id),
+        None,
+    )
+
+    if series_info is None:
+        return []
+
+    result = []
+
+    for file_name in series_info.get("files", []):
+        file_path = PHRASES_DIR / file_name
+
+        if not file_path.exists():
+            continue
+
+        with open(file_path, "r", encoding="utf-8") as file:
+            raw_phrases = json.load(file)
+
+        for index, phrase in enumerate(raw_phrases, start=1):
+            result.append(
+                {
+                    "id": f"{series_id}_{phrase.get('episode_code', 'episode')}_{index}",
+                    "series_id": series_id,
+                    "series": phrase.get("series", series_info["title"]),
+                    "season": phrase.get("season"),
+                    "episode": phrase.get("episode"),
+                    "episode_code": phrase.get("episode_code"),
+                    "level": phrase.get("level"),
+                    "words": phrase.get("words"),
+                    "english": phrase.get("english"),
+                    "russian": phrase.get("russian"),
+                    "tags": phrase.get("tags", []),
+                }
+            )
+
+    return result
+
+
+def load_all_phrases():
+    phrase_series = load_phrase_series()
+    all_phrases = []
+
+    for series_info in phrase_series:
+        all_phrases.extend(load_phrases_for_series(series_info["id"]))
+
+    return all_phrases
+
+
+def filter_phrases(
+    series: str | None = None,
+    season: int | None = None,
+    episode: int | None = None,
+    level: str | None = None,
+    tag: str | None = None,
+):
+    phrases = load_all_phrases()
+
+    if series and series != "all":
+        phrases = [
+            phrase for phrase in phrases if phrase["series_id"] == series
+        ]
+
+    if season is not None:
+        phrases = [
+            phrase for phrase in phrases if phrase.get("season") == season
+        ]
+
+    if episode is not None:
+        phrases = [
+            phrase for phrase in phrases if phrase.get("episode") == episode
+        ]
+
+    if level and level != "all":
+        phrases = [
+            phrase for phrase in phrases if phrase.get("level") == level
+        ]
+
+    if tag and tag != "all":
+        phrases = [
+            phrase for phrase in phrases if tag in phrase.get("tags", [])
+        ]
+
+    return phrases
 
 words = load_all_words()
 
@@ -104,6 +200,10 @@ class CheckAnswerRequest(BaseModel):
 
 class CheckMatchingRequest(BaseModel):
     answers: dict[str, str]
+
+class CheckPhraseRequest(BaseModel):
+    phrase_id: str
+    answer: str
 
 
 @app.get("/")
@@ -291,3 +391,85 @@ def check_matching(data: CheckMatchingRequest):
         "total": len(data.answers),
         "results": results,
     }
+
+@app.get("/phrase-series")
+def get_phrase_series():
+    return load_phrase_series()
+
+@app.get("/phrases")
+def get_phrases(
+    series: str = "all",
+    season: int | None = None,
+    episode: int | None = None,
+    level: str = "all",
+    tag: str = "all",
+):
+    return filter_phrases(
+        series=series,
+        season=season,
+        episode=episode,
+        level=level,
+        tag=tag,
+    )
+
+@app.get("/phrase-task")
+def get_phrase_task(
+    series: str = "all",
+    season: int | None = None,
+    episode: int | None = None,
+    level: str = "all",
+    tag: str = "all",
+):
+    phrases = filter_phrases(
+        series=series,
+        season=season,
+        episode=episode,
+        level=level,
+        tag=tag,
+    )
+
+    if len(phrases) == 0:
+        return {"error": "Фразы не найдены"}
+
+    phrase = choice(phrases)
+
+    return {
+        "phrase_id": phrase["id"],
+        "type": "phrase_en_ru",
+        "instruction": "Переведи фразу на русский",
+        "english": phrase["english"],
+        "russian": phrase["russian"],
+        "series": phrase["series"],
+        "season": phrase["season"],
+        "episode": phrase["episode"],
+        "episode_code": phrase["episode_code"],
+        "level": phrase["level"],
+        "tags": phrase["tags"],
+    }
+
+@app.post("/check-phrase")
+def check_phrase(data: CheckPhraseRequest):
+    phrases = load_all_phrases()
+
+    phrase = next(
+        (item for item in phrases if item["id"] == data.phrase_id),
+        None,
+    )
+
+    if phrase is None:
+        return {
+            "correct": False,
+            "correct_answer": "",
+            "message": "Фраза не найдена",
+        }
+
+    user_answer = data.answer.strip().lower()
+    correct_answer = phrase["russian"].strip().lower()
+
+    is_correct = user_answer == correct_answer
+
+    return {
+        "correct": is_correct,
+        "correct_answer": phrase["russian"],
+    }
+
