@@ -12,6 +12,7 @@ import SeriesGrid from "./components/phrases/SeriesGrid";
 import PhraseTrainer from "./components/phrases/PhraseTrainer";
 import PhraseFilters from "./components/phrases/PhraseFilters";
 import PhraseMatchingTask from "./components/phrases/PhraseMatchingTask";
+import ComboEffect from "./components/effects/ComboEffect";
 
 const API_URL = "http://127.0.0.1:8000";
 const TASKS_LIMIT = 10;
@@ -68,6 +69,9 @@ function App() {
 
   const [phraseError, setPhraseError] = useState("");
 
+  const [comboStreak, setComboStreak] = useState(0);
+  const [comboVisible, setComboVisible] = useState(false);
+
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -110,6 +114,42 @@ function App() {
 
     localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedSessions));
     setSavedSessions(updatedSessions);
+  }
+
+  function triggerComboEffect(nextStreak) {
+    if (nextStreak < 3) {
+      return;
+    }
+
+    setComboVisible(true);
+
+    setTimeout(() => {
+      setComboVisible(false);
+    }, 1200);
+  }
+
+  function handleComboResult(isSuccess) {
+    if (!isSuccess) {
+      setComboStreak(0);
+      setComboVisible(false);
+      return;
+    }
+
+    setComboStreak((prevStreak) => {
+      const nextStreak = prevStreak + 1;
+      triggerComboEffect(nextStreak);
+      return nextStreak;
+    });
+  }
+
+  function handleMatchingComboResult(correct, totalCount) {
+    const isPerfect = correct === totalCount;
+    handleComboResult(isPerfect);
+  }
+
+  function resetCombo() {
+    setComboStreak(0);
+    setComboVisible(false);
   }
 
   async function loadTask(category = selectedCategory) {
@@ -374,6 +414,7 @@ function App() {
       return;
     }
 
+    resetCombo();
     setPhraseStep("trainer");
 
     if (phraseTrainingType === "matching") {
@@ -419,6 +460,7 @@ function App() {
 
       const data = await response.json();
       setPhraseResult(data);
+      handleComboResult(data.correct);
     } catch (error) {
       setPhraseError(error.message);
     }
@@ -461,6 +503,7 @@ function App() {
 
       const data = await response.json();
       setPhraseMatchingResult(data);
+      handleMatchingComboResult(data.correct, data.total);
     } catch (error) {
       setPhraseError(error.message);
     }
@@ -484,6 +527,7 @@ function App() {
     setPhraseMatchingAnswers({});
     setPhraseMatchingResult(null);
     setPhraseError("");
+    resetCombo();
   }
 
   function goBackToFilters() {
@@ -495,6 +539,7 @@ function App() {
     setPhraseMatchingAnswers({});
     setPhraseMatchingResult(null);
     setPhraseError("");
+    resetCombo();
   }
 
   function restartSession(category = selectedCategory, mode = trainingMode) {
@@ -512,6 +557,7 @@ function App() {
     setSessionFinished(false);
     setSessionStartedAt(startedAt);
     setError("");
+    resetCombo();
 
     if (mode === "matching") {
       loadMatchingTask(category);
@@ -550,6 +596,7 @@ function App() {
       }
 
       const data = await response.json();
+      handleComboResult(data.correct);
 
       const historyItem = {
         instruction: task.instruction,
@@ -615,6 +662,7 @@ function App() {
 
       const data = await response.json();
       setMatchingResult(data);
+      handleMatchingComboResult(data.correct, data.total);
     } catch (error) {
       setError(error.message);
     }
@@ -653,6 +701,8 @@ function App() {
     return (
       <div className="app">
         <main className="card">
+          <ComboEffect streak={comboStreak} visible={comboVisible} />
+
           <SessionSummary
             startedAt={sessionStartedAt}
             history={answersHistory}
@@ -671,6 +721,8 @@ function App() {
   return (
     <div className="app">
       <main className="card">
+        <ComboEffect streak={comboStreak} visible={comboVisible} />
+
         <p className="tag">English Vocabulary Trainer</p>
 
         <h1>Тренажёр английского</h1>
@@ -681,6 +733,7 @@ function App() {
             setAppSection(newSection);
             setError("");
             setPhraseError("");
+            resetCombo();
           }}
         />
 
@@ -784,6 +837,10 @@ function App() {
 
                 <div className="score">
                   Счёт: <span>{score}</span> / {total}
+                </div>
+
+                <div className="score">
+                  Серия: <span>{comboStreak}</span>
                 </div>
               </>
             )}
