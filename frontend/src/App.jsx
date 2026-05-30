@@ -13,13 +13,13 @@ import PhraseTrainer from "./components/phrases/PhraseTrainer";
 import PhraseFilters from "./components/phrases/PhraseFilters";
 import PhraseMatchingTask from "./components/phrases/PhraseMatchingTask";
 import ComboEffect from "./components/effects/ComboEffect";
-import SandTrapEffect from "./components/effects/SandTrapEffect";
-import SandRelic from "./components/effects/SandRelic";
+import LightningEffect from "./components/effects/LightningEffect";
+import LightningRelic from "./components/effects/LightningRelic";
 
 const API_URL = "http://127.0.0.1:8000";
 const TASKS_LIMIT = 10;
 const STORAGE_KEY = "vocabulary_sessions";
-const SAND_TRAP_TEST_STREAK = 2;
+const LIGHTNING_TEST_STREAK = 2;
 
 function App() {
   const [appSection, setAppSection] = useState("words");
@@ -74,8 +74,8 @@ function App() {
 
   const [comboStreak, setComboStreak] = useState(0);
   const [comboVisible, setComboVisible] = useState(false);
-  const [sandTrapVisible, setSandTrapVisible] = useState(false);
-  const [sandRelicVisible, setSandRelicVisible] = useState(false);
+  const [lightningVisible, setLightningVisible] = useState(false);
+  const [lightningRelicVisible, setLightningRelicVisible] = useState(false);
 
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
@@ -133,19 +133,19 @@ function App() {
     }, 1800);
   }
 
-  function triggerSandTrapEffect(nextStreak) {
-    if (nextStreak !== SAND_TRAP_TEST_STREAK) {
+  function triggerLightningEffect(nextStreak) {
+    if (nextStreak !== LIGHTNING_TEST_STREAK) {
       return;
     }
 
-    setSandTrapVisible(true);
+    setLightningVisible(true);
   }
 
   function handleComboResult(isSuccess) {
     if (!isSuccess) {
       setComboStreak(0);
       setComboVisible(false);
-      setSandTrapVisible(false);
+      setLightningVisible(false);
       return;
     }
 
@@ -153,7 +153,7 @@ function App() {
       const nextStreak = prevStreak + 1;
 
       triggerComboEffect(nextStreak);
-      triggerSandTrapEffect(nextStreak);
+      triggerLightningEffect(nextStreak);
 
       return nextStreak;
     });
@@ -167,8 +167,8 @@ function App() {
   function resetCombo() {
     setComboStreak(0);
     setComboVisible(false);
-    setSandTrapVisible(false);
-    setSandRelicVisible(false);
+    setLightningVisible(false);
+    setLightningRelicVisible(false);
   }
 
   async function loadTask(category = selectedCategory) {
@@ -722,16 +722,16 @@ function App() {
         <main className="card">
           <ComboEffect streak={comboStreak} visible={comboVisible} />
 
-          <SandTrapEffect
-            visible={sandTrapVisible}
+          <LightningEffect
+            visible={lightningVisible}
             streak={comboStreak}
             onComplete={() => {
-              setSandTrapVisible(false);
-              setSandRelicVisible(true);
+              setLightningVisible(false);
+              setLightningRelicVisible(true);
             }}
           />
 
-          <SandRelic visible={sandRelicVisible} />
+          <LightningRelic visible={lightningRelicVisible} />
 
           <SessionSummary
             startedAt={sessionStartedAt}
@@ -753,16 +753,16 @@ function App() {
       <main className="card">
         <ComboEffect streak={comboStreak} visible={comboVisible} />
 
-        <SandTrapEffect
-          visible={sandTrapVisible}
+        <LightningEffect
+          visible={lightningVisible}
           streak={comboStreak}
           onComplete={() => {
-            setSandTrapVisible(false);
-            setSandRelicVisible(true);
+            setLightningVisible(false);
+            setLightningRelicVisible(true);
           }}
         />
 
-        <SandRelic visible={sandRelicVisible} />
+        <LightningRelic visible={lightningRelicVisible} />
 
         <p className="tag">English Vocabulary Trainer</p>
 

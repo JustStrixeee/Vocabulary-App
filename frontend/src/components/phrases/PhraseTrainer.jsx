@@ -16,7 +16,7 @@ function PhraseTrainer({
   return (
     <section className="phraseTrainer">
       <button className="backButton" onClick={onBack}>
-        ← Назад к сериалам
+        ← Назад к фильтрам
       </button>
 
       <p className="tag">Phrase Trainer</p>

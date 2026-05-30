@@ -1752,3 +1752,425 @@ button:disabled {
   .sandRelic { right: 16px; bottom: 16px; width: 58px; height: 58px; }
   .sandRelicCore { font-size: 32px; }
 }
+
+.lightningUltimateOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9997;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at center, rgba(250, 204, 21, 0.16), transparent 32%),
+    radial-gradient(circle at top, rgba(59, 130, 246, 0.24), transparent 48%),
+    rgba(2, 6, 23, 0.62);
+  animation: lightningScreenShake 1.2s ease;
+}
+
+.lightningFlash {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.72);
+  animation: lightningFlashPulse 0.95s ease forwards;
+}
+
+.lightningSky {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+
+.ultimateBolt {
+  position: absolute;
+  font-size: 92px;
+  color: #facc15;
+  filter:
+    drop-shadow(0 0 14px rgba(250, 204, 21, 1))
+    drop-shadow(0 0 34px rgba(59, 130, 246, 0.95));
+  animation: ultimateBoltStrike 1.05s ease forwards;
+}
+
+.boltLeft {
+  left: 18%;
+  top: 8%;
+  transform: rotate(-18deg);
+}
+
+.boltCenter {
+  left: 48%;
+  top: 2%;
+  transform: rotate(5deg);
+  animation-delay: 0.12s;
+}
+
+.boltRight {
+  right: 18%;
+  top: 10%;
+  transform: rotate(18deg);
+  animation-delay: 0.22s;
+}
+
+.lightningCracks {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.lightningCracks span {
+  position: absolute;
+  width: 3px;
+  height: 220px;
+  border-radius: 999px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(250, 204, 21, 0.95),
+    rgba(59, 130, 246, 0.8),
+    transparent
+  );
+  box-shadow:
+    0 0 18px rgba(250, 204, 21, 0.9),
+    0 0 38px rgba(59, 130, 246, 0.8);
+  animation: lightningCrack 1s ease forwards;
+}
+
+.lightningCracks span:nth-child(1) {
+  left: 22%;
+  top: 18%;
+  transform: rotate(-32deg);
+}
+
+.lightningCracks span:nth-child(2) {
+  left: 42%;
+  top: 8%;
+  transform: rotate(18deg);
+  animation-delay: 0.08s;
+}
+
+.lightningCracks span:nth-child(3) {
+  right: 32%;
+  top: 16%;
+  transform: rotate(-12deg);
+  animation-delay: 0.16s;
+}
+
+.lightningCracks span:nth-child(4) {
+  right: 18%;
+  top: 22%;
+  transform: rotate(28deg);
+  animation-delay: 0.24s;
+}
+
+.ultimateSparks {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+}
+
+.ultimateSparks span {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #facc15;
+  box-shadow:
+    0 0 14px rgba(250, 204, 21, 1),
+    0 0 32px rgba(59, 130, 246, 0.85);
+  opacity: 0;
+  animation: ultimateSparkFly 1.25s ease forwards;
+}
+
+.ultimateSparks span:nth-child(1) {
+  left: 12%;
+  top: 32%;
+}
+
+.ultimateSparks span:nth-child(2) {
+  left: 24%;
+  top: 62%;
+  animation-delay: 0.08s;
+}
+
+.ultimateSparks span:nth-child(3) {
+  left: 36%;
+  top: 25%;
+  animation-delay: 0.16s;
+}
+
+.ultimateSparks span:nth-child(4) {
+  left: 48%;
+  top: 70%;
+  animation-delay: 0.24s;
+}
+
+.ultimateSparks span:nth-child(5) {
+  right: 38%;
+  top: 34%;
+  animation-delay: 0.32s;
+}
+
+.ultimateSparks span:nth-child(6) {
+  right: 26%;
+  top: 64%;
+  animation-delay: 0.4s;
+}
+
+.ultimateSparks span:nth-child(7) {
+  right: 14%;
+  top: 28%;
+  animation-delay: 0.48s;
+}
+
+.ultimateSparks span:nth-child(8) {
+  right: 8%;
+  bottom: 18%;
+  animation-delay: 0.56s;
+}
+
+.ultimateSparks span:nth-child(9) {
+  left: 50%;
+  top: 15%;
+  animation-delay: 0.64s;
+}
+
+.ultimateSparks span:nth-child(10) {
+  left: 50%;
+  bottom: 12%;
+  animation-delay: 0.72s;
+}
+
+.lightningUltimateTitle {
+  position: relative;
+  z-index: 6;
+  display: grid;
+  gap: 10px;
+  text-align: center;
+  padding: 22px 42px;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.42), transparent 38%),
+    linear-gradient(135deg, #020617, #1d4ed8, #facc15);
+  color: #fff7ed;
+  box-shadow:
+    0 0 42px rgba(250, 204, 21, 1),
+    0 0 120px rgba(59, 130, 246, 0.84),
+    0 24px 80px rgba(0, 0, 0, 0.72);
+}
+
+.lightningUltimateTitle span {
+  font-size: 44px;
+  font-weight: 1000;
+  letter-spacing: 0.08em;
+  text-shadow:
+    0 0 16px rgba(250, 204, 21, 1),
+    0 4px 18px rgba(0, 0, 0, 0.75);
+}
+
+.lightningUltimateTitle strong {
+  font-size: 20px;
+  letter-spacing: 0.08em;
+}
+
+.lightningRelic {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  width: 74px;
+  height: 74px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, #fef9c3 0, #facc15 28%, #1d4ed8 68%, #020617 100%);
+  border: 2px solid rgba(250, 204, 21, 0.9);
+  box-shadow:
+    0 0 28px rgba(250, 204, 21, 0.92),
+    0 0 76px rgba(59, 130, 246, 0.55);
+  animation: lightningRelicAppear 0.55s ease;
+}
+
+.lightningRelicCore {
+  position: relative;
+  z-index: 2;
+  color: #fefce8;
+  font-size: 42px;
+  animation: lightningRelicPulse 1.15s ease infinite alternate;
+}
+
+.lightningRelicGlow {
+  position: absolute;
+  inset: -12px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(250, 204, 21, 0.36), transparent 66%);
+  animation: lightningRelicGlow 1.2s ease infinite alternate;
+}
+
+@keyframes lightningScreenShake {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  14% {
+    transform: translate(3px, -2px);
+  }
+
+  28% {
+    transform: translate(-4px, 3px);
+  }
+
+  42% {
+    transform: translate(4px, 2px);
+  }
+
+  56% {
+    transform: translate(-3px, -2px);
+  }
+
+  70% {
+    transform: translate(2px, 1px);
+  }
+}
+
+@keyframes lightningFlashPulse {
+  0% {
+    opacity: 0;
+  }
+
+  12% {
+    opacity: 0.95;
+  }
+
+  28% {
+    opacity: 0.18;
+  }
+
+  44% {
+    opacity: 0.72;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes ultimateBoltStrike {
+  0% {
+    opacity: 0;
+    transform: translateY(-120px) scale(0.65) rotate(-20deg);
+  }
+
+  18% {
+    opacity: 1;
+    transform: translateY(0) scale(1.25) rotate(4deg);
+  }
+
+  48% {
+    opacity: 0.95;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(80px) scale(0.9) rotate(18deg);
+  }
+}
+
+@keyframes lightningCrack {
+  0% {
+    opacity: 0;
+    transform: scaleY(0.1);
+  }
+
+  22% {
+    opacity: 1;
+    transform: scaleY(1.15);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scaleY(0.6);
+  }
+}
+
+@keyframes ultimateSparkFly {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.35);
+  }
+
+  22% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(40px, -90px) scale(1.65);
+  }
+}
+
+@keyframes lightningRelicAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.35) rotate(-20deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes lightningRelicPulse {
+  from {
+    transform: scale(0.92);
+    filter: brightness(1);
+  }
+
+  to {
+    transform: scale(1.12);
+    filter: brightness(1.45);
+  }
+}
+
+@keyframes lightningRelicGlow {
+  from {
+    opacity: 0.45;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.14);
+  }
+}
+
+@media (max-width: 560px) {
+  .ultimateBolt {
+    font-size: 58px;
+  }
+
+  .lightningUltimateTitle {
+    padding: 16px 24px;
+  }
+
+  .lightningUltimateTitle span {
+    font-size: 28px;
+  }
+
+  .lightningUltimateTitle strong {
+    font-size: 16px;
+  }
+
+  .lightningRelic {
+    right: 16px;
+    bottom: 16px;
+    width: 58px;
+    height: 58px;
+  }
+
+  .lightningRelicCore {
+    font-size: 32px;
+  }
+}
