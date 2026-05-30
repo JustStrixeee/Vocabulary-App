@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import confetti from "canvas-confetti";
 
+const LEGENDARY_TEST_STREAK = 2;
+
 function getComboData(streak) {
   if (streak >= 10) {
     return {
@@ -42,6 +44,16 @@ function runComboParticles(streak) {
       startVelocity: 38,
       scalar: 0.75,
       origin: { y: 0.35 },
+    });
+  }
+
+  if (streak >= LEGENDARY_TEST_STREAK) {
+    confetti({
+      particleCount: 130,
+      spread: 120,
+      startVelocity: 48,
+      scalar: 0.9,
+      origin: { y: 0.42 },
     });
   }
 }
@@ -85,94 +97,167 @@ function StormBolts() {
   );
 }
 
+function LegendaryEffect({ streak }) {
+  return (
+    <motion.div
+      className="legendaryEffect"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.25 }}
+    >
+      <div className="legendaryBackdrop" />
+
+      <motion.div
+        className="legendaryCard"
+        initial={{
+          opacity: 0,
+          scale: 0.35,
+          rotateY: 70,
+          y: 40,
+        }}
+        animate={{
+          opacity: 1,
+          scale: [0.85, 1.16, 1],
+          rotateY: [70, -10, 0],
+          y: 0,
+        }}
+        exit={{
+          opacity: 0,
+          scale: 0.7,
+          rotateY: -35,
+          y: -30,
+        }}
+        transition={{
+          duration: 1.15,
+          ease: "easeOut",
+        }}
+      >
+        <div className="legendaryRing legendaryRingOne" />
+        <div className="legendaryRing legendaryRingTwo" />
+
+        <div className="legendaryRays">
+          <span />
+          <span />
+          <span />
+          <span />
+          <span />
+          <span />
+        </div>
+
+        <div className="legendaryCore">⚡</div>
+
+        <div className="legendaryTitle">LEGENDARY</div>
+        <div className="legendarySubtitle">STREAK x{streak}</div>
+
+        <div className="legendarySparks">
+          <span />
+          <span />
+          <span />
+          <span />
+          <span />
+          <span />
+          <span />
+          <span />
+        </div>
+      </motion.div>
+    </motion.div>
+  );
+}
+
 function ComboEffect({ streak, visible }) {
   useEffect(() => {
-    if (visible && streak >= 3) {
+    if (visible && streak >= 2) {
       runComboParticles(streak);
     }
   }, [visible, streak]);
 
   const comboData = getComboData(streak);
+  const showLegendary = streak >= LEGENDARY_TEST_STREAK;
 
   return (
     <AnimatePresence>
-      {visible && streak >= 3 && (
-        <motion.div
-          className={comboData.className}
-          initial={{
-            opacity: 0,
-            scale: 0.45,
-            x: -140,
-            y: -55,
-            skewX: -14,
-          }}
-          animate={{
-            opacity: 1,
-            scale: [1, 1.22, 1.08],
-            x: 0,
-            y: 0,
-            skewX: [0, -6, 4, 0],
-          }}
-          exit={{
-            opacity: 0,
-            scale: 0.72,
-            x: 130,
-            y: -35,
-            skewX: 12,
-          }}
-          transition={{
-            duration: 1.15,
-            ease: "easeOut",
-          }}
-        >
-          <div className="comboShockwave" />
+      {visible && streak >= 2 && (
+        <>
+          {showLegendary && <LegendaryEffect streak={streak} />}
 
-          <div className="windLines">
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-          </div>
+          <motion.div
+            className={comboData.className}
+            initial={{
+              opacity: 0,
+              scale: 0.45,
+              x: -140,
+              y: -55,
+              skewX: -14,
+            }}
+            animate={{
+              opacity: 1,
+              scale: [1, 1.22, 1.08],
+              x: 0,
+              y: 0,
+              skewX: [0, -6, 4, 0],
+            }}
+            exit={{
+              opacity: 0,
+              scale: 0.72,
+              x: 130,
+              y: -35,
+              skewX: 12,
+            }}
+            transition={{
+              duration: 1.15,
+              ease: "easeOut",
+            }}
+          >
+            <div className="comboShockwave" />
 
-          {comboData.nature === "wind" && <WindLeaves />}
-
-          {streak >= 5 && (
-            <>
-              <div className="lightningBolts">
-                <span className="bolt boltOne">⚡</span>
-                <span className="bolt boltTwo">⚡</span>
-                <span className="bolt boltThree">⚡</span>
-              </div>
-
-              <LightningSparks />
-            </>
-          )}
-
-          {streak >= 7 && (
-            <div className="hurricaneSwirl">
+            <div className="windLines">
+              <span />
+              <span />
+              <span />
               <span />
               <span />
               <span />
             </div>
-          )}
 
-          {streak >= 10 && (
-            <>
-              <div className="stormRing">
+            {comboData.nature === "wind" && <WindLeaves />}
+
+            {streak >= 5 && (
+              <>
+                <div className="lightningBolts">
+                  <span className="bolt boltOne">⚡</span>
+                  <span className="bolt boltTwo">⚡</span>
+                  <span className="bolt boltThree">⚡</span>
+                </div>
+
+                <LightningSparks />
+              </>
+            )}
+
+            {streak >= 7 && (
+              <div className="hurricaneSwirl">
                 <span />
                 <span />
                 <span />
               </div>
+            )}
 
-              <StormBolts />
-            </>
-          )}
+            {streak >= 10 && (
+              <>
+                <div className="stormRing">
+                  <span />
+                  <span />
+                  <span />
+                </div>
 
-          <span className="comboLabel">{comboData.label}</span>
-          <strong>x{streak}</strong>
-        </motion.div>
+                <StormBolts />
+              </>
+            )}
+
+            <span className="comboLabel">{comboData.label}</span>
+            <strong>x{streak}</strong>
+          </motion.div>
+        </>
       )}
     </AnimatePresence>
   );

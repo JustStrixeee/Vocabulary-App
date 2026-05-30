@@ -13,10 +13,13 @@ import PhraseTrainer from "./components/phrases/PhraseTrainer";
 import PhraseFilters from "./components/phrases/PhraseFilters";
 import PhraseMatchingTask from "./components/phrases/PhraseMatchingTask";
 import ComboEffect from "./components/effects/ComboEffect";
+import SandTrapEffect from "./components/effects/SandTrapEffect";
+import SandRelic from "./components/effects/SandRelic";
 
 const API_URL = "http://127.0.0.1:8000";
 const TASKS_LIMIT = 10;
 const STORAGE_KEY = "vocabulary_sessions";
+const SAND_TRAP_TEST_STREAK = 2;
 
 function App() {
   const [appSection, setAppSection] = useState("words");
@@ -71,6 +74,8 @@ function App() {
 
   const [comboStreak, setComboStreak] = useState(0);
   const [comboVisible, setComboVisible] = useState(false);
+  const [sandTrapVisible, setSandTrapVisible] = useState(false);
+  const [sandRelicVisible, setSandRelicVisible] = useState(false);
 
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
@@ -117,7 +122,7 @@ function App() {
   }
 
   function triggerComboEffect(nextStreak) {
-    if (nextStreak < 3) {
+    if (nextStreak < 2) {
       return;
     }
 
@@ -125,19 +130,31 @@ function App() {
 
     setTimeout(() => {
       setComboVisible(false);
-    }, 1200);
+    }, 1800);
+  }
+
+  function triggerSandTrapEffect(nextStreak) {
+    if (nextStreak !== SAND_TRAP_TEST_STREAK) {
+      return;
+    }
+
+    setSandTrapVisible(true);
   }
 
   function handleComboResult(isSuccess) {
     if (!isSuccess) {
       setComboStreak(0);
       setComboVisible(false);
+      setSandTrapVisible(false);
       return;
     }
 
     setComboStreak((prevStreak) => {
       const nextStreak = prevStreak + 1;
+
       triggerComboEffect(nextStreak);
+      triggerSandTrapEffect(nextStreak);
+
       return nextStreak;
     });
   }
@@ -150,6 +167,8 @@ function App() {
   function resetCombo() {
     setComboStreak(0);
     setComboVisible(false);
+    setSandTrapVisible(false);
+    setSandRelicVisible(false);
   }
 
   async function loadTask(category = selectedCategory) {
@@ -703,6 +722,17 @@ function App() {
         <main className="card">
           <ComboEffect streak={comboStreak} visible={comboVisible} />
 
+          <SandTrapEffect
+            visible={sandTrapVisible}
+            streak={comboStreak}
+            onComplete={() => {
+              setSandTrapVisible(false);
+              setSandRelicVisible(true);
+            }}
+          />
+
+          <SandRelic visible={sandRelicVisible} />
+
           <SessionSummary
             startedAt={sessionStartedAt}
             history={answersHistory}
@@ -722,6 +752,17 @@ function App() {
     <div className="app">
       <main className="card">
         <ComboEffect streak={comboStreak} visible={comboVisible} />
+
+        <SandTrapEffect
+          visible={sandTrapVisible}
+          streak={comboStreak}
+          onComplete={() => {
+            setSandTrapVisible(false);
+            setSandRelicVisible(true);
+          }}
+        />
+
+        <SandRelic visible={sandRelicVisible} />
 
         <p className="tag">English Vocabulary Trainer</p>
 

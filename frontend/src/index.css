@@ -1483,3 +1483,272 @@ button:disabled {
     font-size: 24px;
   }
 }
+
+/* Sand Trap ultimate effect */
+.sandTrapOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9997;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  animation: sandScreenShake 1.25s ease;
+}
+
+.sandDarkness {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at center, rgba(251, 191, 36, 0.2), transparent 34%),
+    radial-gradient(circle at bottom, rgba(180, 83, 9, 0.35), transparent 56%),
+    rgba(2, 6, 23, 0.72);
+}
+
+.sandVortex {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  width: 360px;
+  height: 360px;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+}
+
+.sandRing {
+  position: absolute;
+  border-radius: 50%;
+  border: 4px solid rgba(251, 191, 36, 0.58);
+  box-shadow:
+    0 0 22px rgba(251, 191, 36, 0.72),
+    inset 0 0 26px rgba(146, 64, 14, 0.45);
+  animation: sandSpin 1.4s linear infinite;
+}
+
+.sandRingOne {
+  width: 330px;
+  height: 120px;
+  transform: rotate(8deg);
+}
+
+.sandRingTwo {
+  width: 260px;
+  height: 92px;
+  border-color: rgba(245, 158, 11, 0.68);
+  animation-direction: reverse;
+}
+
+.sandRingThree {
+  width: 190px;
+  height: 68px;
+  border-color: rgba(253, 230, 138, 0.78);
+}
+
+.sandCore {
+  position: relative;
+  z-index: 3;
+  width: 138px;
+  height: 138px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, #fef3c7 0, #f59e0b 30%, #92400e 62%, #120a05 100%);
+  box-shadow:
+    0 0 38px rgba(251, 191, 36, 0.92),
+    0 0 90px rgba(180, 83, 9, 0.75),
+    inset 0 0 28px rgba(0, 0, 0, 0.65);
+}
+
+.sandEye {
+  font-size: 72px;
+  color: #1c1208;
+  text-shadow:
+    0 0 12px rgba(253, 230, 138, 0.95),
+    0 0 28px rgba(251, 191, 36, 0.75);
+  animation: sandEyePulse 0.65s ease infinite alternate;
+}
+
+.sandWave {
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  bottom: -18%;
+  height: 34%;
+  border-radius: 50% 50% 0 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(254, 243, 199, 0.55), transparent 18%),
+    linear-gradient(180deg, rgba(251, 191, 36, 0.86), rgba(146, 64, 14, 0.96));
+  filter: blur(0.2px);
+}
+
+.sandWaveBack {
+  opacity: 0.55;
+  bottom: -12%;
+  animation: sandWaveRiseBack 1.45s ease forwards;
+}
+
+.sandWaveMiddle {
+  opacity: 0.75;
+  bottom: -18%;
+  animation: sandWaveRiseMiddle 1.35s ease forwards;
+}
+
+.sandWaveFront {
+  opacity: 0.94;
+  bottom: -24%;
+  animation: sandWaveRiseFront 1.25s ease forwards;
+}
+
+.sandDust {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+}
+
+.sandDust span {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fbbf24;
+  box-shadow:
+    0 0 12px rgba(251, 191, 36, 0.9),
+    0 0 24px rgba(180, 83, 9, 0.55);
+  opacity: 0;
+  animation: sandDustFly 1.35s ease forwards;
+}
+
+.sandDust span:nth-child(1) { left: 8%; bottom: 18%; }
+.sandDust span:nth-child(2) { left: 18%; bottom: 8%; animation-delay: 0.08s; }
+.sandDust span:nth-child(3) { left: 28%; bottom: 22%; animation-delay: 0.16s; }
+.sandDust span:nth-child(4) { left: 40%; bottom: 10%; animation-delay: 0.24s; }
+.sandDust span:nth-child(5) { left: 51%; bottom: 18%; animation-delay: 0.32s; }
+.sandDust span:nth-child(6) { right: 38%; bottom: 8%; animation-delay: 0.4s; }
+.sandDust span:nth-child(7) { right: 28%; bottom: 20%; animation-delay: 0.48s; }
+.sandDust span:nth-child(8) { right: 18%; bottom: 9%; animation-delay: 0.56s; }
+.sandDust span:nth-child(9) { right: 10%; bottom: 22%; animation-delay: 0.64s; }
+.sandDust span:nth-child(10) { right: 5%; bottom: 12%; animation-delay: 0.72s; }
+
+.sandTrapTitle {
+  position: relative;
+  z-index: 6;
+  display: grid;
+  gap: 10px;
+  text-align: center;
+  margin-top: 340px;
+  padding: 18px 34px;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.34), transparent 38%),
+    linear-gradient(135deg, #78350f, #d97706, #facc15);
+  color: #fff7ed;
+  box-shadow:
+    0 0 34px rgba(251, 191, 36, 0.95),
+    0 0 95px rgba(180, 83, 9, 0.7),
+    0 22px 70px rgba(0, 0, 0, 0.62);
+}
+
+.sandTrapTitle span {
+  font-size: 42px;
+  font-weight: 1000;
+  letter-spacing: 0.1em;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.75);
+}
+
+.sandTrapTitle strong {
+  font-size: 20px;
+  letter-spacing: 0.08em;
+}
+
+.sandRelic {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  width: 74px;
+  height: 74px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, #fef3c7 0, #f59e0b 34%, #78350f 72%);
+  border: 2px solid rgba(251, 191, 36, 0.85);
+  box-shadow:
+    0 0 26px rgba(251, 191, 36, 0.82),
+    0 0 70px rgba(180, 83, 9, 0.45);
+  animation: sandRelicAppear 0.55s ease;
+}
+
+.sandRelicCore {
+  position: relative;
+  z-index: 2;
+  color: #1c1208;
+  font-size: 42px;
+  animation: sandRelicPulse 1.6s ease infinite alternate;
+}
+
+.sandRelicGlow {
+  position: absolute;
+  inset: -10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.32), transparent 65%);
+  animation: sandRelicGlow 1.4s ease infinite alternate;
+}
+
+@keyframes sandScreenShake {
+  0%, 100% { transform: translate(0, 0); }
+  18% { transform: translate(2px, -2px); }
+  36% { transform: translate(-3px, 2px); }
+  54% { transform: translate(3px, 1px); }
+  72% { transform: translate(-2px, -1px); }
+}
+
+@keyframes sandSpin {
+  from { transform: rotate(0deg) scale(0.96); }
+  to { transform: rotate(360deg) scale(1.04); }
+}
+
+@keyframes sandEyePulse {
+  from { transform: scale(0.94); filter: brightness(1); }
+  to { transform: scale(1.08); filter: brightness(1.35); }
+}
+
+@keyframes sandWaveRiseBack { to { bottom: 0%; } }
+@keyframes sandWaveRiseMiddle { to { bottom: -2%; } }
+@keyframes sandWaveRiseFront { to { bottom: -4%; } }
+
+@keyframes sandDustFly {
+  0% { opacity: 0; transform: translate(0, 60px) scale(0.45); }
+  22% { opacity: 1; }
+  100% { opacity: 0; transform: translate(0, -420px) scale(1.5); }
+}
+
+@keyframes sandRelicAppear {
+  from { opacity: 0; transform: scale(0.4) rotate(-20deg); }
+  to { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+@keyframes sandRelicPulse {
+  from { transform: scale(0.94); }
+  to { transform: scale(1.08); }
+}
+
+@keyframes sandRelicGlow {
+  from { opacity: 0.45; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1.12); }
+}
+
+@media (max-width: 560px) {
+  .sandVortex { width: 280px; height: 280px; }
+  .sandRingOne { width: 260px; }
+  .sandRingTwo { width: 210px; }
+  .sandRingThree { width: 160px; }
+  .sandCore { width: 110px; height: 110px; }
+  .sandEye { font-size: 56px; }
+  .sandTrapTitle { margin-top: 300px; padding: 14px 24px; }
+  .sandTrapTitle span { font-size: 28px; }
+  .sandRelic { right: 16px; bottom: 16px; width: 58px; height: 58px; }
+  .sandRelicCore { font-size: 32px; }
+}
